@@ -43,10 +43,19 @@ export default function Header() {
         <li className="d-flex align-items-center">
           <Link
             className="text-white text-decoration-none fonttext"
-            to="/donar"
+            to="/menu"
             style={{ lineHeight: 1 }}
           >
-            Donar
+            INICIO
+          </Link>
+        </li>
+        <li className="d-flex align-items-center">
+          <Link
+            className="text-white text-decoration-none fonttext"
+            to="/menu"
+            style={{ lineHeight: 1 }}
+          >
+            MENU
           </Link>
         </li>
         <li className="d-flex align-items-center">
@@ -66,9 +75,6 @@ export default function Header() {
             aria-labelledby="offcanvasTopLabel"
           >
             <div className="offcanvas-header">
-              <h5 className="offcanvas-title" id="offcanvasTopLabel">
-                Menú
-              </h5>
               <button
                 type="button"
                 className="btn-close btn-close-white"
@@ -77,27 +83,97 @@ export default function Header() {
               ></button>
             </div>
             <div className="offcanvas-body">
-              <Link
-                to="/inicio"
-                onClick={handleLinkClick}
-                className="text-white text-decoration-none d-block mb-2"
-              >
-                Inicio
-              </Link>
-              <Link
-                to="/nosotros"
-                onClick={handleLinkClick}
-                className="text-white text-decoration-none d-block mb-2"
-              >
-                Nosotros
-              </Link>
-              <Link
-                to="/donar"
-                onClick={handleLinkClick}
-                className="text-white text-decoration-none d-block mb-2"
-              >
-                Donar
-              </Link>
+              <div className="container-fluid">
+                <div className="row">
+                  {/* Columna izquierda */}
+                  <div className="col-md-6">
+                    <div className="d-flex align-items-center mb-3">
+                      <i className="fas fa-users me-3"></i>
+                      <Link
+                        to="/sobre-nosotros"
+                        onClick={handleLinkClick}
+                        className="text-white text-decoration-none"
+                      >
+                        SOBRE NOSOTROS
+                      </Link>
+                    </div>
+                    <div className="d-flex align-items-center mb-3">
+                      <i className="fas fa-graduation-cap me-3"></i>
+                      <Link
+                        to="/carreras"
+                        onClick={handleLinkClick}
+                        className="text-white text-decoration-none"
+                      >
+                        CARRERAS
+                      </Link>
+                    </div>
+                    <div className="d-flex align-items-center mb-3">
+                      <i className="fas fa-user me-3"></i>
+                      <Link
+                        to="/contacto"
+                        onClick={handleLinkClick}
+                        className="text-white text-decoration-none"
+                      >
+                        CONTACTO
+                      </Link>
+                    </div>
+                    <div className="d-flex align-items-center mb-3">
+                      <i className="fas fa-calendar me-3"></i>
+                      <Link
+                        to="/eventos"
+                        onClick={handleLinkClick}
+                        className="text-white text-decoration-none"
+                      >
+                        EVENTOS
+                      </Link>
+                    </div>
+                  </div>
+                  
+                  {/* Columna derecha */}
+                  <div className="col-md-6">
+                    <div className="d-flex align-items-center mb-3">
+                      <i className="fas fa-laptop me-3"></i>
+                      <Link
+                        to="/campus-virtual"
+                        onClick={handleLinkClick}
+                        className="text-white text-decoration-none"
+                      >
+                        CAMPUS VIRTUAL
+                      </Link>
+                    </div>
+                    <div className="d-flex align-items-center mb-3">
+                      <i className="fas fa-balance-scale me-3"></i>
+                      <Link
+                        to="/transparencia"
+                        onClick={handleLinkClick}
+                        className="text-white text-decoration-none"
+                      >
+                        TRANSPARENCIA
+                      </Link>
+                    </div>
+                    <div className="d-flex align-items-center mb-3">
+                      <i className="fas fa-heart me-3"></i>
+                      <Link
+                        to="/fundacion-undelta"
+                        onClick={handleLinkClick}
+                        className="text-white text-decoration-none"
+                      >
+                        FUNDACIÓN UNDELTA
+                      </Link>
+                    </div>
+                    <div className="d-flex align-items-center mb-3">
+                      <i className="fas fa-puzzle-piece me-3"></i>
+                      <Link
+                        to="/extension-universitaria"
+                        onClick={handleLinkClick}
+                        className="text-white text-decoration-none"
+                      >
+                        EXTENSIÓN UNIVERSITARIA
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </li>
