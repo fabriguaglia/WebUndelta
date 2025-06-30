@@ -50,3 +50,16 @@
   color: #ffffff !important;
   transform: translateX(10px);
 }
+
+/* Logo responsive - se adapta automáticamente al tamaño de pantalla */
+.greensock-icon {
+  width: clamp(100px, 15vw, 200px);
+  height: auto;
+}
+
+/* Ajustar el margen del contenedor del logo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .icon {
+    margin-left: -10px !important;
+  }
+}
