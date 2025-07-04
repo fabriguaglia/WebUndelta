@@ -2,7 +2,7 @@
 #offcanvasTop {
   background-color: #003B55 !important;
   color: #fff !important;
-  height: 65vh !important; /* Ocupa 60% de la altura de la ventana */
+  height: 60vh !important; /* Ocupa 60% de la altura de la ventana */
   min-height: 400px !important; /* Altura mínima */
   overflow: hidden !important; /* Oculta cualquier contenido que se desborde */
 }
