@@ -12,7 +12,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Menu />} />
         </Routes>
-      <Footer />
+        <Footer />
     </Router>
   );
 }
