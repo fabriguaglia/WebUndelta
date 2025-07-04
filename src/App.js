@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/footer.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Contact from './components/Contact/Contact.jsx';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
         <Routes>
           <Route exact path="/" element={<Menu />} />
+          <Route path="/contacto" element={<Contact />} />
         </Routes>
         <Footer />
     </Router>
