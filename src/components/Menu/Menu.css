@@ -144,3 +144,65 @@ html, body {
     font-size: 0.8rem;
   }
 }
+
+/* Sección informativa tipo slider */
+.info-slider-custom {
+  background-color: #f9f9f9;
+  border-top: 2px solid #69932D;
+  border-bottom: 2px solid #69932D;
+  padding: 4rem 1rem;
+}
+
+.info-title-custom {
+  color: #4d7c26;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-text-custom {
+  color: #004b4d;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-btn-custom {
+  background-color: #0078a0;
+  border-color: #0078a0;
+  border-radius: 20px;
+  padding: 0.6rem 1.8rem;
+  font-weight: 600;
+}
+
+.info-btn-custom:hover {
+  background-color: #005f7a;
+  border-color: #005f7a;
+}
+
+.info-image-custom {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Separador de sección: Novedades Destacadas */
+.novedades-separator-custom {
+  background-color: #003B55; /* Fondo azul oscuro */
+  padding: 1rem ;
+}
+
+.novedades-title-custom {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: relative;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 5px solid #A2C523; /* Línea verde a la izquierda */
+  display: inline-block;
+}
+
+.arrow-container {
+  text-align: right;
+  padding-right: 2rem;
+}
