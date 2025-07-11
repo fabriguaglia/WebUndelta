@@ -1,7 +1,7 @@
 /* Contact.css */
 .contact-container {
   min-height: 100vh;
-  background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/infobae/G3RGICDSOVAXLAUYJYW3EO4MVQ.jpg');
+  background-image: url('undelta-bakcground.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,7 +17,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* Overlay oscuro semi-transparente */
+  background: rgba(0, 0, 0, 0.5); /* Overlay oscuro semi-transparente */
   z-index: 1;
 }
 
@@ -34,7 +34,7 @@
 /* Alternativa sin overlay */
 .contact-container-light {
   min-height: 100vh;
-  background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/infobae/G3RGICDSOVAXLAUYJYW3EO4MVQ.jpg');
+  background-image: url('undelta-bakcground.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

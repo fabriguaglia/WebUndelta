@@ -1,0 +1,209 @@
+        .hero-section {
+          background-image: url('about-us.png');
+          background-size: cover;
+          background-position: center;
+          height: 400px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+        }
+
+        .hero-title {
+          font-size: 4rem;
+          font-weight: bold;
+          text-align: center;
+          text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+          letter-spacing: 3px;
+        }
+
+        .row-custom-nav {
+          background-color: #045976;
+          padding: 15px 0;
+          margin: 0;
+        }
+
+        .col-custom {
+          color: white;
+          font-weight: bold;
+          font-size: 1.1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          padding: 10px;
+        }
+
+        .col-custom:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          transform: translateY(-2px);
+        }
+
+        .row-custom-separator {
+          background-color: #7fb069;
+          height: 8px;
+          margin: 0;
+        }
+
+        .about-section {
+          background-color: #d4e6b7;
+          padding: 60px 0;
+        }
+
+        .about-content {
+          color: #333;
+          line-height: 1.8;
+          font-size: 1rem;
+          text-align: justify;
+        }
+
+        .about-content p {
+          margin-bottom: 20px;
+        }
+
+        /* Estilos para la imagen del edificio universitario */
+        .university-building-container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        }
+
+        .university-building-img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        object-fit: cover;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 991px) {
+        .university-building-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .university-building-img {
+            max-width: 350px;
+        }
+        }
+
+        @media (max-width: 768px) {
+        .university-building-container {
+            padding: 15px;
+        }
+        
+        .university-building-img {
+            max-width: 300px;
+        }
+        }
+
+        .organigrama-section {
+          background-color: #045976;
+          padding: 60px 0;
+          color: white;
+        }
+
+        .organigrama-title {
+          color: white;
+          font-size: 2.5rem;
+          text-align: center;
+          margin-bottom: 50px;
+          font-weight: bold;
+        }
+
+        .organigrama-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 30px;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+        }
+
+        .persona-card {
+          background-color: white;
+          border-radius: 15px;
+          padding: 20px;
+          text-align: center;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+          transition: transform 0.3s ease;
+        }
+
+        .persona-card:hover {
+          transform: translateY(-5px);
+        }
+
+        .persona-img {
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          margin: 0 auto 15px;
+          background-color: #f0f0f0;
+          background-size: cover;
+          background-position: center;
+          border: 3px solid #7fb069;
+        }
+
+        .persona-img.silvia {
+          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><circle cx="60" cy="60" r="60" fill="%23f0f0f0"/><circle cx="60" cy="45" r="15" fill="%23d0d0d0"/><ellipse cx="60" cy="85" rx="25" ry="20" fill="%23d0d0d0"/></svg>');
+        }
+
+        .persona-img.sebastian {
+          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><circle cx="60" cy="60" r="60" fill="%23e8e8e8"/><circle cx="60" cy="45" r="15" fill="%23c8c8c8"/><ellipse cx="60" cy="85" rx="25" ry="20" fill="%23c8c8c8"/></svg>');
+        }
+
+        .persona-img.marcelo {
+          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><circle cx="60" cy="60" r="60" fill="%23f5f5f5"/><circle cx="60" cy="45" r="15" fill="%23d5d5d5"/><ellipse cx="60" cy="85" rx="25" ry="20" fill="%23d5d5d5"/></svg>');
+        }
+
+        .persona-img.sergio {
+          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><circle cx="60" cy="60" r="60" fill="%23ececec"/><circle cx="60" cy="45" r="15" fill="%23cccccc"/><ellipse cx="60" cy="85" rx="25" ry="20" fill="%23cccccc"/></svg>');
+        }
+
+        .persona-img.federico {
+          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><circle cx="60" cy="60" r="60" fill="%23f8f8f8"/><circle cx="60" cy="45" r="15" fill="%23d8d8d8"/><ellipse cx="60" cy="85" rx="25" ry="20" fill="%23d8d8d8"/></svg>');
+        }
+
+        .persona-img.natalia {
+          background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><circle cx="60" cy="60" r="60" fill="%23f2f2f2"/><circle cx="60" cy="45" r="15" fill="%23d2d2d2"/><ellipse cx="60" cy="85" rx="25" ry="20" fill="%23d2d2d2"/></svg>');
+        }
+
+        .persona-name {
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: #045976;
+          margin-bottom: 8px;
+        }
+
+        .persona-title {
+          font-size: 0.9rem;
+          color: #7fb069;
+          font-weight: 600;
+          margin-bottom: 10px;
+          line-height: 1.3;
+        }
+
+        .persona-description {
+          font-size: 0.8rem;
+          color: #666;
+          line-height: 1.4;
+        }
+
+        @media (max-width: 992px) {
+          .organigrama-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        @media (max-width: 768px) {
+          .hero-title {
+            font-size: 2.5rem;
+          }
+          
+          .organigrama-grid {
+            grid-template-columns: 1fr;
+          }
+          
+          .organigrama-title {
+            font-size: 2rem;
+          }
+        }

@@ -55,12 +55,12 @@ function Menu() {
         ></video>
       </div>
       
-      <div className="container-fluid text-center">
+      <div className="container-fluid">
         <div className="row row-custom-nav align-items-center">
-          <div className="col col-custom">CARRERAS</div>
-          <div className="col col-custom">INSCRIPCIÓN</div>
-          <div className="col col-custom">PREGUNTAS FRECUENTES</div>
-          <div className="col col-custom">EVENTOS</div>
+          <div className="col-md-3 col-custom">CARRERAS</div>
+          <div className="col-md-3 col-custom">INSCRIPCIÓN</div>
+          <div className="col-md-3 col-custom">PREGUNTAS FRECUENTES</div>
+          <div className="col-md-3 col-custom">EVENTOS</div>
         </div>
       </div>
 
