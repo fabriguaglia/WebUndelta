@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './sobre-nosotros.css'
+import sobrenos from './sobre-nos.png';
 
 function SobreNosotros() {
   const personas = [
@@ -73,7 +74,7 @@ function SobreNosotros() {
             <div className="col-lg-4">
               <div className="university-building-container">
                 <img 
-                  src="\sobre-nos.png" 
+                  src={sobrenos} 
                   alt="Edificio Universidad Nacional del Delta" 
                   className="university-building-img"
                 />
