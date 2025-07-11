@@ -146,49 +146,177 @@ html, body {
 }
 
 /* Sección informativa tipo slider */
-.info-slider-custom {
+/* Estilos adicionales para el carousel personalizado */
+
+/* Contenedor del carousel */
+.carousel-custom-container {
+  position: relative;
   background-color: #f9f9f9;
   border-top: 2px solid #69932D;
   border-bottom: 2px solid #69932D;
-  padding: 4rem 1rem;
 }
 
-.info-title-custom {
-  color: #4d7c26;
-  font-weight: 700;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+/* Botones de navegación del carousel */
+.carousel-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  padding: 0.5rem;
+  border-radius: 50%;
 }
 
-.info-text-custom {
-  color: #004b4d;
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
+.carousel-btn:hover {
+  transform: scale(1.1);
+  background-color: rgba(4, 89, 118, 0.1);
 }
 
-.info-btn-custom {
-  background-color: #0078a0;
-  border-color: #0078a0;
-  border-radius: 20px;
-  padding: 0.6rem 1.8rem;
-  font-weight: 600;
+.carousel-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(4, 89, 118, 0.3);
 }
 
-.info-btn-custom:hover {
-  background-color: #005f7a;
-  border-color: #005f7a;
+/* Contenedor de controles del carousel */
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 
-.info-image-custom {
-  max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+/* Indicadores del carousel */
+.carousel-indicators-custom {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.indicator-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.indicator-dot.active {
+  background-color: #045976;
+  transform: scale(1.2);
+}
+
+.indicator-dot:hover {
+  background-color: #045976;
+  transform: scale(1.1);
+}
+
+/* Transición suave para el cambio de slides */
+.carousel-slide-content {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Responsive para el carousel */
+@media (max-width: 767px) {
+  .carousel-controls {
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .carousel-btn {
+    padding: 1rem;
+    background-color: rgba(4, 89, 118, 0.1);
+    border-radius: 50%;
+    min-width: 60px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-btn svg {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .carousel-btn:hover {
+    background-color: rgba(4, 89, 118, 0.2);
+  }
+  
+  .indicator-dot {
+    width: 14px;
+    height: 14px;
+    margin: 0 4px;
+  }
+  
+  .carousel-indicators-custom {
+    gap: 8px;
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-controls {
+    margin-top: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .carousel-btn {
+    min-width: 56px;
+    min-height: 56px;
+    padding: 0.8rem;
+  }
+  
+  .carousel-btn svg {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .indicator-dot {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Estilos adicionales para mejor visibilidad en móvil */
+@media (max-width: 480px) {
+  .carousel-controls {
+    padding: 0 1rem;
+  }
+  
+  .carousel-btn {
+    background-color: rgba(4, 89, 118, 0.15);
+    border: 2px solid rgba(4, 89, 118, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-btn:active {
+    transform: scale(0.95);
+    background-color: rgba(4, 89, 118, 0.25);
+  }
+  
+  .indicator-dot {
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgba(4, 89, 118, 0.3);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .indicator-dot.active {
+    border-color: #045976;
+    box-shadow: 0 2px 6px rgba(4, 89, 118, 0.3);
+  }
 }
 
 /* Separador de sección: Novedades Destacadas */
 .novedades-separator-custom {
   background-color: #003B55; /* Fondo azul oscuro */
-  padding: 1rem ;
+  padding: 1.5rem ;
 }
 
 .novedades-title-custom {
