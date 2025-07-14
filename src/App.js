@@ -6,6 +6,8 @@ import Footer from './components/Footer/footer.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './components/Contact/Contact.jsx';
 import SobreNosotros from './components/Sobre nosotros/sobre-nosotros.jsx';
+import PreguntasFrecuentes from './components/preguntas-frecuentes/preguntas-frecuentes';
+
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
           <Route exact path="/" element={<Menu />} />
           <Route path="/contacto" element={<Contact />} />
           <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+          <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
         </Routes>
         <Footer />
     </Router>

@@ -204,6 +204,7 @@ html, body {
   background-color: #f9f9f9;
   border-top: 2px solid #69932D;
   border-bottom: 2px solid #69932D;
+  padding: 20px;
 }
 
 /* Botones de navegación del carousel */
