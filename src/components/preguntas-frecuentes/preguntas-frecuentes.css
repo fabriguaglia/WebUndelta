@@ -48,6 +48,36 @@
   line-height: 1.4;
 }
 
+/* Líneas verdes debajo de la imagen hero */
+.green-lines-container {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 0;
+  margin: 0;
+}
+
+.green-line-thick {
+  width: 100%;
+  height: 12px;
+  background-color: #69932D;
+  margin: 0;
+}
+
+.green-line-thin {
+  width: 100%;
+  height: 4px;
+  background-color: #69932D;
+  margin: 0;
+}
+
+/* Línea verde antes del footer */
+.green-line-before-footer {
+  width: 100%;
+  height: 12px;
+  background-color: #69932D;
+  margin: 0;
+}
+
 /* FAQ Container */
 .faq-container {
   padding: 60px 20px;
@@ -230,6 +260,19 @@
   .faq-container {
     padding: 40px 15px;
   }
+  
+  /* Líneas verdes responsive */
+  .green-line-thick {
+    height: 10px;
+  }
+  
+  .green-line-thin {
+    height: 3px;
+  }
+  
+  .green-line-before-footer {
+    height: 10px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -257,5 +300,18 @@
   
   .faq-custom-accordion {
     margin: 0 10px;
+  }
+  
+  /* Líneas verdes responsive mobile */
+  .green-line-thick {
+    height: 8px;
+  }
+  
+  .green-line-thin {
+    height: 2px;
+  }
+  
+  .green-line-before-footer {
+    height: 8px;
   }
 }

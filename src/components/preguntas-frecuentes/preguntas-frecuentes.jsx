@@ -112,22 +112,22 @@ const FAQPage = () => {
         Las Tecnicaturas Universitarias de la Universidad Nacional del Delta tienen una orientación más práctica y técnica, con una duración de cinco cuatrimestres. Las Licenciaturas, en cambio, se focalizan también en la investigación y tienen una duración de ocho cuatrimestres.
 
         Para facilitar el desarrollo de la trayectoria académica de nuestros estudiantes en la UNDelta articulamos nuestras Tecnicaturas Universitarias con nuestras Licenciaturas. Es por ello que una vez que termines de cursar una de nuestras Tecnicaturas Universitarias podrás continuar con el tramo superior para obtener la Licenciatura correspondiente. A su vez, si te inscribiste en alguna de nuestras licenciaturas, aprobados los cinco primeros cuatrimestres, obtendrás el título intermedio de Técnico/a Universitario/a.
-        </div>)
-    },
+        </div>
+      )
+    }, // ← COMA AGREGADA AQUÍ
     {
       id: 'collapseEight',
-      question: '¿Me puedo anotar si estoy cursando mi último año del secundario?',
+      question: '¿Me puedo anotar si estoy cursando mi último año del secundario?', // ← COMA AGREGADA AQUÍ
       answer: (
         <div>
           Si estás en tu último año del secundario te podeés anotar y en agosto de 2025 empezar el Curso de Preparación Universitaria (CPU). 
           IMPORTANTE: Recordá que para empezar la carrera que elegiste en marzo del 2026 antes tenés que haber finalizado el secundario y no adeudar ninguna materias. Esto quiere decir que si cursaste satisfactoriamente el CPU y no finalizaste el secundario NO vas a poder empezar a cursar la Licenciatura o Tecnicatura en la cual te anotaste.  
         </div>
       )
-    },
-
+    }, // ← COMA AGREGADA AQUÍ
     {
       id: 'collapseNine',
-      question: '¿Si tengo dudas sobre el proceso de inscripción a quién puedo consultar?',
+      question: '¿Si tengo dudas sobre el proceso de inscripción a quién puedo consultar?', // ← COMA AGREGADA AQUÍ
       answer: (
         <div>
         Ante cualquier duda o inquietud sobre el proceso de inscripción a carreras podes escribirnos a estudiantes@undelta.edu.ar o acercate a la UNDelta (Av. Avellaneda 2270, San Fernando)  de lunes a viernes de 9:30 a 19 hs.
@@ -178,6 +178,12 @@ const FAQPage = () => {
         </div>
       </section>
 
+      {/* Green lines after hero */}
+      <div className="green-lines-container">
+        <div className="green-line-thick"></div>
+        <div className="green-line-thin"></div>
+      </div>
+
       {/* FAQ Section */}
       <section className="faq-container">
         <h2 className={`faq-section-title ${visibleElements.includes('title') ? 'visible' : ''}`}>
@@ -196,6 +202,7 @@ const FAQPage = () => {
         </div>
       </section>
 
+
       {/* Contact Section */}
       <section className="faq-contact-info">
         <h3 className="faq-contact-title">¿Necesitas más información?</h3>
@@ -204,7 +211,11 @@ const FAQPage = () => {
           <strong>estudiantes@undelta.edu.ar</strong> o acercarte a la UNDelta (Av. Avellaneda 3250, San Fernando) de lunes a viernes de 9:30 a 19 hs.
         </p>
       </section>
+
+    {/* Green line before footer */}
+    <div className="green-line-before-footer"></div>
     </div>
+
   );
 };
 
