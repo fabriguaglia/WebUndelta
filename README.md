@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# 🌐 UndeltaWeb
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Página web oficial de la **Universidad Nacional del Delta** (UNDelta).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎓 ¿Qué es UNDelta?
 
-### `npm start`
+La Universidad Nacional del Delta es una universidad pública argentina, con sede en los partidos de Tigre, San Fernando y Escobar (Zona Norte del Gran Buenos Aires). Fue creada por la Ley Nacional N°27727 en 2023 y comenzó sus actividades académicas en 2024 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ofrece carreras alineadas con el desarrollo social, productivo y ambiental de la región, en áreas como Ciencia de Datos, Relaciones Internacionales, Turismo Sostenible, Gestión Educativa, Desastres y Emergencias Sanitarias 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🧩 Estructura técnica
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Framework/frontend**: [React, CSS, JS, HTML]
+- **Responsive**: Compatible con versión móvil y desktop.
+- **Integraciones**:
+  - Formulario de contacto/incripción a SIU‑Guaraní.
+  - Enlaces a redes sociales (Instagram, YouTube).
+  - Mapa de la sede en Av. Avellaneda 2270, Virreyes (San Fernando).
+---
 
-### `npm run build`
+## 📚 Contenido y funcionalidades destacadas
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Oferta académica** (2025): carreras disponibles, fechas de CPU (Curso de Preparación Universitaria en agosto) :contentReference[oaicite:3]{index=3}.
+- **Proceso de inscripción**: pasos virtual y presencial, listado de requisitos :contentReference[oaicite:4]{index=4}.
+- **Información institucional**: misión, estructura organizacional, autoridades y cifras clave (estudiantes, interesados).
+- **Campus Virtual**: enlace a plataforma Moodle y cursos abiertos :contentReference[oaicite:5]{index=5}.
+- **Sección Novedades**: noticias e inscripciones recientes (programas para mayo 2025) :contentReference[oaicite:6]{index=6}.
+- **Contacto**:
+  - Dirección: Av. Avellaneda 2270, San Fernando.
+  - Horario: lunes a viernes, de 9:30 a 19:00.
+  - Email: `estudiantes@undelta.edu.ar'.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🤝 Equipo
 
-### `npm run eject`
+- **Repositorio inicial**: @fabriguaglia @Sanchez-Mariano
+- **Contacto académico**: `estudiantes@undelta.edu.ar`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+> “La UNDelta nació para acercar la universidad pública a la región del Delta, con carreras pertinentes y un fuerte compromiso social.” — Rectora Silvia Carolina Farías :contentReference[oaicite:11]{index=11}
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
