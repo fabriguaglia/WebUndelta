@@ -50,11 +50,11 @@ const InscripcionPage = () => {
       </div>
 
       {/* Main Content */}
+      <div class="green-bar"></div>
+        <div class="section-title-ins">
+        <h2>INSCRÍBITE</h2>
+      </div>   
       <div className="main-content">
-        {/* Section Title */}
-        <div className="section-title-ins">
-          <h2>INSCRÍBITE</h2>
-        </div>
 
         {/* Description */}
         <div className="description">
