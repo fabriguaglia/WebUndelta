@@ -1,70 +1,145 @@
-# Getting Started with Create React App
+# 🌐 UndeltaWeb
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Página web oficial de la **Universidad Nacional del Delta** (UNDelta).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🎓 ¿Qué es UNDelta?
 
-### `npm start`
+La Universidad Nacional del Delta es una universidad pública argentina, con sede en los partidos de Tigre, San Fernando y Escobar (Zona Norte del Gran Buenos Aires). Fue creada por la Ley Nacional N°27727 en 2023 y comenzó sus actividades académicas en 2024 :contentReference[oaicite:1]{index=1}.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ofrece carreras alineadas con el desarrollo social, productivo y ambiental de la región, en áreas como Ciencia de Datos, Relaciones Internacionales, Turismo Sostenible, Gestión Educativa, Desastres y Emergencias Sanitarias :contentReference[oaicite:2]{index=2}.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📌 Contenido del repositorio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- `src/` – Código fuente del sitio (HTML, CSS, JS, frameworks, etc.).
+- `assets/` – Imágenes, logos y archivos multimedia.
+- `docs/` – Materiales técnicos, guías editoriales y manual de marca.
+- `public/` – Archivos estáticos para despliegue.
+- `package.json` – Dependencias y scripts (build, lint, test).
+- `README.md` – Esta documentación.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Cómo iniciar el proyecto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clonar el repositorio:
+    ```bash
+    git clone https://github.com/fabriguaglia/UndeltaWeb.git
+    cd UndeltaWeb
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Instalar dependencias (Node.js ≥16, npm o yarn):
+    ```bash
+    npm install
+    # o
+    yarn install
+    ```
 
-### `npm run eject`
+3. Levantar servidor de desarrollo:
+    ```bash
+    npm run dev
+    # o
+    yarn dev
+    ```
+    Accede a `http://localhost:3000` (puerto según configuración).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Generar versión de producción:
+    ```bash
+    npm run build
+    # o
+    yarn build
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Opcional: evaluar calidad del código:
+    ```bash
+    npm test
+    # o
+    yarn test
+    npm run lint
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🧩 Estructura técnica
 
-## Learn More
+- **Framework/frontend**: [ej. React, Vue, Next.js] *(a completar según el proyecto real)*.
+- **Preprocesadores**: SCSS, PostCSS o similares.
+- **Build tools**: Webpack, Vite u otros.
+- **SEO & Performance**: Optimización de imágenes, meta tags para SEO, accesibilidad.
+- **Responsive**: Compatible con versión móvil y desktop.
+- **Integraciones**:
+  - Formulario de contacto/incripción a SIU‑Guaraní.
+  - Enlaces a redes sociales (Instagram, YouTube).
+  - Mapa de la sede en Av. Avellaneda 2270, Virreyes (San Fernando).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📚 Contenido y funcionalidades destacadas
 
-### Code Splitting
+- **Oferta académica** (2025): carreras disponibles, fechas de CPU (Curso de Preparación Universitaria en agosto) :contentReference[oaicite:3]{index=3}.
+- **Proceso de inscripción**: pasos virtual y presencial, listado de requisitos :contentReference[oaicite:4]{index=4}.
+- **Información institucional**: misión, estructura organizacional, autoridades y cifras clave (estudiantes, interesados).
+- **Campus Virtual**: enlace a plataforma Moodle y cursos abiertos :contentReference[oaicite:5]{index=5}.
+- **Sección Novedades**: noticias e inscripciones recientes (programas para mayo 2025) :contentReference[oaicite:6]{index=6}.
+- **Contacto**:
+  - Dirección: Av. Avellaneda 2270, San Fernando.
+  - Horario: lunes a viernes, de 9:30 a 19:00.
+  - Email: `estudiantes@undelta.edu.ar` :contentReference[oaicite:7]{index=7}.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🛠️ Despliegue
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Puedes integrar el proyecto con:
 
-### Making a Progressive Web App
+- **CI/CD**: GitHub Actions, GitLab CI, CircleCI.
+- **Hosting**: Vercel, Netlify, AWS S3 + CloudFront, etc.
+- **Dominio**: `undelta.edu.ar` (SSL via Let's Encrypt).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🔧 Contribuciones
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Las contribuciones son bienvenidas:
 
-### Deployment
+1. Forkea el repositorio.
+2. Crea una rama (`feature/tu-mejora`).
+3. Realiza tus cambios, tests y docs.
+4. Haz un PR describiendo tu aporte.
+5. Será revisado y aprobado.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🤝 Equipo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Repositorio inicial**: @fabriguaglia
+- **Diseño web**: [Nombre del diseñador]
+- **Contenido**: [Editor/a, comunicador/a]
+- **Contacto académico**: `estudiantes@undelta.edu.ar`
+
+---
+
+## 📄 Licencia
+
+[Incluir tipo de licencia: MIT, GPL, etc.]  
+[Descripción breve de permisos y limitaciones]
+
+---
+
+## 🧾 Referencias oficiales
+
+- Sitio institucional de UNDelta :contentReference[oaicite:8]{index=8}  
+- Anuncio de inscripciones en abril 2025 :contentReference[oaicite:9]{index=9}  
+- Campus Virtual y cursos :contentReference[oaicite:10]{index=10}  
+
+---
+
+> “La UNDelta nació para acercar la universidad pública a la región del Delta, con carreras pertinentes y un fuerte compromiso social.” — Rectora Silvia Carolina Farías :contentReference[oaicite:11]{index=11}
+
+---
+
+Este README puede ser ajustado conforme avance el desarrollo y se incorporen nuevas secciones o funcionalidades. ¡Éxitos con el proyecto!
+::contentReference[oaicite:12]{index=12}
