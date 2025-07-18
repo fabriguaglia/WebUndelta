@@ -6,7 +6,7 @@ const FAQPage = () => {
   const [activeAccordion, setActiveAccordion] = useState('collapseOne');
   const [visibleElements, setVisibleElements] = useState([]);
 
-  // Simular el efecto de fade-in
+  
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisibleElements(['title', 'accordion']);
@@ -114,20 +114,20 @@ const FAQPage = () => {
         Para facilitar el desarrollo de la trayectoria académica de nuestros estudiantes en la UNDelta articulamos nuestras Tecnicaturas Universitarias con nuestras Licenciaturas. Es por ello que una vez que termines de cursar una de nuestras Tecnicaturas Universitarias podrás continuar con el tramo superior para obtener la Licenciatura correspondiente. A su vez, si te inscribiste en alguna de nuestras licenciaturas, aprobados los cinco primeros cuatrimestres, obtendrás el título intermedio de Técnico/a Universitario/a.
         </div>
       )
-    }, // ← COMA AGREGADA AQUÍ
+    }, 
     {
       id: 'collapseEight',
-      question: '¿Me puedo anotar si estoy cursando mi último año del secundario?', // ← COMA AGREGADA AQUÍ
+      question: '¿Me puedo anotar si estoy cursando mi último año del secundario?', 
       answer: (
         <div>
           Si estás en tu último año del secundario te podeés anotar y en agosto de 2025 empezar el Curso de Preparación Universitaria (CPU). 
           IMPORTANTE: Recordá que para empezar la carrera que elegiste en marzo del 2026 antes tenés que haber finalizado el secundario y no adeudar ninguna materias. Esto quiere decir que si cursaste satisfactoriamente el CPU y no finalizaste el secundario NO vas a poder empezar a cursar la Licenciatura o Tecnicatura en la cual te anotaste.  
         </div>
       )
-    }, // ← COMA AGREGADA AQUÍ
+    }, 
     {
       id: 'collapseNine',
-      question: '¿Si tengo dudas sobre el proceso de inscripción a quién puedo consultar?', // ← COMA AGREGADA AQUÍ
+      question: '¿Si tengo dudas sobre el proceso de inscripción a quién puedo consultar?', 
       answer: (
         <div>
         Ante cualquier duda o inquietud sobre el proceso de inscripción a carreras podes escribirnos a estudiantes@undelta.edu.ar o acercate a la UNDelta (Av. Avellaneda 2270, San Fernando)  de lunes a viernes de 9:30 a 19 hs.

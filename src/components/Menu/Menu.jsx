@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Importar useNavigate para navegación
+import { useNavigate } from 'react-router-dom'; 
 import Videodelta from "./UNDelta-inscripcion-carrerasABRIL-2025_v2-HORIZ.mp4";
 import './Menu.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -7,7 +7,7 @@ import Novedadesimg from './novedadesimage.png';
 
 function Menu() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const navigate = useNavigate(); // Hook para navegación
+  const navigate = useNavigate();// Hook para navegación
 
   const novedades = [
     {
@@ -45,7 +45,7 @@ function Menu() {
     setCurrentSlide(index);
   };
 
-  // Función para navegar a preguntas frecuentes
+  
   const handlePreguntasFrecuentes = () => {
     navigate('/preguntas-frecuentes');
   };

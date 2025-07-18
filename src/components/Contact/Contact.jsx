@@ -1,5 +1,5 @@
 import React from 'react'
-import './Contact.css' // Importar el archivo CSS
+import './Contact.css' 
 
 function Contact() {
   const handleAddressClick = () => {
