@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './components/Contact/Contact.jsx';
 import SobreNosotros from './components/Sobre nosotros/sobre-nosotros.jsx';
 import PreguntasFrecuentes from './components/preguntas-frecuentes/preguntas-frecuentes';
+import InscripcionPage from './components/Inscripcion/inscripcion.jsx';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contacto" element={<Contact />} />
           <Route path="/sobre-nosotros" element={<SobreNosotros />} />
           <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
+          <Route path="/Inscripcion" element={<InscripcionPage />} />
         </Routes>
         <Footer />
     </Router>

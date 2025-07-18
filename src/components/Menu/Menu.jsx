@@ -50,6 +50,10 @@ function Menu() {
     navigate('/preguntas-frecuentes');
   };
 
+  const handleInscripcionPage = () => {
+    navigate('/Inscripcion');
+  };
+
   return (
     <>
       <div className="video-container">
@@ -66,7 +70,12 @@ function Menu() {
       <div className="container-fluid">
         <div className="row row-custom-nav align-items-center">
           <div className="col-md-3 col-custom">CARRERAS</div>
-          <div className="col-md-3 col-custom">INSCRIPCIÓN</div>
+          <div className="col-md-3 col-custom" 
+          onClick={handleInscripcionPage}
+          style={{cursor:'pointer'}}
+          >
+            INSCRIPCIÓN
+            </div>
           <div 
             className="col-md-3 col-custom" 
             onClick={handlePreguntasFrecuentes}

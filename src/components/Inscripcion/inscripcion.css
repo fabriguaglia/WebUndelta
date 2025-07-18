@@ -1,0 +1,548 @@
+.inscripcion-page {
+    min-height: 100vh;
+    background-color: #f9fafb;
+}
+
+/* Header Styles */
+.header {
+    background-image: url('inscripcionimg.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Reducido para móviles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.header-content {
+    position: relative;
+    padding: 32px 16px; /* Reducido para móviles */
+}
+
+.header-container {
+    max-width: 56rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 2.5rem; /* Más pequeño para móviles */
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+/* Media query para tablets y up */
+@media (min-width: 768px) {
+    .header {
+        height: 550px;
+    }
+    
+    .header-content {
+        padding: 64px 24px;
+    }
+    
+    .header-title {
+        font-size: 4rem;
+        letter-spacing: 3px;
+    }
+}
+
+/* Main Content */
+.main-content {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 24px 16px; /* Menos padding en móviles */
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        padding: 48px 24px;
+    }
+}
+
+.section-title-ins {
+    position: relative;
+    background-color: #003B55;
+    color: white;
+    padding: 12px 16px; /* Menos padding en móviles */
+    margin-bottom: 24px;
+}
+
+.section-title-ins::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background-color: #51A35C; /* Verde como en la imagen */
+}
+
+.section-title-ins h2 {
+    font-size: 1.1rem; /* Más pequeño en móviles */
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .section-title-ins {
+        padding: 16px 24px;
+        margin-bottom: 32px;
+    }
+    
+    .section-title-ins::before {
+        height: 10px;
+    }
+    
+    .section-title-ins h2 {
+        font-size: 1.25rem;
+    }
+}
+
+.description {
+    margin-bottom: 24px;
+}
+
+.description p {
+    color: #374151;
+    line-height: 1.625;
+    margin: 0;
+    font-size: 0.9rem; /* Más pequeño en móviles */
+}
+
+@media (min-width: 768px) {
+    .description {
+        margin-bottom: 32px;
+    }
+    
+    .description p {
+        font-size: 1rem;
+    }
+}
+
+/* Steps Grid */
+.steps-grid {
+    display: grid;
+    gap: 16px; /* Menos gap en móviles */
+    margin-bottom: 32px;
+    grid-template-columns: 1fr; /* Una sola columna en móviles */
+}
+
+@media (min-width: 768px) {
+    .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-bottom: 48px;
+    }
+}
+
+.step-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.step-icon-section {
+    padding: 24px 16px; /* Menos padding en móviles */
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .step-icon-section {
+        padding: 32px;
+    }
+}
+
+.step-blue {
+    background-color: #003B55;
+}
+
+.step-green-dark {
+    background-color: #69932D;
+}
+
+.step-green {
+    background-color: #51A35C;
+}
+
+.step-icon-container {
+    background-color: white;
+    border-radius: 50%;
+    padding: 12px; /* Más pequeño en móviles */
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .step-icon-container {
+        padding: 16px;
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 16px;
+    }
+}
+
+.step-icon {
+    width: 24px; /* Más pequeño en móviles */
+    height: 24px;
+    color: #374151;
+}
+
+@media (min-width: 768px) {
+    .step-icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.step-content {
+    padding: 16px; /* Menos padding en móviles */
+}
+
+@media (min-width: 768px) {
+    .step-content {
+        padding: 24px;
+    }
+}
+
+.step-title {
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 8px;
+    font-size: 0.8rem; /* Más pequeño en móviles */
+}
+
+@media (min-width: 768px) {
+    .step-title {
+        margin-bottom: 12px;
+        font-size: 0.875rem;
+    }
+}
+
+.step-subtitle {
+    color: #4b5563;
+    font-size: 0.8rem; /* Más pequeño en móviles */
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .step-subtitle {
+        font-size: 0.875rem;
+        margin-bottom: 24px;
+        line-height: 1.625;
+    }
+}
+
+.step-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; /* Menos gap en móviles */
+}
+
+@media (min-width: 768px) {
+    .step-buttons {
+        gap: 8px;
+    }
+}
+
+.step-button {
+    width: 100%;
+    padding: 6px 12px; /* Menos padding en móviles */
+    border-radius: 4px;
+    font-size: 0.8rem; /* Más pequeño en móviles */
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .step-button {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+        gap: 8px;
+    }
+}
+
+.btn-blue {
+    background-color: #003B55;
+    color: white;
+}
+
+.btn-green-dark {
+    background-color: #69932D;
+    color: white;
+}
+
+.btn-green {
+    background-color: #51A35C;
+    color: white;
+}
+
+.btn-gray {
+    background-color: #6b7280;
+    color: white;
+}
+
+.button-icon {
+    width: 14px; /* Más pequeño en móviles */
+    height: 14px;
+}
+
+@media (min-width: 768px) {
+    .button-icon {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* Additional Information */
+.additional-info {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 16px; /* Menos padding en móviles */
+    margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    .additional-info {
+        padding: 24px;
+        margin-bottom: 32px;
+    }
+}
+
+.info-title {
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 12px;
+    font-size: 0.95rem; /* Más pequeño en móviles */
+}
+
+@media (min-width: 768px) {
+    .info-title {
+        margin-bottom: 16px;
+        font-size: 1rem;
+    }
+}
+
+.info-text {
+    color: #374151;
+    margin-bottom: 12px;
+    font-size: 0.8rem; /* Más pequeño en móviles */
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .info-text {
+        margin-bottom: 16px;
+        font-size: 0.875rem;
+        line-height: 1.625;
+    }
+}
+
+.info-subtitle {
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 8px;
+    font-size: 0.85rem; /* Más pequeño en móviles */
+}
+
+@media (min-width: 768px) {
+    .info-subtitle {
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+    }
+}
+
+.info-list {
+    color: #374151;
+    font-size: 0.8rem; /* Más pequeño en móviles */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.info-list li {
+    margin-bottom: 6px;
+}
+
+@media (min-width: 768px) {
+    .info-list {
+        font-size: 0.875rem;
+    }
+    
+    .info-list li {
+        margin-bottom: 8px;
+    }
+}
+
+/* Footer Note */
+.footer-note {
+    background-color: #dbeafe;
+    border-left: 4px solid #3b82f6;
+    padding: 12px; /* Menos padding en móviles */
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .footer-note {
+        padding: 16px;
+    }
+}
+
+.footer-note p {
+    color: #374151;
+    font-size: 0.8rem; /* Más pequeño en móviles */
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+    .footer-note p {
+        font-size: 0.875rem;
+        line-height: 1.5;
+    }
+}
+
+/* Modal */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    z-index: 50;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    max-width: 90vw; /* Más ancho en móviles */
+    width: 100%;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        max-width: 28rem;
+        padding: 24px;
+    }
+}
+
+.modal-title {
+    font-size: 1rem; /* Más pequeño en móviles */
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+    .modal-title {
+        font-size: 1.125rem;
+        margin-bottom: 16px;
+    }
+}
+
+.modal-text {
+    color: #4b5563;
+    margin-bottom: 20px;
+    font-size: 0.9rem; /* Más pequeño en móviles */
+}
+
+@media (min-width: 768px) {
+    .modal-text {
+        margin-bottom: 24px;
+        font-size: 1rem;
+    }
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column; /* Botones en columna en móviles */
+}
+
+@media (min-width: 768px) {
+    .modal-buttons {
+        flex-direction: row;
+        gap: 12px;
+    }
+}
+
+.modal-button {
+    flex: 1;
+    padding: 10px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.9rem; /* Más pequeño en móviles */
+}
+
+@media (min-width: 768px) {
+    .modal-button {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
+
+.modal-button-primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.modal-button-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.modal-button-secondary {
+    background-color: #d1d5db;
+    color: #374151;
+}
+
+.modal-button-secondary:hover {
+    background-color: #9ca3af;
+}
+
+/* Utilidades adicionales para móviles */
+@media (max-width: 767px) {
+    /* Asegurar que el texto no se desborde */
+    .header-title {
+        word-wrap: break-word;
+        hyphens: auto;
+    }
+    
+    /* Mejorar el espaciado general */
+    .step-card {
+        margin-bottom: 8px;
+    }
+    
+    /* Asegurar que los botones sean táctiles */
+    .step-button {
+        min-height: 44px;
+        touch-action: manipulation;
+    }
+}

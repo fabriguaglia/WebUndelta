@@ -72,8 +72,8 @@ html, body {
 
 /* Separador */
 .row-custom-separator {
-  height: 15px;
-  background-color: #69932D;
+  height: 100px;
+  background-color:#69932D;
   margin: 0;
 }
 
@@ -103,7 +103,7 @@ html, body {
 }
 
 .section-title {
-  color: #003B55;
+  color: #116067;
   font-weight: bold;
   font-size: 1.5rem;
   margin-bottom: 2rem;
