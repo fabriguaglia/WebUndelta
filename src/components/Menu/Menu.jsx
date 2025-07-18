@@ -54,6 +54,10 @@ function Menu() {
     navigate('/Inscripcion');
   };
 
+  const handleSobreNosotros = () => {
+    navigate('/sobre-nosotros')
+  }
+
   return (
     <>
       <div className="video-container">
@@ -138,7 +142,8 @@ function Menu() {
           </div>
           
           <div className="text-center mt-4">
-            <button className="info-button">MÁS INFORMACIÓN</button>
+            <button className="info-button" onClick={handleSobreNosotros}
+            style={{ cursor: 'pointer' }}>MÁS INFORMACIÓN</button>
           </div>
         </div>
       </div>

@@ -1,8 +1,15 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import Logopng from './logoUND.png';
 import './footer.css';
 
 function Footer() {
+  const navigate = useNavigate();
+  
+  const handleInscripcionPage = () => {
+    navigate('/Inscripcion');
+  };
+
   const handleFacebookClick = () => {
     window.open('https://www.facebook.com/UNIVERSIDADDELTA', '_blank');
   };
@@ -123,7 +130,7 @@ function Footer() {
           </div>
 
           {/* Botón Ingresar */}
-          <div className="ingreso-section">
+          <div className="ingreso-section" onClick={handleInscripcionPage} style={{ cursor: 'pointer' }}>
             <p className="ingreso-text">Ingresá a nuestra universidad:</p>
             <button className="ingreso-btn">
               INGRESAR
