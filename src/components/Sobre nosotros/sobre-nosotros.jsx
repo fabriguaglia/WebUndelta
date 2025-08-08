@@ -59,26 +59,21 @@ function SobreNosotros() {
 
       {/* Sección Sobre Nosotros */}
       <div className="about-section">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-8">
-              <div className="about-content">
-                <p>
-                  La Universidad Nacional del Delta es una universidad nacional, pública y gratuita creada en 2023. Se constituye como un punto de encuentro entre lo local y lo nacional, entre estudiantes y docentes, entre el territorio. Combinamos la tradición de nuestros diversos y los focos, entre la ciudadanía y la industria, entre grupos y comunidades, entre la comprensión regional y los que aspiramos, para el desarrollo sostenible como principal objetivo colaborar proceso y constructivo un futuro compartido.
-                </p>
-                <p>
-                  Somos una universidad accesible a la región, donde la escuela trasciende lo geográfico, alcanzando la industria, el diálogo urbano y la participación activa de todos los actores de la comunidad, fortaleciendo así el tejido social y cultural del Tigre, San Fernando y Escobar.
-                </p>
-              </div>
+        <div className="container-fluid">
+          <div className="about-content">
+            <div className="about-text">
+              <p>
+                La Universidad Nacional del Delta es una universidad nacional, pública y gratuita creada en 2023. Se constituye como un punto de encuentro entre lo local y lo nacional, entre estudiantes y docentes, entre el territorio. Combinamos la tradición de nuestros diversos y los focos, entre la ciudadanía y la industria, entre grupos y comunidades, entre la comprensión regional y los que aspiramos, para el desarrollo sostenible como principal objetivo colaborar proceso y constructivo un futuro compartido.
+              </p>
+              <p>
+                Somos una universidad accesible a la región, donde la escuela trasciende lo geográfico, alcanzando la industria, el diálogo urbano y la participación activa de todos los actores de la comunidad, fortaleciendo así el tejido social y cultural del Tigre, San Fernando y Escobar.
+              </p>
             </div>
-            <div className="col-lg-4">
-              <div className="university-building-container">
-                <img 
-                  src={sobrenos} 
-                  alt="Edificio Universidad Nacional del Delta" 
-                  className="university-building-img"
-                />
-              </div>
+            <div className="about-image-container">
+              <img 
+                src={sobrenos} 
+                alt="Edificio Universidad Nacional del Delta" 
+              />
             </div>
           </div>
         </div>
