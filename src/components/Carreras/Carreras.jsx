@@ -119,6 +119,7 @@ const Carreras = () => {
   return (
     <div className="carreras-container">
       {/* Header Section */}
+
       <div className="section-carreras">
         <div className="overlay-carreras">
           <h1 className="title-carreras">CARRERAS</h1>
@@ -128,6 +129,7 @@ const Carreras = () => {
       {/* Licenciaturas Section */}
       <section className="careers-section">
         <div className="container-carreras">
+        <div className='green-bar-car'></div>
           <div className="section-header-car">
             <h2>NUESTRAS CARRERAS</h2>
           </div>
@@ -159,6 +161,7 @@ const Carreras = () => {
       {/* Diplomaturas Section */}
       <section className="careers-section diplomaturas-section">
         <div className="container-carreras">
+        <div className='green-bar-car'></div>
           <div className="section-header-car">
             <h2>NUESTRAS DIPLOMATURAS</h2>
           </div>
