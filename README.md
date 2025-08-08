@@ -24,11 +24,11 @@ Ofrece carreras alineadas con el desarrollo social, productivo y ambiental de la
 
 ## 📚 Contenido y funcionalidades destacadas
 
-- **Oferta académica** (2025): carreras disponibles, fechas de CPU (Curso de Preparación Universitaria en agosto) :contentReference[oaicite:3]{index=3}.
-- **Proceso de inscripción**: pasos virtual y presencial, listado de requisitos :contentReference[oaicite:4]{index=4}.
+- **Oferta académica** (2025): carreras disponibles, fechas de CPU (Curso de Preparación Universitaria en agosto)
+- **Proceso de inscripción**: pasos virtual y presencial, listado de requisitos
 - **Información institucional**: misión, estructura organizacional, autoridades y cifras clave (estudiantes, interesados).
-- **Campus Virtual**: enlace a plataforma Moodle y cursos abiertos :contentReference[oaicite:5]{index=5}.
-- **Sección Novedades**: noticias e inscripciones recientes (programas para mayo 2025) :contentReference[oaicite:6]{index=6}.
+- **Campus Virtual**: enlace a plataforma Moodle y cursos abiertos
+- **Sección Novedades**: noticias e inscripciones recientes (programas para mayo 2025)
 - **Contacto**:
   - Dirección: Av. Avellaneda 2270, San Fernando.
   - Horario: lunes a viernes, de 9:30 a 19:00.
@@ -40,6 +40,6 @@ Ofrece carreras alineadas con el desarrollo social, productivo y ambiental de la
 - **Repositorio inicial**: @fabriguaglia @Sanchez-Mariano
 - **Contacto académico**: `estudiantes@undelta.edu.ar`
 
-> “La UNDelta nació para acercar la universidad pública a la región del Delta, con carreras pertinentes y un fuerte compromiso social.” — Rectora Silvia Carolina Farías :contentReference[oaicite:11]{index=11}
+> “La UNDelta nació para acercar la universidad pública a la región del Delta, con carreras pertinentes y un fuerte compromiso social.” — Rectora Silvia Carolina Farías
 
 ---
