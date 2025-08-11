@@ -1,6 +1,249 @@
 import React, { useState, useEffect } from 'react';
-import { Monitor, Users, GraduationCap, ChevronRight } from 'lucide-react';
+import { Monitor, Users, GraduationCap, ChevronRight, Play, X, Minimize2 } from 'lucide-react';
 import './inscripcion.css';
+import Video from "./preinscripcion.mp4";
+
+// Componente de video flotante
+const FloatingVideoComponent = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const toggleExpanded = () => {
+    setIsExpanded(!isExpanded);
+    if (!isExpanded) {
+      setIsPlaying(false);
+    }
+  };
+
+  const playVideo = () => {
+    setIsPlaying(true);
+  };
+
+  const floatingButtonStyle = {
+    position: 'fixed',
+    bottom: '1.5rem',
+    right: '1.5rem',
+    zIndex: 1050,
+    width: '64px',
+    height: '64px',
+    background: 'linear-gradient(135deg, #0ea5e9, #22c55e)',
+    borderRadius: '50%',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    transition: 'all 0.3s ease',
+    border: 'none'
+  };
+
+  const pulseStyle = {
+    position: 'absolute',
+    inset: '0',
+    borderRadius: '50%',
+    background: 'linear-gradient(135deg, #0ea5e9, #22c55e)',
+    opacity: '0.3',
+    animation: 'pulse 2s infinite'
+  };
+
+  const panelStyle = {
+    position: 'fixed',
+    bottom: '1.5rem',
+    right: '1.5rem',
+    zIndex: 1050,
+    width: '320px',
+    maxWidth: '90vw',
+    background: 'white',
+    borderRadius: '1rem',
+    boxShadow: '0 10px 25px rgba(0,0,0,0.3)',
+    overflow: 'hidden'
+  };
+
+  const headerStyle = {
+    background: 'linear-gradient(90deg, #0ea5e9, #22c55e)',
+    padding: '1rem',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  };
+
+  const videoAreaStyle = {
+    width: '100%',
+    height: '180px',
+    backgroundColor: '#f8f9fa',
+    borderRadius: '0.5rem',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+    transition: 'background-color 0.3s ease',
+    marginBottom: '1rem',
+    position: 'relative'
+  };
+
+  return (
+    <>
+      <style>{`
+        @keyframes pulse {
+          0%, 100% { transform: scale(1); opacity: 0.3; }
+          50% { transform: scale(1.1); opacity: 0.1; }
+        }
+        
+        .video-hover:hover {
+          background-color: #e9ecef !important;
+        }
+        
+        .play-button {
+          width: 64px;
+          height: 64px;
+          background: linear-gradient(135deg, #0ea5e9, #22c55e);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s ease;
+        }
+        
+        .play-button:hover {
+          background: linear-gradient(135deg, #0284c7, #16a34a);
+          transform: scale(1.05);
+        }
+        
+        .spinner-border-custom {
+          width: 3rem;
+          height: 3rem;
+          border-width: 0.25em;
+        }
+      `}</style>
+
+      <div>
+        {/* Botón flotante colapsado */}
+        {!isExpanded && (
+          <div onClick={toggleExpanded} style={floatingButtonStyle}>
+            <div className="bg-white rounded-circle d-flex align-items-center justify-content-center" style={{width: '48px', height: '48px'}}>
+              <Play size={24} color="#0ea5e9" style={{marginLeft: '2px'}} />
+            </div>
+            <div style={pulseStyle}></div>
+          </div>
+        )}
+
+        {/* Panel expandido */}
+        {isExpanded && (
+          <div style={panelStyle}>
+            {/* Header */}
+            <div style={headerStyle}>
+              <h5 className="text-white mb-0 fw-semibold">Video Tutorial</h5>
+              <div className="d-flex gap-2">
+                <button 
+                  onClick={toggleExpanded}
+                  className="btn btn-sm"
+                  style={{
+                    width: '32px',
+                    height: '32px',
+                    background: 'rgba(255,255,255,0.2)',
+                    border: 'none',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}
+                >
+                  <Minimize2 size={16} color="white" />
+                </button>
+                <button 
+                  onClick={toggleExpanded}
+                  className="btn btn-sm"
+                  style={{
+                    width: '32px',
+                    height: '32px',
+                    background: 'rgba(255,255,255,0.2)',
+                    border: 'none',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}
+                >
+                  <X size={16} color="white" />
+                </button>
+              </div>
+            </div>
+
+            {/* Contenido del video */}
+            <div className="p-4">
+              <div 
+                style={videoAreaStyle}
+                className="video-hover"
+                onClick={playVideo}
+              >
+                {!isPlaying ? (
+                  <>
+                    <div className="play-button">
+                      <Play size={32} color="white" style={{marginLeft: '4px'}} />
+                    </div>
+                    <div style={{
+                      position: 'absolute',
+                      inset: '0',
+                      background: 'linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(34, 197, 94, 0.1))'
+                    }}></div>
+                  </>
+                ) : (
+                  <video 
+                    width="100%" 
+                    height="100%" 
+                    controls 
+                    autoPlay
+                    style={{
+                      borderRadius: '0.5rem',
+                      backgroundColor: 'black'
+                    }}
+                  >
+                    <source src={Video} type="video/mp4" />
+                    Tu navegador no soporta el elemento de video.
+                  </video>
+                )}
+              </div>
+
+              <div className="mb-3">
+                <h6 className="fw-semibold text-dark mb-2">Guía de Inscripción SIU</h6>
+                <p className="text-muted small mb-3">
+                  Aprende paso a paso cómo completar tu inscripción en el sistema SIU Guaraní de la UNDelta.
+                </p>
+                
+                <div className="d-flex align-items-center mb-3">
+                  <div style={{
+                    width: '8px',
+                    height: '8px',
+                    background: 'linear-gradient(135deg, #0ea5e9, #22c55e)',
+                    borderRadius: '50%',
+                    marginRight: '0.5rem'
+                  }}></div>
+                  <small className="text-muted">Duración: 5:45 min</small>
+                </div>
+
+                <button 
+                  onClick={playVideo}
+                  className="btn w-100 d-flex align-items-center justify-content-center text-white"
+                  style={{
+                    background: 'linear-gradient(135deg, #0ea5e9, #22c55e)',
+                    border: 'none',
+                    gap: '0.5rem',
+                    transition: 'all 0.3s ease'
+                  }}
+                  onMouseEnter={(e) => e.target.style.background = 'linear-gradient(135deg, #0284c7, #16a34a)'}
+                  onMouseLeave={(e) => e.target.style.background = 'linear-gradient(135deg, #0ea5e9, #22c55e)'}
+                >
+                  <Play size={16} />
+                  {isPlaying ? 'Reproduciendo...' : 'Ver Tutorial'}
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </>
+  );
+};
 
 const InscripcionPage = () => {
   const [selectedStep, setSelectedStep] = useState(null);
@@ -50,8 +293,8 @@ const InscripcionPage = () => {
       </div>
 
       {/* Main Content */}
-      <div class="green-bar"></div>
-        <div class="section-title-ins">
+      <div className="green-bar"></div>
+        <div className="section-title-ins">
         <h2>INSCRÍBITE</h2>
       </div>   
       <div className="main-content">
@@ -90,14 +333,17 @@ const InscripcionPage = () => {
                   <div className="step-buttons">
                     <button
                       className={`step-button ${step.buttonColor}`}
-                      onClick={() => setSelectedStep(step.id)}
+                      onClick={() => window.open('https://guarani.undelta.edu.ar/guarani_preinscripcion/?__o=', '_blank')}
                     >
                       {step.buttonText}
                       <ChevronRight className="button-icon" />
                     </button>
                     
                     {step.id === 'paso1' && (
-                      <button className="step-button btn-gray">
+                      <button 
+                        className="step-button btn-gray"
+                        onClick={() => window.open('https://undelta.edu.ar/wp-content/uploads/2025/04/INSTRUCTIVO-PRE-INSCRIPCION-SIU-GUARANI-1.docx', '_blank')}
+                      >
                         MAS INFORMACIÓN
                       </button>
                     )}
@@ -170,6 +416,9 @@ const InscripcionPage = () => {
           </div>
         </div>
       )}
+
+      {/* Componente de Video Flotante */}
+      <FloatingVideoComponent />
     </div>
   );
 };
