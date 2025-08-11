@@ -56,22 +56,25 @@
 
 .green-bar-car {
     width: 100%;
-    height: 10px; /* ajustá a gusto */
+    height: 15px; /* ajustá a gusto */
     background-color: #69932D;
+    margin-bottom: 10px;
 }
 
 .section-header-car {
-    background-color: #003B55;
-    color: white;
+    color: #003B55;
+
     padding: 20px 40px;
 }
 
 
 .section-header-car h2 {
+  padding-top: 10px;
   font-size: 1.8rem;
   font-weight: bold;
   margin: 0;
   letter-spacing: 0.05em;
+  text-align: center;
 }
 
 /* Career Grid */
@@ -251,6 +254,256 @@
   }
   
   .career-content p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Student Experiences Section */
+.student-experiences-section {
+  background-color:#003B55;
+  padding: 60px 0;
+}
+
+.experiences-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #69932D;
+  margin-bottom: 50px;
+}
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.experience-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.student-photo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #69932D;
+}
+
+.student-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-content p {
+  font-style: italic;
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.student-info h4 {
+  color: #2c5aa0;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.student-info span {
+  color: #69932D;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Available Courses Section */
+.available-courses-section {
+  background-color: white;
+  padding: 60px 0;
+}
+
+.courses-title {
+  text-align: left;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #065C4E;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.courses-slider {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.courses-grid-slider {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  overflow: hidden;
+}
+
+.course-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.course-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-content {
+  padding: 20px;
+  background: linear-gradient(100deg, #003B55 0%, #69932D 100%);
+  color: white;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.course-content h3 {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin: 0;
+  font-weight: 600;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #2c5aa0;
+  color: white;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.slider-btn:hover {
+  background: #69932D;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+  left: -24px;
+}
+
+.next-btn {
+  right: -24px;
+}
+
+/* Responsive Design for new sections */
+@media (max-width: 768px) {
+  .experiences-title,
+  .courses-title {
+    font-size: 1.8rem;
+  }
+  
+  .experiences-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .courses-grid-slider {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .course-content h3 {
+    font-size: 0.9rem;
+  }
+  
+  .slider-btn {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .prev-btn {
+    left: -10px;
+  }
+  
+  .next-btn {
+    right: -10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .student-experiences-section,
+  .available-courses-section {
+    padding: 40px 0;
+  }
+  
+  .experiences-title,
+  .courses-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .courses-grid-slider {
+    grid-template-columns: 1fr;
+  }
+  
+  .experience-card {
+    padding: 20px;
+  }
+  
+  .student-photo {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .course-image {
+    height: 160px;
+  }
+  
+  .course-content {
+    padding: 15px;
+    min-height: 70px;
+  }
+  
+  .course-content h3 {
     font-size: 0.85rem;
   }
 }
