@@ -245,8 +245,145 @@ const FloatingVideoComponent = () => {
   );
 };
 
+// Componente del popup para el Paso 2
+const Paso2Popup = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="modal-overlay" style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      zIndex: 1000
+    }}>
+      <div className="modal-content" style={{
+        backgroundColor: 'white',
+        borderRadius: '12px',
+        padding: '2rem',
+        maxWidth: '500px',
+        width: '90%',
+        maxHeight: '80vh',
+        overflowY: 'auto',
+        position: 'relative',
+        boxShadow: '0 10px 25px rgba(0,0,0,0.3)'
+      }}>
+        <button
+          onClick={onClose}
+          style={{
+            position: 'absolute',
+            top: '1rem',
+            right: '1rem',
+            background: 'none',
+            border: 'none',
+            fontSize: '1.5rem',
+            cursor: 'pointer',
+            color: '#666'
+          }}
+        >
+          <X size={24} />
+        </button>
+        
+        <h3 style={{
+          color: '#2d5a27',
+          marginBottom: '1.5rem',
+          fontSize: '1.5rem',
+          fontWeight: '600'
+        }}>
+          PASO 2 - Documentación Presencial
+        </h3>
+        
+        <div style={{ marginBottom: '1.5rem' }}>
+          <h4 style={{
+            color: '#333',
+            marginBottom: '1rem',
+            fontSize: '1.1rem',
+            fontWeight: '600'
+          }}>
+            Recordá que para poder completar tu inscripción necesitás:
+          </h4>
+          
+          <ul style={{
+            listStyle: 'none',
+            padding: 0,
+            margin: 0
+          }}>
+            <li style={{
+              padding: '0.5rem 0',
+              borderBottom: '1px solid #eee',
+              color: '#555'
+            }}>
+              • DNI (original y copia)
+            </li>
+            <li style={{
+              padding: '0.5rem 0',
+              borderBottom: '1px solid #eee',
+              color: '#555'
+            }}>
+              • Título secundario, certificado de título en trámite o certificado de alumno regular, según corresponda (original y copia)
+            </li>
+            <li style={{
+              padding: '0.5rem 0',
+              borderBottom: '1px solid #eee',
+              color: '#555'
+            }}>
+              • Formulario de SIU Guaraní (impreso)
+            </li>
+          </ul>
+        </div>
+        
+        <div style={{
+          backgroundColor: '#f8f9fa',
+          padding: '1rem',
+          borderRadius: '8px',
+          borderLeft: '4px solid #2d5a27'
+        }}>
+          <p style={{
+            margin: 0,
+            fontWeight: '600',
+            color: '#333'
+          }}>
+            <strong>La documentación debe entregarse de manera presencial en Avenida Avellaneda 2370, Virreyes, de 9:30 a 19:00 horas.</strong>
+          </p>
+        </div>
+        
+        <div style={{
+          marginTop: '2rem',
+          display: 'flex',
+          justifyContent: 'center'
+        }}>
+          <button
+            onClick={onClose}
+            style={{
+              background: 'linear-gradient(135deg, #2d5a27, #4caf50)',
+              color: 'white',
+              border: 'none',
+              padding: '0.75rem 2rem',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              fontSize: '1rem',
+              fontWeight: '600',
+              transition: 'all 0.3s ease'
+            }}
+            onMouseEnter={(e) => e.target.style.background = 'linear-gradient(135deg, #1b3a1a, #388e3c)'}
+            onMouseLeave={(e) => e.target.style.background = 'linear-gradient(135deg, #2d5a27, #4caf50)'}
+          >
+            Entendido
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const InscripcionPage = () => {
   const [selectedStep, setSelectedStep] = useState(null);
+  const [showPaso2Popup, setShowPaso2Popup] = useState(false);
 
   const steps = [
     {
@@ -277,6 +414,16 @@ const InscripcionPage = () => {
       buttonColor: 'btn-green'
     }
   ];
+
+  const handleStepButtonClick = (stepId) => {
+    if (stepId === 'paso1') {
+      window.open('https://guarani.undelta.edu.ar/guarani_preinscripcion/?__o=', '_blank');
+    } else if (stepId === 'paso2') {
+      setShowPaso2Popup(true);
+    } else if (stepId === 'paso3') {
+      window.open('https://guarani.undelta.edu.ar/g3w3/', '_blank');
+    }
+  };
 
   return (
     <div className="inscripcion-page">
@@ -333,7 +480,7 @@ const InscripcionPage = () => {
                   <div className="step-buttons">
                     <button
                       className={`step-button ${step.buttonColor}`}
-                      onClick={() => window.open('https://guarani.undelta.edu.ar/guarani_preinscripcion/?__o=', '_blank')}
+                      onClick={() => handleStepButtonClick(step.id)}
                     >
                       {step.buttonText}
                       <ChevronRight className="button-icon" />
@@ -416,6 +563,12 @@ const InscripcionPage = () => {
           </div>
         </div>
       )}
+
+      {/* Popup del Paso 2 */}
+      <Paso2Popup 
+        isOpen={showPaso2Popup} 
+        onClose={() => setShowPaso2Popup(false)} 
+      />
 
       {/* Componente de Video Flotante */}
       <FloatingVideoComponent />
