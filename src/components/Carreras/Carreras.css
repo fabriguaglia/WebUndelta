@@ -49,24 +49,14 @@
 
 /* Container */
 .container-carreras {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin: auto;
+  padding: 0;
 }
 
-/* Sections */
-.careers-section {
-  background-color: #ffffff;
-  
-}
-
-.diplomaturas-section {
-  background-color: #fdfdfd;
-}
 
 .green-bar-car {
     width: 100%;
-    height: 18px; /* ajustá a gusto */
+    height: 10px; /* ajustá a gusto */
     background-color: #69932D;
 }
 
@@ -90,6 +80,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: start;
+  padding: 30px;
 }
 
 .careers-column {
@@ -214,9 +205,6 @@
     gap: 20px;
   }
   
-  .careers-section {
-    padding: 40px 0;
-  }
   
   .section-header {
     padding: 15px 20px;
