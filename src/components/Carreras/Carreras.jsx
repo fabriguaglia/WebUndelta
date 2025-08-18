@@ -101,32 +101,27 @@ consultas a especialistas de cada área.` },
     setExpandedItem(expandedItem === itemId ? null : itemId);
   };
 
-  const CareerCard = ({ career, isExpanded, onClick }) => {
-    // Check if the career ID is from diplomaturas (IDs 9-16)
-    const isDiplomatura = career.id >= 9 && career.id <= 16;
-
-    return (
-      <div className={`career-card ${isExpanded ? 'expanded' : ''}`}>
-        <div className="career-header" onClick={() => onClick(career.id)}>
-          <h3>{career.title}</h3>
-          <div className={`arrow ${isExpanded ? 'rotated' : ''}`}>
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
-              <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+  const CareerCard = ({ career, isExpanded, onClick }) => (
+    <div className={`career-card ${isExpanded ? 'expanded' : ''}`}>
+      <div className="career-header" onClick={() => onClick(career.id)}>
+        <h3>{career.title}</h3>
+        <div className={`arrow ${isExpanded ? 'rotated' : ''}`}>
+          <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+            <path d="M1 1L6 6L11 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </div>
+      </div>
+      {isExpanded && (
+        <div className="career-content">
+          <p>{career.description}</p>
+          <div className="career-buttons">
+            <button className="more-info-btn">Más información</button>
+            <button className="brochure-btn">Folleto</button>
           </div>
         </div>
-        {isExpanded && (
-          <div className="career-content">
-            <p>{career.description}</p>
-            <div className="career-buttons">
-              <button className="more-info-btn">Más información</button>
-              {!isDiplomatura && <button className="brochure-btn">Folleto</button>}
-            </div>
-          </div>
-        )}
-      </div>
-    );
-  };
+      )}
+    </div>
+  );
 
   // --- Slider logic ---
   useEffect(() => {
