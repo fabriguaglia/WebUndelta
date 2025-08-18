@@ -191,6 +191,31 @@
   box-shadow: 0 2px 8px rgba(124, 179, 66, 0.3);
 }
 
+/* Nueva sección para los botones de las carreras */
+.career-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.brochure-btn {
+  background: #003B55;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.brochure-btn:hover {
+  background: #065C4E;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(124, 179, 66, 0.3);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-title {
