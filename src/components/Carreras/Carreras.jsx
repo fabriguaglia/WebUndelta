@@ -87,7 +87,7 @@ sensibilidad social.` }
 demandas, estilos, lenguajes y dinámicas de las distintas industrias del sector
 privado. También se propiciarán instancias específicas para el networking y
 consultas a especialistas de cada área.` },
-    { id: 10, title: "Diplomatura en Innovación Aplicada a la Gestión Deportiva de Clubes y Federaciones", description: "La Diplomatura tiene como objetivo formar profesionales capaces de gestionar en el deporte de forma eficiente e innovadora en búsqueda de la inclusión, la salud y el bienestar general." },
+    { id: 10, title: "Diplomatura en Innovación Aplicada a la Gestión Deportiva de Clubes y Federaciones", description: "La Diplomatura tiene como objetivo formar profesionales capaces de gestionar en el deporte de forma eficiente e innovadora en búsqueda de la inclusión, la salud y el bienestar general." },
     { id: 11, title: "Diplomatura en Gestión Integral de Riesgo y Desarrollo Resiliente", description: "La diplomatura tiene como objetivo fortalecer las capacidades y aptitudes competentes de profesionales, técnicos y tomadores de decisión en la identificación, evaluación y reducción de riesgos de cualquier origen, como así también para el diseño e implementación de iniciativas de gestión de riesgo a partir de un enfoque integral que incluye la interacción con diversas disciplinas convergentes." },
     { id: 12, title: "Diplomatura en Investigación Criminal", description: "La presente diplomatura tiene por objeto introducir a los estudiantes en el ámbito del Derecho Procesal Penal, y particularmente en el desarrollo de las nuevas modalidades de investigación criminal." },
     { id: 13, title: "Diplomatura en Derechos Humanos y Garantías Judiciales", description: "La diplomatura tiene como objetivo brindar una formación integral y especializada en derechos humanos y garantías judiciales, que permita a los y las participantes analizar, interpretar y aplicar los principios constitucionales y los sistemas internacionales de protección de derechos humanos, con especial atención a las garantías procesales, la responsabilidad de actores estatales y no estatales." },
@@ -153,22 +153,22 @@ consultas a especialistas de cada área.` },
     { 
       id: 'c1', 
       img: './course1.jpg', 
-      title: 'Ciclo de Formación Sindical y Derechos Humanos' 
+      title: 'curso 1' 
     },
     { 
       id: 'c2', 
       img: './course2.jpg', 
-      title: 'Diplomatura Estrategias de marketing para empresas turísticas' 
+      title: 'curso 2' 
     },
     { 
       id: 'c3', 
       img: './course3.jpg', 
-      title: 'Ciclo de Actualización: Reforma al Código...' 
+      title: 'curso 3' 
     },
     { 
       id: 'c4', 
       img: './course4.jpg', 
-      title: 'Diplomatura en Innovación Aplicada a la Gestión Deportiva...' 
+      title: 'curso 4' 
     }
   ];
 

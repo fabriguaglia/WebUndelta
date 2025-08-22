@@ -112,7 +112,7 @@ html, body {
 
 
 .info-card {
-  color: white;
+  color: #f9f9f9;
   padding: 2rem 1rem;
   text-align: center;
   height: 200px;
@@ -165,9 +165,6 @@ html, body {
   transition: background-color 0.3s ease;
 }
 
-.info-button:hover {
-  background-color: #003B55;
-}
 
 /* Responsive */
 @media (max-width: 767px) {
@@ -185,189 +182,129 @@ html, body {
     padding: 0 1rem;
   }
 
-  .info-card {
-    height: 180px;
-    margin: 0 5px;
-  }
 
   .card-title {
     font-size: 0.8rem;
   }
 }
 
-/* Sección informativa tipo slider */
-/* Estilos adicionales para el carousel personalizado */
-
-/* Contenedor del carousel */
-.carousel-custom-container {
+/* Contenedor principal del carrusel */
+#novedadesCarousel {
+ 
+  border-top: 4px solid #003358;
+  border-bottom: 4px solid #003B55;
+  padding: 2.5rem 0; 
+  background-color: #ffffff;
   position: relative;
-  background-color: #f9f9f9;
-  border-top: 2px solid #69932D;
-  border-bottom: 2px solid #69932D;
-  padding: 20px;
 }
 
-/* Botones de navegación del carousel */
-.carousel-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  padding: 0.5rem;
-  border-radius: 50%;
+
+#novedadesCarousel .row {
+  align-items: flex-start !important;
 }
 
-.carousel-btn:hover {
-  transform: scale(1.1);
-  background-color: rgba(4, 89, 118, 0.1);
+/* Sección de contenido de texto */
+#novedadesCarousel .content-section {
+  text-align: left;
+padding: 100px; 
 }
 
-.carousel-btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(4, 89, 118, 0.3);
+/* Título principal */
+#novedadesCarousel .content-section h1 {
+  color: #6c9a2d !important;
+  font-weight: 700;
+  font-size: 2.8rem; 
+  margin-bottom: 0.5rem; 
 }
 
-/* Contenedor de controles del carousel */
-.carousel-controls {
+/* Texto secundario */
+#novedadesCarousel .content-section p {
+  font-size: 1.1rem;
+  color: #003358 !important;
+  margin-bottom: 1.5rem; 
+}
+
+/* Botón "Conocé más" */
+#novedadesCarousel .btn-info {
+  background-color: #0A81AB !important;
+  border-color: #0A81AB;
+  font-weight: 600;
+  padding: 0.75rem 2rem !important;
+  color: #f9f9f9;
+}
+
+
+/* Contenedor de la imagen */
+#novedadesCarousel .image-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 2rem;
 }
 
-/* Indicadores del carousel */
-.carousel-indicators-custom {
-  display: inline-flex;
-  gap: 8px;
-  align-items: center;
-  padding: 0 1rem;
+/* Controles de navegación personalizados (flechas) */
+.carousel-control-custom {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #ced4da !important; 
+  background-color: #ffffff !important;
+
 }
 
-.indicator-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: none;
-  background-color: #ccc;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  padding: 0;
+/* Icono SVG dentro de los botones */
+.carousel-control-custom svg {
+  fill: #003B55; 
 }
 
-.indicator-dot.active {
-  background-color: #045976;
-  transform: scale(1.2);
+/* Efecto hover para los controles */
+.carousel-control-custom:hover {
+  background-color: #f8f9fa !important;
+  border-color: #adb5bd !important;
 }
 
-.indicator-dot:hover {
-  background-color: #045976;
-  transform: scale(1.1);
-}
+/* Se aplica a pantallas con un ancho máximo de 768px (tablets y teléfonos) */
+@media (max-width: 768px) {
 
-/* Transición suave para el cambio de slides */
-.carousel-slide-content {
-  transition: opacity 0.3s ease-in-out;
-}
 
-/* Responsive para el carousel */
-@media (max-width: 767px) {
-  .carousel-controls {
-    flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 2rem;
+  #novedadesCarousel {
+    padding: 2rem 0;
   }
   
-  .carousel-btn {
-    padding: 1rem;
-    background-color: rgba(4, 89, 118, 0.1);
-    border-radius: 50%;
-    min-width: 60px;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  #novedadesCarousel .content-section {
+    text-align: center;
+    padding: 2rem 1.5rem;
   }
-  
-  .carousel-btn svg {
-    width: 36px;
-    height: 36px;
-  }
-  
-  .carousel-btn:hover {
-    background-color: rgba(4, 89, 118, 0.2);
-  }
-  
-  .indicator-dot {
-    width: 14px;
-    height: 14px;
-    margin: 0 4px;
-  }
-  
-  .carousel-indicators-custom {
-    gap: 8px;
-    padding: 0 1rem;
-  }
-}
 
-@media (max-width: 576px) {
-  .carousel-controls {
+  /* Título principal */
+  #novedadesCarousel .content-section h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Contenedor de la imagen */
+  #novedadesCarousel .image-container {
     margin-top: 1.5rem;
-    gap: 1.5rem;
+    padding: 20px;
   }
-  
-  .carousel-btn {
-    min-width: 56px;
-    min-height: 56px;
-    padding: 0.8rem;
+
+  /* Imagen */
+  #novedadesCarousel .image-container img {
+    max-height: 280px;
   }
-  
-  .carousel-btn svg {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .indicator-dot {
-    width: 12px;
-    height: 12px;
+
+  /* Contenedor de los controles de navegación */
+  #novedadesCarousel .position-absolute.bottom-0.end-0 {
+    position: static !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 1.5rem;
   }
 }
 
-/* Estilos adicionales para mejor visibilidad en móvil */
-@media (max-width: 480px) {
-  .carousel-controls {
-    padding: 0 1rem;
-  }
-  
-  .carousel-btn {
-    background-color: rgba(4, 89, 118, 0.15);
-    border: 2px solid rgba(4, 89, 118, 0.3);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .carousel-btn:active {
-    transform: scale(0.95);
-    background-color: rgba(4, 89, 118, 0.25);
-  }
-  
-  .indicator-dot {
-    width: 10px;
-    height: 10px;
-    border: 2px solid rgba(4, 89, 118, 0.3);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  }
-  
-  .indicator-dot.active {
-    border-color: #045976;
-    box-shadow: 0 2px 6px rgba(4, 89, 118, 0.3);
-  }
-}
 
 /* Separador de sección: Novedades Destacadas */
 .novedades-separator-custom {
-  background-color: #003B55; /* Fondo azul oscuro */
-  padding: 1.5rem ;
+  background-color: #003B55; 
+  padding: 2rem 4rem;
 }
 
 .novedades-title-custom {
@@ -377,7 +314,7 @@ html, body {
   position: relative;
   margin-left: 1rem;
   padding-left: 1rem;
-  border-left: 5px solid #A2C523; /* Línea verde a la izquierda */
+  border-left: 5px solid #A2C523;
   display: inline-block;
 }
 
