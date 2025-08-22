@@ -1,9 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './sobre-nosotros.css'
 import sobrenos from './sobre-nos.png';
 
 function SobreNosotros() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const personas = [
     {
       nombre: "Lic. Silvia Cristina Goyos",

@@ -8,6 +8,10 @@ const FloatingVideoComponent = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const toggleExpanded = () => {
     setIsExpanded(!isExpanded);
     if (!isExpanded) {

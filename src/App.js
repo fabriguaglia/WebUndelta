@@ -9,7 +9,7 @@ import SobreNosotros from './components/Sobre nosotros/sobre-nosotros.jsx';
 import Carreras from './components/Carreras/Carreras.jsx';
 import PreguntasFrecuentes from './components/preguntas-frecuentes/preguntas-frecuentes';
 import InscripcionPage from './components/Inscripcion/inscripcion.jsx';
-
+import Transparencia from './components/Transparencia/transparencia.jsx';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
           <Route path="/sobre-nosotros" element={<SobreNosotros />} />
           <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
           <Route path="/Inscripcion" element={<InscripcionPage />} />
+          <Route path="/transparencia" element={<Transparencia />} />
         </Routes>
         <Footer />
     </Router>
