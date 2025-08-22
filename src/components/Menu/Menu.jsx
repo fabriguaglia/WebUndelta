@@ -11,25 +11,25 @@ function Menu() {
 
   const novedades = [
     {
-      title: "Abrimos las inscripciones a nuestras carreras",
-      text: "Desde el 21 de abril, estarán abiertas las inscripciones a las primeras carreras de la Universidad Nacional del Delta.",
+      title: "Titulo noticia 1",
+      text: "noticia 1",
       buttonText: "Conocé más",
       image: Novedadesimg,
-      alt: "Inscripción UNDelta"
+      alt: "boton 1"
     },
     {
-      title: "Nuevas becas disponibles",
-      text: "La Universidad Nacional del Delta ofrece nuevas oportunidades de becas para estudiantes destacados. Postulate hasta el 15 de mayo.",
-      buttonText: "Ver más",
+      title: "TItulo noticia 2",
+      text: "noticia 2",
+      buttonText: "Conocé más",
       image: Novedadesimg,
-      alt: "Becas UNDelta"
+      alt: "boton 2"
     },
     {
-      title: "Jornada de puertas abiertas",
-      text: "Te invitamos a conocer nuestras instalaciones y a conversar con docentes y estudiantes. Próxima fecha: 30 de mayo.",
-      buttonText: "Inscribite",
+      title: "Titulo noticia 3",
+      text: "noticia 3",
+      buttonText: "Conocé mas",
       image: Novedadesimg,
-      alt: "Puertas Abiertas UNDelta"
+      alt: "boton 3"
     }
   ];
 
@@ -162,55 +162,77 @@ function Menu() {
         </div>
       </div>
 
-      {/* Carousel React personalizado */}
-      <div className="carousel-custom-container">
-        <div className="container-fluid info-slider-custom py-3">
-          <div className="row align-items-center justify-content-center gx-5">
-            <div className="col-md-6 text-center text-md-start mb-4 mb-md-0">
-              <h3 className="info-title-custom">{novedades[currentSlide].title}</h3>
-              <p className="info-text-custom">
-                {novedades[currentSlide].text}
-              </p>
-              <button className="info-button">{novedades[currentSlide].buttonText}</button>
+  <div id="novedadesCarousel" className="carousel slide" data-bs-ride="carousel">
+    {/* Items del carousel */}
+    <div className="carousel-inner">
+      {novedades.map((novedad, index) => (
+        <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+          <div className="container-fluid py-5">
+            <div className="row align-items-center justify-content-center min-vh-50">
+              {/* Contenido de texto */}
+              <div className="col-lg-6 col-md-6 pe-lg-5">
+                <div className="content-section">
+                  <h1 className="display-4 fw-bold text-success mb-4">
+                    {novedad.title}
+                  </h1>
+                  <p className="lead text-dark mb-4 fs-5">
+                    {novedad.text}
+                  </p>
+                  <button className="btn btn-info btn-lg rounded-pill px-4 py-2 text-white fw-semibold">
+                    {novedad.buttonText}
+                  </button>
+                </div>
+              </div>
+              
+              {/* Imagen */}
+              <div className="col-lg-6 col-md-6 text-center">
+                <div className="image-container position-relative">
+                  <img
+                    src={novedad.image}
+                    alt={novedad.alt}
+                    className="img-fluid rounded-4"
+                    style={{maxHeight: '400px', objectFit: 'cover'}}
+                  />
+                </div>
+              </div>
             </div>
-            <div className="col-md-6 text-center">
-              <img
-                src={novedades[currentSlide].image}
-                alt={novedades[currentSlide].alt}
-                className="img-fluid info-image-custom"
-              />
-            </div>
-          </div>
-          
-          {/* Controles del carousel */}
-          <div className="carousel-controls text-center mt-4">
-            <button onClick={prevSlide} className="carousel-btn me-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#045976" className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
-                <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
-              </svg>
-            </button>
-            
-            {/* Indicadores */}
-            <div className="carousel-indicators-custom d-inline-block mx-3">
-              {novedades.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => goToSlide(index)}
-                  className={`indicator-dot ${index === currentSlide ? 'active' : ''}`}
-                />
-              ))}
-            </div>
-            
-            <button onClick={nextSlide} className="carousel-btn ms-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#045976" className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
-                <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
-              </svg>
-            </button>
           </div>
         </div>
+      ))}
+    </div>
+
+    {/* Controles de navegación personalizados */}
+    <div className="position-absolute bottom-0 end-0 p-4">
+      <div className="d-flex gap-2">
+        <button
+          className="btn btn-outline-primary rounded-circle p-2 carousel-control-custom"
+          type="button"
+          data-bs-target="#novedadesCarousel"
+          data-bs-slide="prev"
+          style={{width: '50px', height: '50px'}}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" viewBox="0 0 16 16">
+            <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        
+        <button
+          className="btn btn-outline-primary rounded-circle p-2 carousel-control-custom"
+          type="button"
+          data-bs-target="#novedadesCarousel"
+          data-bs-slide="next"
+          style={{width: '50px', height: '50px'}}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" viewBox="0 0 16 16">
+            <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
-    </>
-  );
-}
+    </div>
+  </div>
+  </>
+  )}
 
 export default Menu;
