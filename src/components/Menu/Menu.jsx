@@ -33,17 +33,6 @@ function Menu() {
     }
   ];
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % novedades.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + novedades.length) % novedades.length);
-  };
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
 
   
   const handlePreguntasFrecuentes = () => {
@@ -190,7 +179,7 @@ function Menu() {
                   <img
                     src={novedad.image}
                     alt={novedad.alt}
-                    className="img-fluid rounded-4"
+                    className="img-fluid rounded-2"
                     style={{maxHeight: '400px', objectFit: 'cover'}}
                   />
                 </div>
