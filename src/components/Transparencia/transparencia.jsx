@@ -81,345 +81,403 @@ function Transparencia() {
               {/* Grid de Botones */}
               <div className="temas-grid">
                 <div className="row">
-
-                  {/* Organigrama */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Organigrama, Autoridades y Personal",
-                        <>
-                          <p className="lead mb-4">
-                            Aquí podés acceder a la disposición y la relación funcional de las distintas áreas que componen este organismo, 
-                            así como la normativa de la estructura organizacional de la que emerge. Además, podés conocer el listado de 
-                            autoridades de cada área junto con las normas que aprueban sus correspondientes designaciones.
-                          </p>
-
-                          {/* Organigrama y Estructura */}
-                          <div className="mb-5">
-                            <h4 className="text-primary mb-3">📊 Organigrama y Estructura</h4>
-                            <p>A continuación se adjunta el Estatuto de la Universidad Nacional del Delta, donde se encuentra estipulada la estructura general de la institución.</p>
-                            
-                            <div className="row mb-4">
-                              <div className="col-md-6">
-                                <div className="card h-100">
-                                  <div className="card-body text-center">
-                                    <img 
-                                      src="https://placehold.co/400x250/0066cc/ffffff?text=Organigrama+General+UNDelta" 
-                                      alt="Organigrama General"
-                                      className="img-fluid rounded mb-3"
-                                    />
-                                    <h6>Estructura General</h6>
-                                  </div>
-                                </div>
+                      
+                      {/*Misión y servicios a la ciudadanía*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#misionModal">
+                          Misión y servicios a la ciudadanía
+                        </button>
+                        <div className="modal fade" id="misionModal" tabIndex="-1" aria-labelledby="misionModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="misionModalLabel">Misión y servicios a la ciudadanía</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
-                              <div className="col-md-6">
-                                <div className="card h-100">
-                                  <div className="card-body text-center">
-                                    <img 
-                                      src="https://placehold.co/400x250/28a745/ffffff?text=Consejo+Directivo" 
-                                      alt="Estructura Consejo Directivo"
-                                      className="img-fluid rounded mb-3"
-                                    />
-                                    <h6>Estructura del Consejo Directivo</h6>
-                                  </div>
-                                </div>
+                              <div className="modal-body">
+                                Contenido sobre Misión y servicios a la ciudadanía...
                               </div>
-                            </div>
-
-                            <div className="text-center mb-4">
-                              <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" className="btn btn-primary me-3">
-                                📄 Conoce el Estatuto de la Universidad Nacional del Delta
-                              </a>
-                              <a href="https://drive.google.com/file/d/11teCLn7jbFb2S4QnzkpBo2yubD6tycGx/view" className="btn btn-outline-primary">
-                                🏛️ Estructura del Consejo Superior
-                              </a>
-                              <a href="https://drive.google.com/file/d/1J3CFPAjuBHc4ZadA21-cqbsJVnZl8J6h/view" className="btn btn-outline-primary">
-                                🏛️ Estructura del Consejo Directivo
-                              </a>
-                            </div>
-                            <div className="mb-5">
-                              <h4 className="text-primary mb-3">👤 Designaciones</h4>
-                              <ul className="list-group">
-                                <li className="list-group-item">
-                                  <strong>Lic. Farias, Silvia Carolina</strong><br />
-                                  DNI: 23.614.474 – Rectora<br />
-                                  <em>Designación – Lic. Silvia Carolina Farias</em>
-                                </li>
-                                <li className="list-group-item">
-                                  <strong>Cdor. Puccio, Mariano</strong><br />
-                                  DNI: 24.595.794 – Secretario General<br />
-                                  <em>Designación – Cdor. Mariano Javier Puccio</em>
-                                </li>
-                                <li className="list-group-item">
-                                  <strong>Lic. Rovira, Sebastián</strong><br />
-                                  DNI: 42.149.689 – Secretario Administrativo, Financiero y Técnico<br />
-                                  <em>Designación – Lic. Sebastian Rovira</em>
-                                </li>
-                                <li className="list-group-item">
-                                  <strong>Prof. Castro, Sergio</strong><br />
-                                  DNI: 21.094.957 – Secretario de Extensión Universitaria y Enlace con la Comunidad<br />
-                                  <em>Designación – Prof. Sergio Gustavo Castro</em>
-                                </li>
-                                <li className="list-group-item">
-                                  <strong>Dr. Quilici, Federico Domingo</strong><br />
-                                  DNI: 18.844.392 – Secretario Académico<br />
-                                  <em>Designación – Dr. Federico Domingo Quilici</em>
-                                </li>
-                                <li className="list-group-item">
-                                  <strong>Dra. Del Cogliano, Natalia Cecilia</strong><br />
-                                  DNI: 31.349.099 – Secretaria de Vinculación con el Empleo y la Producción<br />
-                                  <em>Designación – Dra. Natalia del Cogliano</em>
-                                </li>
-                                <li className="list-group-item">
-                                  <strong>Dr. Davidovich, Pablo</strong><br />
-                                  DNI: 26.200.499 – Director de Asuntos Legales<br />
-                                  <em>Designación – Dr. Pablo Omar Davidovich</em>
-                                </li>
-                                <li className="list-group-item">
-                                  <strong>Mg. Giuliani, Leonardo Andrés</strong><br />
-                                  DNI: 28.632.556 – Director de Instituto de Innovación Educación<br />
-                                  <em>Designación – Mg. Leonardo Ariel Giuliani</em>
-                                </li>
-                              </ul>
-                            </div>
-
-                            {/* Personal */}
-                            <div className="mb-5">
-                              <h4 className="text-primary mb-3">👥 Personal</h4>
-                              <p>
-                                La dotación óptima del organismo es de <strong>50 agentes</strong>. 
-                                La Universidad Nacional del Delta está desarrollando una página para la divulgación de la plantilla de personal.
-                              </p>
-                            </div>
-
-                            {/* Forma de Gobierno */}
-                            <div>
-                              <h4 className="text-primary mb-3">🏛️ Forma de Gobierno y Autonomía</h4>
-                              <p>
-                                El Estatuto de la Universidad Nacional del Delta tiene estipulado su forma de gobierno y autonomía.
-                              </p>
-                              <a href="#" className="btn btn-primary">
-                                📄 Conoce el Estatuto de la Universidad Nacional del Delta
-                              </a>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
                             </div>
                           </div>
-                        </>
-                      )}
-                    >
-                      Organigrama, Autoridades y Personal
-                    </button>
-                  </div>
+                        </div>
+                      </div>
 
-                  {/* Misión Y Servicios A La Ciudadanía */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Misión Y Servicios A La Ciudadanía",
-                        "Desde la Universidad Nacional del Delta nos proponemos como objetivo la formación integral de los estudiantes que en esta institución se formen, preparándolos para desempeñarse en actividades científicas y profesionales, inculcando asimismo el respeto por las normas e instituciones de la Constitución Nacional y la República Argentina..."
-                      )}
-                    >
-                      Misión Y Servicios A La Ciudadanía
-                    </button>
-                  </div>
-
-                  {/* Transferencias */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Transferencias",
-                        "Información detallada sobre transferencias de fondos recibidas del gobierno nacional y provincial, así como transferencias realizadas a otras instituciones educativas y organizaciones comunitarias."
-                      )}
-                    >
-                      Transferencias
-                    </button>
-                  </div>
-
-                  {/* Gestión De La Información */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Gestión De La Información",
-                        "Políticas y procedimientos para la gestión de información institucional, incluyendo protocolos de seguridad de datos, políticas de archivo y sistemas de información utilizados."
-                      )}
-                    >
-                      Gestión De La Información
-                    </button>
-                  </div>
-
-                  {/* Auditorías Y Evaluaciones */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Auditorías Y Evaluaciones",
-                        "Resultados de auditorías internas y externas realizadas a la institución, así como evaluaciones de programas académicos y administrativos. Incluye planes de mejora implementados."
-                      )}
-                    >
-                      Auditorías Y Evaluaciones
-                    </button>
-                  </div>
-
-                  {/* Obsequios Y Viajes */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Obsequios Y Viajes",
-                        "Registro completo de obsequios recibidos por autoridades universitarias y viajes oficiales realizados por personal de la institución, con detalles de destino, propósito y costos."
-                      )}
-                    >
-                      Obsequios Y Viajes
-                    </button>
-                  </div>
-
-                  {/* Catálogo De Datos Abiertos */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Catálogo De Datos Abiertos",
-                        "Acceso a nuestro catálogo de datos abiertos, que incluye información estadística sobre estudiantes, carreras, investigaciones y gestión administrativa en formatos reutilizables."
-                      )}
-                    >
-                      Catálogo De Datos Abiertos
-                    </button>
-                  </div>
-
-                  {/* Transparencia Proactiva */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Transparencia Proactiva",
-                        "Iniciativas proactivas de transparencia implementadas por la universidad, incluyendo publicaciones periódicas de información relevante, foros de participación ciudadana y mecanismos de rendición de cuentas."
-                      )}
-                    >
-                      Transparencia Proactiva
-                    </button>
-                  </div>
-
-                  {/* Participación Ciudadana */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Participación Ciudadana",
-                        "Programas y canales de participación ciudadana, incluyendo consejos consultivos, audiencias públicas, consultas ciudadanas y mecanismos para presentar propuestas e iniciativas."
-                      )}
-                    >
-                      Participación Ciudadana
-                    </button>
-                  </div>
-
-                  {/* Declaraciones Juradas */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Declaraciones Juradas",
-                        "Acceso a las declaraciones juradas de autoridades universitarias y personal clave de la institución, según lo establecido por la normativa de ética pública."
-                      )}
-                    >
-                      Declaraciones Juradas
-                    </button>
-                  </div>
-
-                  {/* Presupuesto */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Presupuesto",
-                        "Presupuesto anual de la universidad, ejecución presupuestaria trimestral, y análisis comparativos con años anteriores. Incluye información detallada sobre ingresos y gastos."
-                      )}
-                    >
-                      Presupuesto
-                    </button>
-                  </div>
-
-                  {/* Compras Y Contrataciones */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Compras Y Contrataciones",
-                        "Información completa sobre procesos de compra y contratación de bienes y servicios, incluyendo licitaciones, contratos directos y resultados de procesos de selección."
-                      )}
-                    >
-                      Compras Y Contrataciones
-                    </button>
-                  </div>
-
-                  {/* Actos Administrativos */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Actos Administrativos",
-                        "Registro de actos administrativos relevantes, incluyendo resoluciones rectorales, disposiciones y decisiones de órganos colegiados de gobierno universitario."
-                      )}
-                    >
-                      Actos Administrativos
-                    </button>
-                  </div>
-
-                  {/* Permisos Y Concesiones */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Permisos Y Concesiones",
-                        "Información sobre permisos otorgados para uso de instalaciones universitarias y concesiones de servicios dentro del campus, con detalles de plazos, condiciones y beneficiarios."
-                      )}
-                    >
-                      Permisos Y Concesiones
-                    </button>
-                  </div>
-
-                  {/* Acordadas Y Sentencias */}
-                  <div className="col-md-4 col-sm-6 mb-4">
-                    <button 
-                      className="tema-btn"
-                      onClick={() => openModal(
-                        "Acordadas Y Sentencias",
-                        "Registro de acordadas del Consejo Superior y sentencias judiciales relevantes relacionadas con la universidad, incluyendo fallos en casos de interés institucional."
-                      )}
-                    >
-                      Acordadas Y Sentencias
-                    </button>
-                  </div>
-
+                      {/*Organigrama, autoridades y personal*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#organigramaModal">
+                          Organigrama, autoridades y personal
+                        </button>
+                        <div className="modal fade" id="organigramaModal" tabIndex="-1" aria-labelledby="organigramaModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="organigramaModalLabel">Organigrama, autoridades y personal</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Organigrama, autoridades y personal...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Escalas salariales*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#escalasModal">
+                          Escalas salariales
+                        </button>
+                        <div className="modal fade" id="escalasModal" tabIndex="-1" aria-labelledby="escalasModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="escalasModalLabel">Escalas salariales</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Escalas salariales...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Transferencias*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#transferenciasModal">
+                          Transferencias
+                        </button>
+                        <div className="modal fade" id="transferenciasModal" tabIndex="-1" aria-labelledby="transferenciasModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="transferenciasModalLabel">Transferencias</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Transferencias...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Gestión de la información*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#gestionModal">
+                          Gestión de la información
+                        </button>
+                        <div className="modal fade" id="gestionModal" tabIndex="-1" aria-labelledby="gestionModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="gestionModalLabel">Gestión de la información</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Gestión de la información...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Auditorías y evaluaciones*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#auditoriasModal">
+                          Auditorías y evaluaciones
+                        </button>
+                        <div className="modal fade" id="auditoriasModal" tabIndex="-1" aria-labelledby="auditoriasModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="auditoriasModalLabel">Auditorías y evaluaciones</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Auditorías y evaluaciones...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Obsequios y viajes*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#obsequiosModal">
+                          Obsequios y viajes
+                        </button>
+                        <div className="modal fade" id="obsequiosModal" tabIndex="-1" aria-labelledby="obsequiosModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="obsequiosModalLabel">Obsequios y viajes</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Obsequios y viajes...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Solicitar información*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#solicitarModal">         
+                          Solicitar información
+                        </button>
+                        <div className="modal fade" id="solicitarModal" tabIndex="-1" aria-labelledby="solicitarModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="solicitarModalLabel">Solicitar información</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre cómo solicitar información...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Transparencia Proactiva*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#proactivaModal">
+                          Transparencia Proactiva
+                        </button>
+                        <div className="modal fade" id="proactivaModal" tabIndex="-1" aria-labelledby="proactivaModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="proactivaModalLabel">Transparencia Proactiva</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Transparencia Proactiva...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Participación ciudadana*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#participacionModal">
+                          Participación ciudadana
+                        </button>
+                        <div className="modal fade" id="participacionModal" tabIndex="-1" aria-labelledby="participacionModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="participacionModalLabel">Participación ciudadana</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Participación ciudadana...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Declaraciones juradas*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#declaracionesModal">
+                          Declaraciones juradas
+                        </button>
+                        <div className="modal fade" id="declaracionesModal" tabIndex="-1" aria-labelledby="declaracionesModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="declaracionesModalLabel">Declaraciones juradas</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Declaraciones juradas...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Presupuesto*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#presupuestoModal">
+                          Presupuesto
+                        </button>
+                        <div className="modal fade" id="presupuestoModal" tabIndex="-1" aria-labelledby="presupuestoModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="presupuestoModalLabel">Presupuesto</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Presupuesto...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Compras y contrataciones*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#comprasModal">
+                          Compras y contrataciones
+                        </button>
+                        <div className="modal fade" id="comprasModal" tabIndex="-1" aria-labelledby="comprasModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="comprasModalLabel">Compras y contrataciones</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Compras y contrataciones...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Actos administrativos*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#actosModal">                          
+                          Actos administrativos
+                        </button>
+                        <div className="modal fade" id="actosModal" tabIndex="-1" aria-labelledby="actosModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="actosModalLabel">Actos administrativos</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Actos administrativos...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Permisos y concesiones*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#permisosModal">                          
+                          Permisos y concesiones
+                        </button>
+                        <div className="modal fade" id="permisosModal" tabIndex="-1" aria-labelledby="permisosModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="permisosModalLabel">Permisos y concesiones</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Permisos y concesiones...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Acordadas y sentencias*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#acordadasModal">                          
+                          Acordadas y sentencias
+                        </button>
+                        <div className="modal fade" id="acordadasModal" tabIndex="-1" aria-labelledby="acordadasModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="acordadasModalLabel">Acordadas y sentencias</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Acordadas y sentencias...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      {/*Catálogo de datos abiertos*/}
+                      <div className="col-md-4 col-sm-6 mb-4">
+                        <button type="button" className="tema-btn" data-bs-toggle="modal" data-bs-target="#datosModal">                          
+                          Catálogo de datos abiertos
+                        </button>
+                        <div className="modal fade" id="datosModal" tabIndex="-1" aria-labelledby="datosModalLabel" aria-hidden="true">
+                          <div className="modal-dialog">
+                            <div className="modal-content">
+                              <div className="modal-header">
+                                <h1 className="modal-title fs-5" id="datosModalLabel">Catálogo de datos abiertos</h1>
+                                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div className="modal-body">
+                                Contenido sobre Catálogo de datos abiertos...
+                              </div>
+                              <div className="modal-footer">
+                                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      {/* Modal genérico (grande y centrado) */}
-      <Modal
-        show={showModal}
-        onHide={() => setShowModal(false)}
-        size="xl"
-        centered
-        dialogClassName="modal-xl-custom"
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>{modalContent.title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          {modalContent.content}
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={() => setShowModal(false)}>
-            Cerrar
-          </Button>
-        </Modal.Footer>
-      </Modal>
     </>
   );
 }
