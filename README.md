@@ -18,17 +18,11 @@ Ofrece carreras alineadas con el desarrollo social, productivo y ambiental de la
 - **Responsive**: Compatible con versión móvil y desktop.
 - **Integraciones**:
   - Formulario de contacto/incripción a SIU‑Guaraní.
-  - Enlaces a redes sociales (Instagram, YouTube).
+  - Enlaces a redes sociales (Instagram, YouTube, Facebook, Linkedin).
   - Mapa de la sede en Av. Avellaneda 2270, Virreyes (San Fernando).
 ---
 
-## 📚 Contenido y funcionalidades destacadas
 
-- **Oferta académica** (2025): carreras disponibles, fechas de CPU (Curso de Preparación Universitaria en agosto)
-- **Proceso de inscripción**: pasos virtual y presencial, listado de requisitos
-- **Información institucional**: misión, estructura organizacional, autoridades y cifras clave (estudiantes, interesados).
-- **Campus Virtual**: enlace a plataforma Moodle y cursos abiertos
-- **Sección Novedades**: noticias e inscripciones recientes (programas para mayo 2025)
 - **Contacto**:
   - Dirección: Av. Avellaneda 2270, San Fernando.
   - Horario: lunes a viernes, de 9:30 a 19:00.
