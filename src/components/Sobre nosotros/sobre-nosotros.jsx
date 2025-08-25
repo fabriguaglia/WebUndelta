@@ -9,39 +9,33 @@ function SobreNosotros() {
   }, []);
   const personas = [
     {
-      nombre: "Lic. Silvia Cristina Goyos",
+      nombre: "Lic. Silvia Carolina Farías",
       cargo: "Rectora",
-      descripcion: "Responsable de las actividades académicas de la Universidad Nacional del Delta",
       className: "silvia"
     },
     {
-      nombre: "Mg. Sebastián Andia",
+      nombre: "Mg. Sebastián Rovira",
       cargo: "Secretario Académico y Estudiantil",
-      descripcion: "Coordinación de programas académicos y gestión estudiantil",
       className: "sebastian"
     },
     {
-      nombre: "Cdor. Marcelo Peralta",
+      nombre: "Cdor. Mariano Puccio",
       cargo: "Secretario Administrativo",
-      descripcion: "Administración y gestión financiera de la universidad",
       className: "marcelo"
     },
     {
-      nombre: "Prof. Sergio Castri",
+      nombre: "Prof. Sergio Castro",
       cargo: "Secretario de Extensión Universitaria y Cultura",
-      descripcion: "Gestión de Programas Universitarios y Cultura del UNDelta",
       className: "sergio"
     },
     {
-      nombre: "Sr. Federico Ibáñez",
+      nombre: "Dr. Federico Quilici",
       cargo: "Secretario Académico",
-      descripcion: "Secretario Académico",
       className: "federico"
     },
     {
-      nombre: "Dra. Natalia del Cogliano",
+      nombre: "Dra. Natalia Del Cogliano",
       cargo: "Secretaria de Investigación y Posgrado",
-      descripcion: "Secretaria de Investigación y Posgrado de la Universidad Nacional del Delta",
       className: "natalia"
     }
   ];
