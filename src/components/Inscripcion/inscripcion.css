@@ -8,6 +8,7 @@
     background-image: url('inscripcionimg.png');
     background-size: cover;
     background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
     height: 400px; /* Reducido para móviles */
     display: flex;
     align-items: center;
