@@ -10,6 +10,7 @@ import Carreras from './components/Carreras/Carreras.jsx';
 import PreguntasFrecuentes from './components/preguntas-frecuentes/preguntas-frecuentes';
 import InscripcionPage from './components/Inscripcion/inscripcion.jsx';
 import Transparencia from './components/Transparencia/transparencia.jsx';
+import Eventos from './components/Eventos/eventos.jsx';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
           <Route path="/Inscripcion" element={<InscripcionPage />} />
           <Route path="/transparencia" element={<Transparencia />} />
+          <Route path="/eventos" element={<Eventos />} />
         </Routes>
         <Footer />
     </Router>
