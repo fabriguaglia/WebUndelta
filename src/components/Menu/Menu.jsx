@@ -51,6 +51,10 @@ function Menu() {
     navigate('/Carreras')
   }
 
+  const handleEventos = () => {
+    navigate('/Eventos');
+  }
+  
   return (
     <>
       <div className="video-container">
@@ -78,7 +82,8 @@ function Menu() {
           >
             PREGUNTAS FRECUENTES
           </div>
-          <div className="col-md-3 col-custom">EVENTOS</div>
+          <div className="col-md-3 col-custom" onClick={handleEventos}
+            style={{ cursor: 'pointer' }}>EVENTOS</div>
         </div>
       </div>
 

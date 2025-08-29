@@ -30,7 +30,7 @@ const FloatingVideoComponent = () => {
     zIndex: 1050,
     width: '64px',
     height: '64px',
-    background: 'linear-gradient(135deg, #0ea5e9, #22c55e)',
+    background: 'linear-gradient(135deg, #003B55, #69932D)',
     borderRadius: '50%',
     boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
     cursor: 'pointer',
@@ -45,7 +45,7 @@ const FloatingVideoComponent = () => {
     position: 'absolute',
     inset: '0',
     borderRadius: '50%',
-    background: 'linear-gradient(135deg, #0ea5e9, #22c55e)',
+    background: 'linear-gradient(135deg, #69932D, #22c55e)',
     opacity: '0.3',
     animation: 'pulse 2s infinite'
   };
@@ -64,7 +64,7 @@ const FloatingVideoComponent = () => {
   };
 
   const headerStyle = {
-    background: 'linear-gradient(90deg, #0ea5e9, #22c55e)',
+    background: 'linear-gradient(90deg, #003B55, #69932D)',
     padding: '1rem',
     display: 'flex',
     justifyContent: 'space-between',
@@ -100,7 +100,7 @@ const FloatingVideoComponent = () => {
         .play-button {
           width: 64px;
           height: 64px;
-          background: linear-gradient(135deg, #0ea5e9, #22c55e);
+          background: linear-gradient(135deg, #003B55, #22c55e);
           border-radius: 50%;
           display: flex;
           align-items: center;
@@ -109,7 +109,7 @@ const FloatingVideoComponent = () => {
         }
         
         .play-button:hover {
-          background: linear-gradient(135deg, #0284c7, #16a34a);
+          background: linear-gradient(135deg, #003B55, #69932D);
           transform: scale(1.05);
         }
         
@@ -218,7 +218,7 @@ const FloatingVideoComponent = () => {
                   <div style={{
                     width: '8px',
                     height: '8px',
-                    background: 'linear-gradient(135deg, #0ea5e9, #22c55e)',
+                    background: 'linear-gradient(135deg, #003B55, #22c55e)',
                     borderRadius: '50%',
                     marginRight: '0.5rem'
                   }}></div>
@@ -229,13 +229,13 @@ const FloatingVideoComponent = () => {
                   onClick={playVideo}
                   className="btn w-100 d-flex align-items-center justify-content-center text-white"
                   style={{
-                    background: 'linear-gradient(135deg, #0ea5e9, #22c55e)',
+                    background: 'linear-gradient(135deg, #003B55, #22c55e)',
                     border: 'none',
                     gap: '0.5rem',
                     transition: 'all 0.3s ease'
                   }}
-                  onMouseEnter={(e) => e.target.style.background = 'linear-gradient(135deg, #0284c7, #16a34a)'}
-                  onMouseLeave={(e) => e.target.style.background = 'linear-gradient(135deg, #0ea5e9, #22c55e)'}
+                  onMouseEnter={(e) => e.target.style.background = 'linear-gradient(135deg, #003B55, #69932D)'}
+                  onMouseLeave={(e) => e.target.style.background = 'linear-gradient(135deg, #003B55, #69932D)'}
                 >
                   <Play size={16} />
                   {isPlaying ? 'Reproduciendo...' : 'Ver Tutorial'}
@@ -433,7 +433,6 @@ const InscripcionPage = () => {
     <div className="inscripcion-page">
       {/* Header */}
       <div className="header">
-        <div className="header-overlay"></div>
         <div className="header-content">
           <div className="header-container">
             <h1 className="header-title">

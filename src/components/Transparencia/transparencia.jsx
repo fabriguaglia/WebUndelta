@@ -54,7 +54,7 @@ function Transparencia() {
               {/* Botón para el Portal Nacional de Transparencia */}
               <div className="text-center my-5">
                 <a 
-                  href="https://www.argentina.gob.ar/justicia/accesoalainformacionpublica" 
+                  href="https://portal.transparencia.gob.ar/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="btn btn-primary btn-lg portal-btn"
@@ -488,7 +488,7 @@ function Transparencia() {
                                         <h6 className="card-title">Email</h6>
                                         <p className="card-text small">
                                           <a href="mailto:info@prueba.local" className="text-decoration-none">
-                                            undelta@gmail.com
+                                            undelta@undelta.edu.ar
                                           </a>
                                         </p>
                                       </div>

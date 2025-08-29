@@ -1,44 +1,31 @@
-/* Hacer el offcanvas más alto */
 #offcanvasTop {
-  background-color: #003B55 !important;
+  height: 85vh !important;
+  background-color: #003b55 !important;
   color: #fff !important;
-  height: 75vh !important; /* Ocupa 60% de la altura de la ventana */
-  min-height: 400px !important; /* Altura mínima */
-  overflow: hidden !important; /* Oculta cualquier contenido que se desborde */
+  overflow-y: auto !important;
 }
 
-/* Alternativamente, usa una altura fija */
-/* 
-#offcanvasTop {
-  background-color: #003B55 !important;
-  color: #fff !important;
-  height: 500px !important;
-}
-*/
-
-/* Estilos para el contenido */
-#offcanvasTop .offcanvas-header, 
-#offcanvasTop .offcanvas-body, 
+/* El resto de tus estilos */
+#offcanvasTop .offcanvas-header,
+#offcanvasTop .offcanvas-body,
 #offcanvasTop .offcanvas-body a {
   color: #fff !important;
 }
 
-/* Ícono de cerrar blanco */
 .btn-close.btn-close-white {
   filter: invert(1);
 }
 
-/* Asegurar que el body del offcanvas use todo el espacio disponible */
 #offcanvasTop .offcanvas-body {
   flex-grow: 1;
   display: flex;
-  align-items: flex-start;
+  flex-direction: column; 
+  justify-content: flex-start; 
   padding-top: 3rem;
   padding-bottom: 3rem;
-  overflow: hidden !important; /* Prevenir scroll en el body del offcanvas */
+  overflow: visible !important; 
 }
 
-/* Estilo adicional para los enlaces */
 #offcanvasTop .offcanvas-body a {
   font-size: 1.1rem;
   font-weight: 500;
@@ -51,13 +38,11 @@
   transform: translateX(10px);
 }
 
-/* Logo responsive - se adapta automáticamente al tamaño de pantalla */
 .greensock-icon {
   width: clamp(100px, 15vw, 200px);
   height: auto;
 }
 
-/* Ajustar el margen del contenedor del logo para pantallas pequeñas */
 @media (max-width: 768px) {
   .icon {
     margin-left: -10px !important;

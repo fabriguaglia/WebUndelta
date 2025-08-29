@@ -1,17 +1,27 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Carreras.css';
+import { href } from 'react-router';
 
 const Carreras = () => {
   const [expandedItem, setExpandedItem] = useState(null);
 
-  // Slider state for "Cursos disponibles"
-  const [visibleCount, setVisibleCount] = useState(4); // 4 by default (desktop)
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const sliderRef = useRef(null);
+  const handleItemClick = (id) => {
+    setExpandedItem(expandedItem === id ? null : id);
+  };
 
-  // Arrays (licenciaturas, tecnicaturas, diplomaturas) - mantuve los datos que tenías.
+  const handleBrochureDownload = (brochureUrl, careerTitle) => {
+    if (!brochureUrl) {
+      console.error(`Folleto no disponible para la carrera: ${careerTitle}`);
+      return;
+    }
+    window.open(brochureUrl, '_blank');
+  };
+
   const licenciaturas = [
-    { id: 1, title: "Licenciatura En Ciencia De Datos", description: `La Ciencia de Datos es una disciplina clave en
+    { 
+      id: 1, 
+      title: "Licenciatura En Ciencia De Datos", 
+      description: `La Ciencia de Datos es una disciplina clave en
 la era digital: permite transformar grandes
 volúmenes de datos en conocimiento útil para
 tomar decisiones estratégicas en ámbitos
@@ -20,22 +30,36 @@ gobierno. Estudiá esta carrera y convertite en
 un profesional capaz de dar respuesta a las
 necesidades de nuestra sociedad, empresas y
 organismos a través de la construcción de
-modelos de Ciencia de Datos.` },
-    { id: 2, title: "Licenciatura En Turismo Y Desarrollo Sostenible", description: `En un contexto donde el turismo puede ser motor
+modelos de Ciencia de Datos.`,
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Licenciatura-Ciencia-de-Datos-UNDelta.pdf"
+    },
+    { 
+      id: 2, 
+      title: "Licenciatura En Turismo Y Desarrollo Sostenible", 
+      description: `En un contexto donde el turismo puede ser motor
 del desarrollo local, esta licenciatura te ayudará a
 construir una mirada aplicada, territorial y
 sostenible. Vas a adquirir herramientas para
 investigar, así como también para impulsar proyectos
 turísticos que respeten los ecosistemas, promuevan
 la equidad y valoren el patrimonio natural y cultural de
-tu región.` },
-    { id: 3, title: "Licenciatura En Relaciones Internacionales Y Asuntos Globales", description: `En un mundo donde los desafíos trascienden
-fronteras, se necesitan profesionales capaces
+tu región.`,
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Licenciatura-Turismo-y-Desarrollo-Sostenible-UNDelta.pdf"
+    },
+    { 
+      id: 3, 
+      title: "Licenciatura En Relaciones Internacionales Y Asuntos Globales", 
+      description: `En un mundo donde los desafíos trascienden las fronteras, se necesitan profesionales capaces
 de comprender las tendencias actuales e
 intervenir en la complejidad global. Si querés
 incidir en escenarios internacionales con
-impacto local, esta carrera es para vos.` },
-    { id: 4, title: "Licenciatura En Gestión De Las Instituciones Educativas", description: `Gestionar instituciones educativas implica
+impacto local, esta carrera es para vos.`,
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Licenciatura-Relaciones-Internacionales-y-Asuntos-Globales-UNDelta.pdf"
+    },
+    { 
+      id: 4, 
+      title: "Licenciatura En Gestión De Las Instituciones Educativas", 
+      description: `Gestionar instituciones educativas implica
 mucho más que administrar: es también
 liderar con compromiso y visión crítica.
 Para eso, aprendé cómo incidir activamente
@@ -43,11 +67,16 @@ en la mejora del sistema educativo,
 acompañar procesos de cambio, promover
 la inclusión, la participación democrática y el
 derecho a la educación desde una mirada
-situada y transformadora.`}
-];
+situada y transformadora.`,
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Lic_Educacion.pdf"
+    }
+  ];
 
   const tecnicaturas = [
-    { id: 5, title: "Tecnicatura Universitaria En Ciencia De Datos", description: `Los datos están en todas partes: desde las
+    { 
+      id: 5, 
+      title: "Tecnicatura Universitaria En Ciencia De Datos", 
+      description: `Los datos están en todas partes: desde las
 redes sociales hasta la salud, el comercio o el
 transporte. Esta Tecnicatura te prepara para
 transformar grandes volúmenes de datos en
@@ -55,15 +84,25 @@ información útil para resolver problemas
 reales y tomar decisiones informadas. Vas a
 formarte como técnico/a con capacidades
 prácticas para trabajar en proyectos de Ciencia
-de Datos en equipos multidisciplinarios.` },
-    { id: 6, title: "Tecnicatura Universitaria En Turismo Sostenible", description: `Formate como profesional para gestionar
+de Datos en equipos multidisciplinarios.`,
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-Ciencia-de-Datos-UNDelta.pdf"
+    },
+    { 
+      id: 6, 
+      title: "Tecnicatura Universitaria En Turismo Sostenible", 
+      description: `Formate como profesional para gestionar
 experiencias turísticas con compromiso
 ambiental y social. Esta tecnicatura te brindará
 herramientas prácticas para diseñar, organizar y
 acompañar actividades turísticas sostenibles,
 integradas al territorio y con impacto positivo en
-las comunidades locales.` },
-    { id: 7, title: "Tecnicatura Universitaria En Relaciones Internacionales", description: `En un mundo donde los desafíos sociales,
+las comunidades locales.`,
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-Turismo-UNDelta.pdf"
+    },
+    { 
+      id: 7, 
+      title: "Tecnicatura Universitaria En Relaciones Internacionales", 
+      description: `En un mundo donde los desafíos sociales,
 económicos y políticos cruzan fronteras,
 incorporá herramientas técnicas y prácticas
 para analizar y actuar en escenarios
@@ -71,23 +110,26 @@ internacionales. Si te interesa la cooperación,
 el comercio internacional, las estrategias
 globales con impacto local y la diplomacia y
 sus nuevas dinámicas, esta es la tecnicatura
-para vos.` },
-    { id: 8, title: "Tecnicatura Universitaria En Desastres Y Emergencias Sanitarias", description: `Frente al aumento de eventos críticos como
-catástrofes naturales, emergencias sanitarias o
+para vos.`,
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-RRII-UNDelta.pdf"
+    },
+    { 
+      id: 8, 
+      title: "Tecnicatura Universitaria En Desastres Y Emergencias Sanitarias", 
+      description: `Frente al aumento de eventos críticos como catástrofes naturales emergencias sanitarias o
 crisis humanitarias, se necesitan profesionales
 especializados en su prevención, mitigación y
 respuesta. Esta tecnicatura te forma para
 actuar eficazmente en situaciones que
 requieren acción rápida, coordinación y
-sensibilidad social.` }
+sensibilidad social.`,
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-Desastres-y-Emergencias-Sanitarias-UNDelta.pdf"
+    }
   ];
 
   const diplomaturas = [
-    { id: 9, title: "Diplomatura en Ciencias sociales aplicadas al sector privado", description: `La Diplomatura presentará los aportes de las Ciencias Sociales a las empresas y las
-demandas, estilos, lenguajes y dinámicas de las distintas industrias del sector
-privado. También se propiciarán instancias específicas para el networking y
-consultas a especialistas de cada área.` },
-    { id: 10, title: "Diplomatura en Innovación Aplicada a la Gestión Deportiva de Clubes y Federaciones", description: "La Diplomatura tiene como objetivo formar profesionales capaces de gestionar en el deporte de forma eficiente e innovadora en búsqueda de la inclusión, la salud y el bienestar general." },
+    { id: 9, title: "Diplomatura en Ciencias sociales aplicadas al sector privado", description: `La Diplomatura presentará los aportes de las Ciencias Sociales a las empresas y las demandas, estilos, lenguajes y dinámicas de las distintas industrias del sector privado. También se propiciarán instancias específicas para el networking y consultas a especialistas de cada área.` },
+    { id: 10, title: "Diplomatura en Innovación Aplicada a la Gestión Deportiva de Clubes y Federaciones", description: "La Diplomatura tiene como objetivo formar profesionales capaces de gestionar en el deporte de forma eficiente e innovadora en búsqueda de la inclusión, la salud y el bienestar general." },
     { id: 11, title: "Diplomatura en Gestión Integral de Riesgo y Desarrollo Resiliente", description: "La diplomatura tiene como objetivo fortalecer las capacidades y aptitudes competentes de profesionales, técnicos y tomadores de decisión en la identificación, evaluación y reducción de riesgos de cualquier origen, como así también para el diseño e implementación de iniciativas de gestión de riesgo a partir de un enfoque integral que incluye la interacción con diversas disciplinas convergentes." },
     { id: 12, title: "Diplomatura en Investigación Criminal", description: "La presente diplomatura tiene por objeto introducir a los estudiantes en el ámbito del Derecho Procesal Penal, y particularmente en el desarrollo de las nuevas modalidades de investigación criminal." },
     { id: 13, title: "Diplomatura en Derechos Humanos y Garantías Judiciales", description: "La diplomatura tiene como objetivo brindar una formación integral y especializada en derechos humanos y garantías judiciales, que permita a los y las participantes analizar, interpretar y aplicar los principios constitucionales y los sistemas internacionales de protección de derechos humanos, con especial atención a las garantías procesales, la responsabilidad de actores estatales y no estatales." },
@@ -96,15 +138,8 @@ consultas a especialistas de cada área.` },
     { id: 16, title: "Diplomatura en Desarrollo Emprendedor y Empresarial", description: "" }
   ];
 
-  // Career card expand/collapse
-  const handleItemClick = (itemId) => {
-    setExpandedItem(expandedItem === itemId ? null : itemId);
-  };
-
   const CareerCard = ({ career, isExpanded, onClick }) => {
-    // Check if the career ID is from diplomaturas (IDs 9-16)
     const isDiplomatura = career.id >= 9 && career.id <= 16;
-
     return (
       <div className={`career-card ${isExpanded ? 'expanded' : ''}`}>
         <div className="career-header" onClick={() => onClick(career.id)}>
@@ -120,13 +155,45 @@ consultas a especialistas de cada área.` },
             <p>{career.description}</p>
             <div className="career-buttons">
               <button className="more-info-btn">Más información</button>
-              {!isDiplomatura && <button className="brochure-btn">Folleto</button>}
+              {!isDiplomatura && (
+                <button 
+                  className="brochure-btn"
+                  onClick={(e) => {
+                    e.stopPropagation(); // Evita que se cierre la tarjeta al hacer clic
+                    handleBrochureDownload(career.brochureUrl, career.title);
+                  }}
+                >
+                  Folleto
+                </button>
+              )}
             </div>
           </div>
         )}
       </div>
     );
   };
+
+    const [visibleCount, setVisibleCount] = useState(4);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const updateVisible = () => {
+      const w = window.innerWidth;
+      if (w < 768) setVisibleCount(1);
+      else if (w < 1024) setVisibleCount(2);
+      else setVisibleCount(4);
+    };
+
+    updateVisible();
+    window.addEventListener('resize', updateVisible);
+    return () => window.removeEventListener('resize', updateVisible);
+  }, []);
+
+  useEffect(() => {
+    const total = 4;
+    const maxIndex = Math.max(0, total - visibleCount);
+    if (currentIndex > maxIndex) setCurrentIndex(maxIndex);
+  }, [visibleCount, currentIndex]);
 
   // --- Slider logic ---
   useEffect(() => {

@@ -32,7 +32,7 @@ const FAQPage = () => {
 
         ¿En qué consiste la inscripción virtual?
 
-        Deberás crearte un usuario y completar el formulario con tus datos personales en el SIU-Guaraní, que es la plataforma que vas a usar para consultas e inscripciones a lo largo de toda tu carrera. Para ver el paso a paso leé EL SIGUIENTE TUTORIAL O MIRA EL VIDEO TUTORIAL que te dejamos por acá.
+        Deberás crearte un usuario y completar el formulario con tus datos personales en el SIU-Guaraní, que es la plataforma que vas a usar para consultas e inscripciones a lo largo de toda tu carrera. Para ver el paso a paso leé <a href='https://undelta.edu.ar/wp-content/uploads/2025/04/INSTRUCTIVO-PRE-INSCRIPCION-SIU-GUARANI.docx.pdf'>EL SIGUIENTE TUTORIAL</a> O <a href='https://vimeo.com/1077336445/e02243db64?share=copy'>MIRA EL VIDEO TUTORIAL</a> que te dejamos por acá.
 
         Recomendamos realizar la inscripción desde una computadora.
 
@@ -51,7 +51,7 @@ const FAQPage = () => {
             Si estás cursando tu último año del secundario: Certificado de alumno regular (ORIGINAL Y COPIA).
             Si terminaste el secundario y aún no tenés el título Certificado de título en trámite (ORIGINAL Y COPIA).
             Excepcionalmente, los mayores de 25 años que no posean título secundario, según lo establece el Artículo 7 de la Ley de Educación Superior 24.521, podrán ingresar siempre que demuestren los conocimientos necesarios a través de las evaluaciones que realice la Universidad.
-            Si estás interesado/a en la Licenciatura en Gestión de las Instituciones Educativas (CCC) conocé los requisitos haciendo CLIC ACÁ. 
+            Si estás interesado/a en la Licenciatura en Gestión de las Instituciones Educativas (CCC) conocé los requisitos haciendo <a href='https://undelta.edu.ar/wp-content/uploads/2025/04/Requisitos-de-ingreso-CCC-Lic.-Gestion-de-las-Instituciones-Educativas.pdf'>CLIC ACÁ.</a> 
         </div>
       )
     },
@@ -87,8 +87,6 @@ const FAQPage = () => {
           Introducción al Pensamiento Lógico
           Se cursará una vez por semana de manera presencial, con posibilidad de elegir entre diferentes turnos. Comenzará en Agosto de 2025.
 
-          Excepciones
-
           Los graduados provenientes de carreras de pregrado o grado universitarias de instituciones públicas o privadas, del país o del extranjero, debidamente reconocidas como tales. 
           Los egresados del nivel superior no universitario comprendidas en la Ley N° 24.591 de Educación Superior y sus modificatorias, que emitan título con validez nacional y que se encuentren debidamente reconocidas como tales por la autoridad educativa competente.
         </div>
@@ -100,7 +98,7 @@ const FAQPage = () => {
       answer: (
         <div>
         En el caso de estudios secundarios realizados en el extranjero, el título o certificado de estudios completos deberá ser acompañado de una constancia expedida por autoridad competente indicando que el título de referencia habilita para ingresar a la Universidad en su país de origen.
-        Conocé cómo realizar el apostillado AQUÍ.
+        Conocé cómo realizar el apostillado <a href="https://cancilleria.gob.ar/es/servicios/servicios/apostilla-legalizacion-con-validez-internacional-tad"> AQUI</a>.
         </div>
       )
     },
