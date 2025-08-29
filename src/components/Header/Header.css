@@ -1,35 +1,31 @@
 #offcanvasTop {
-  height: 100vh !important;
-  background-color: #003B55 !important;
+  height: 85vh !important;
+  background-color: #003b55 !important;
   color: #fff !important;
   overflow-y: auto !important;
-  overflow-x: hidden !important; 
 }
 
-/* Estilos para el contenido */
-#offcanvasTop .offcanvas-header, 
-#offcanvasTop .offcanvas-body, 
+/* El resto de tus estilos */
+#offcanvasTop .offcanvas-header,
+#offcanvasTop .offcanvas-body,
 #offcanvasTop .offcanvas-body a {
   color: #fff !important;
 }
 
-/* Ícono de cerrar blanco */
 .btn-close.btn-close-white {
   filter: invert(1);
 }
 
-/* Asegurar que el cuerpo del offcanvas ocupe todo el espacio disponible */
 #offcanvasTop .offcanvas-body {
   flex-grow: 1;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: column; 
+  justify-content: flex-start; 
   padding-top: 3rem;
   padding-bottom: 3rem;
   overflow: visible !important; 
 }
 
-/* Estilo adicional para los enlaces */
 #offcanvasTop .offcanvas-body a {
   font-size: 1.1rem;
   font-weight: 500;
@@ -42,13 +38,11 @@
   transform: translateX(10px);
 }
 
-/* Logo responsive - se adapta automáticamente al tamaño de pantalla */
 .greensock-icon {
   width: clamp(100px, 15vw, 200px);
   height: auto;
 }
 
-/* Ajustar el margen del contenedor del logo para pantallas pequeñas */
 @media (max-width: 768px) {
   .icon {
     margin-left: -10px !important;
