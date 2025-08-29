@@ -168,7 +168,7 @@ export default function Header() {
                         onClick={handleLinkClick}
                         className="text-white text-decoration-none"
                       >
-                        EXTENSIÓN UNIVERSITARIA
+                        EXTENSIÓN UNDELTA
                       </Link>
                     </div>
                   </div>

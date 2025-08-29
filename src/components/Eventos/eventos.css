@@ -8,10 +8,10 @@
 /* Header Section */
 .eventos-header {
   height: 450px;
-  background-image: url('./eventos.png');
+  background-image: url('./eventos.png') ;
     position: relative;
 }
-
+  
 .header-overlay {
   position: absolute;
   top: 0;

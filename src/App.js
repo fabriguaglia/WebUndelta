@@ -11,6 +11,7 @@ import PreguntasFrecuentes from './components/preguntas-frecuentes/preguntas-fre
 import InscripcionPage from './components/Inscripcion/inscripcion.jsx';
 import Transparencia from './components/Transparencia/transparencia.jsx';
 import Eventos from './components/Eventos/eventos.jsx';
+import Extension from './components/extension-undelta/extension-undelta.jsx';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/Inscripcion" element={<InscripcionPage />} />
           <Route path="/transparencia" element={<Transparencia />} />
           <Route path="/eventos" element={<Eventos />} />
+          <Route path="/extension-undelta" element={<Extension />} />
         </Routes>
         <Footer />
     </Router>

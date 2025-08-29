@@ -1,0 +1,320 @@
+.extension-undelta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--white-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.extension-header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 250px; /* Ajusta según la imagen original */
+  background-color: var(--primary-color);
+  overflow: hidden;
+}
+
+.header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: var(--white-color);
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  z-index: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.header-logo img {
+  width: 100px; /* Ajusta el tamaño del logo */
+}
+
+/* --- SECCIÓN DE NOTICIAS --- */
+
+.news-section {
+  padding: 20px;
+  background-color: var(--white-color);
+}
+
+.section-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 5px solid var(--primary-color);
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.main-news-item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.news-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.main-news-item:hover .news-img {
+  transform: scale(1.05);
+}
+
+.news-text-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  color: var(--white-color);
+}
+
+.news-title-overlay {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+
+.news-description-overlay {
+  margin: 0;
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+.side-news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.side-news-item {
+  position: relative;
+  flex: 1;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.side-news-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.side-news-item:hover .side-news-img {
+  transform: scale(1.05);
+}
+
+.side-news-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color);
+  font-size: 1.4em;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  padding: 0 10px;
+  width: 100%;
+}
+
+/* --- SECCIÓN DE DEBATE --- */
+
+.debate-section {
+  padding: 20px;
+  background-color: var(--white-color);
+}
+
+.debate-content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.video-container {
+  position: relative;
+  flex: 2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail {
+  width: 100%;
+  display: block;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.video-info {
+  margin-top: auto;
+}
+
+.video-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.video-subtitle {
+  font-size: 1.1em;
+  margin: 5px 0 0;
+  font-style: italic;
+}
+
+.video-presenters {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.presenter-card {
+  text-align: center;
+}
+
+.presenter-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--white-color);
+  object-fit: cover;
+}
+
+.presenter-card p {
+  font-size: 0.7em;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.youtube-promo {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.youtube-promo p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.promo-button {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.promo-button:hover {
+  background-color: #265543;
+}
+
+/* --- BOTÓN DE YOUTUBE EN VIDEO --- */
+
+.watch-on-youtube-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.watch-on-youtube-btn .fab {
+  color: var(--youtube-red);
+}
+
+/* --- RESPONSIVE DESIGN --- */
+
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .debate-content {
+    flex-direction: column;
+  }
+
+  .header-title {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1.5em;
+    left: 10px;
+    bottom: 10px;
+  }
+  
+  .news-title-overlay {
+    font-size: 1.2em;
+  }
+
+  .side-news-title {
+    font-size: 1.1em;
+  }
+  
+  .section-title {
+    font-size: 1.3em;
+  }
+
+  .youtube-promo p {
+    font-size: 1em;
+  }
+}
