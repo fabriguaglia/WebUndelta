@@ -1,20 +1,10 @@
-/* Hacer el offcanvas más alto */
 #offcanvasTop {
+  height: 100vh !important;
   background-color: #003B55 !important;
   color: #fff !important;
-  height: 75vh !important; /* Ocupa 60% de la altura de la ventana */
-  min-height: 400px !important; /* Altura mínima */
-  overflow: hidden !important; /* Oculta cualquier contenido que se desborde */
+  overflow-y: auto !important;
+  overflow-x: hidden !important; 
 }
-
-/* Alternativamente, usa una altura fija */
-/* 
-#offcanvasTop {
-  background-color: #003B55 !important;
-  color: #fff !important;
-  height: 500px !important;
-}
-*/
 
 /* Estilos para el contenido */
 #offcanvasTop .offcanvas-header, 
@@ -28,14 +18,15 @@
   filter: invert(1);
 }
 
-/* Asegurar que el body del offcanvas use todo el espacio disponible */
+/* Asegurar que el cuerpo del offcanvas ocupe todo el espacio disponible */
 #offcanvasTop .offcanvas-body {
   flex-grow: 1;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  overflow: hidden !important; /* Prevenir scroll en el body del offcanvas */
+  overflow: visible !important; 
 }
 
 /* Estilo adicional para los enlaces */
