@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './components/Contact/Contact.jsx';
 import SobreNosotros from './components/Sobre nosotros/sobre-nosotros.jsx';
 import Carreras from './components/Carreras/Carreras.jsx';
+import CarrerasInfo from './components/Carreras-Info/LicCieDat/LicCieDat.jsx';
 import PreguntasFrecuentes from './components/preguntas-frecuentes/preguntas-frecuentes';
 import InscripcionPage from './components/Inscripcion/inscripcion.jsx';
 import Transparencia from './components/Transparencia/transparencia.jsx';
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/" element={<Menu />} />
           <Route path="/contacto" element={<Contact />} />
           <Route path='/Carreras' element={<Carreras />} />
+          <Route path='/Carreras-Info' element={<CarrerasInfo />} />
           <Route path="/sobre-nosotros" element={<SobreNosotros />} />
           <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
           <Route path="/Inscripcion" element={<InscripcionPage />} />

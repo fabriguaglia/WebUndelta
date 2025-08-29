@@ -243,28 +243,6 @@ consultas a especialistas de cada área.` },
         </div>
       </section>
 
-      <section className="student-experiences-section">
-        <div className="container-carreras">
-          <h2 className="experiences-title">Experiencias de alumnos</h2>
-          <div className="experiences-grid">
-            <div className="experience-card">
-              <div className="student-photo"><img src="./student1.jpg" alt="1" /></div>
-              <div className="experience-content"><p>"Opinion 1"</p><div className="student-info"><h4>NN</h4><span>Alumna de </span></div></div>
-            </div>
-
-            <div className="experience-card">
-              <div className="student-photo"><img src="./student2.jpg" alt="2" /></div>
-              <div className="experience-content"><p>"Opinion 2"</p><div className="student-info"><h4>NN</h4><span>Alumna de </span></div></div>
-            </div>
-
-            <div className="experience-card">
-              <div className="student-photo"><img src="./student3.jpg" alt="3" /></div>
-              <div className="experience-content"><p>"Opinion 3"</p><div className="student-info"><h4>NN</h4><span>Alumno de </span></div></div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Cursos disponibles con slider funcional */}
       <section className="available-courses-section">
         <div className="container-carreras">
@@ -307,6 +285,28 @@ consultas a especialistas de cada área.` },
             >
               {'>'}
             </button>
+          </div>
+        </div>
+      </section>
+
+      <section className="student-experiences-section">
+        <div className="container-carreras">
+          <h2 className="experiences-title">Experiencias de alumnos</h2>
+          <div className="experiences-grid">
+            <div className="experience-card">
+              <div className="student-photo"><img src="./student1.jpg" alt="1" /></div>
+              <div className="experience-content"><p>"Opinion 1"</p><div className="student-info"><h4>NN</h4><span>Alumna de </span></div></div>
+            </div>
+
+            <div className="experience-card">
+              <div className="student-photo"><img src="./student2.jpg" alt="2" /></div>
+              <div className="experience-content"><p>"Opinion 2"</p><div className="student-info"><h4>NN</h4><span>Alumna de </span></div></div>
+            </div>
+
+            <div className="experience-card">
+              <div className="student-photo"><img src="./student3.jpg" alt="3" /></div>
+              <div className="experience-content"><p>"Opinion 3"</p><div className="student-info"><h4>NN</h4><span>Alumno de </span></div></div>
+            </div>
           </div>
         </div>
       </section>
