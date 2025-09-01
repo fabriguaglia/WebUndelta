@@ -91,6 +91,22 @@
   gap: 20px;
 }
 
+.diplo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .diplo-list{
+    padding: 15px;
+    gap: 12px;
+  }
+}
+
 /* Career Cards */
 .career-card {
   background: white;
@@ -215,6 +231,29 @@
   transform: translateY(-1px);
   box-shadow: 0 2px 8px rgba(124, 179, 66, 0.3);
 }
+
+
+
+/*BOTON DE INSCRIPCION FINALIZADA */
+
+.inscription-finished-btn {
+  background: linear-gradient(135deg, #ff4757, #ff6b7a);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 20px;
+  cursor: not-allowed;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  min-width: 180px;
+  text-align: center;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

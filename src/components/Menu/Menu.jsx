@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Menu() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const navigate = useNavigate();// Hook para navegación
+  const navigate = useNavigate();
 
 const novedades = [
   {
