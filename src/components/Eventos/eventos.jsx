@@ -22,7 +22,7 @@ const Eventos = () => {
         <div className="calendario-container">
           <div className="calendario-placeholder">
             {/* Aquí va tu componente de calendario */}
-            <p>Espacio reservado para el calendario</p>
+            <p>En construcción.</p>
           </div>
         </div>
         </div>
