@@ -1,320 +1,266 @@
-.extension-undelta-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: var(--white-color);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-.extension-header {
+/* Header Section */
+.header-section {
   position: relative;
-  width: 100%;
-  height: auto;
-  min-height: 250px; /* Ajusta según la imagen original */
-  background-color: var(--primary-color);
-  overflow: hidden;
+  height: 500px;
+  background-image: url('./header-undelta.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-.header-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.header-overlay {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.288);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header-title {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: var(--white-color);
-  font-size: 3em;
-  font-weight: bold;
-  text-transform: uppercase;
-  z-index: 1;
+.main-title {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 3px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.header-logo {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 1;
-}
-
-.header-logo img {
-  width: 100px; /* Ajusta el tamaño del logo */
-}
-
-/* --- SECCIÓN DE NOTICIAS --- */
-
+/* News Section */
 .news-section {
-  padding: 20px;
-  background-color: var(--white-color);
+  background-color: #f8f9fa;
+  padding: 0;
 }
 
-.section-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: var(--primary-color);
-  margin-bottom: 20px;
-  padding-left: 10px;
-  border-left: 5px solid var(--primary-color);
+.news-header {
+  background-color: #003B55;
+  padding: 20px 40px;
+  margin: 0;
+}
+
+.news-header h2 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
 }
 
 .news-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: 600px;
 }
 
-.main-news-item {
+.news-card {
   position: relative;
-  cursor: pointer;
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
-  border-radius: 8px;
 }
 
-.news-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+.card-large {
+  grid-row: span 2;
+  background-image: url('./noticia1.jpg');
 }
 
-.main-news-item:hover .news-img {
-  transform: scale(1.05);
+.card-medium {
+  background-image: url('./noticia2.jpg');
 }
 
-.news-text-overlay {
+.card-medium:nth-child(3) {
+  background-image: url('./noticia3.jpg');
+}
+
+.card-overlay {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  width: 100%;
-  padding: 20px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
-  color: var(--white-color);
-}
-
-.news-title-overlay {
-  font-size: 1.8em;
-  font-weight: bold;
-  margin: 0 0 10px;
-}
-
-.news-description-overlay {
-  margin: 0;
-  font-size: 0.9em;
-  line-height: 1.4;
-}
-
-.side-news-container {
+  right: 0;
+  bottom: 0;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  align-items: flex-end;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.288);
 }
 
-.side-news-item {
-  position: relative;
-  flex: 1;
-  cursor: pointer;
-  border-radius: 8px;
-  overflow: hidden;
+.card-content {
+  color: #f8f9fa;
 }
 
-.side-news-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+.card-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
-.side-news-item:hover .side-news-img {
-  transform: scale(1.05);
-}
 
-.side-news-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--white-color);
-  font-size: 1.4em;
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  padding: 0 10px;
-  width: 100%;
-}
-
-/* --- SECCIÓN DE DEBATE --- */
-
+/* Debate Section */
 .debate-section {
-  padding: 20px;
-  background-color: var(--white-color);
+  background-color: #003B55;
+  padding: 20px 40px;
+  margin: 0;
+}
+
+.debate-title {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.debate-body {
+  background-color: #134F4F;
+  padding: 40px;
 }
 
 .debate-content {
   display: flex;
-  gap: 20px;
   align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
 }
 
 .video-container {
-  position: relative;
-  flex: 2;
+  flex: 0 0 560px;
+}
+
+.video-container iframe {
+  width: 100%;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.video-thumbnail {
-  width: 100%;
-  display: block;
-}
-
-.video-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: var(--white-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.video-info {
-  margin-top: auto;
-}
-
-.video-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 0;
-}
-
-.video-subtitle {
-  font-size: 1.1em;
-  margin: 5px 0 0;
-  font-style: italic;
-}
-
-.video-presenters {
-  display: flex;
-  gap: 10px;
-  margin-top: 15px;
-}
-
-.presenter-card {
-  text-align: center;
-}
-
-.presenter-card img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid var(--white-color);
-  object-fit: cover;
-}
-
-.presenter-card p {
-  font-size: 0.7em;
-  margin-top: 5px;
-  font-weight: bold;
-}
-
-.youtube-promo {
+.debate-info {
   flex: 1;
-  text-align: center;
-  padding: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.youtube-promo p {
-  font-size: 1.2em;
-  font-weight: bold;
-  color: var(--primary-color);
-  margin-bottom: 20px;
+.debate-text {
+  color: white;
+  text-align: left;
 }
 
-.promo-button {
-  background-color: var(--primary-color);
-  color: var(--white-color);
+.debate-text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.proximos-debates-btn {
+  background-color: #73a33b;
+  color: white;
   border: none;
   padding: 15px 30px;
-  font-size: 1em;
-  font-weight: bold;
-  text-transform: uppercase;
-  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 25px;
   cursor: pointer;
+  letter-spacing: 1px;
   transition: background-color 0.3s ease;
 }
 
-.promo-button:hover {
-  background-color: #265543;
+.proximos-debates-btn:hover {
+  background-color: #69932D;
 }
-
-/* --- BOTÓN DE YOUTUBE EN VIDEO --- */
-
-.watch-on-youtube-btn {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background-color: var(--black-color);
-  color: var(--white-color);
-  padding: 5px 10px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.8em;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.watch-on-youtube-btn .fab {
-  color: var(--youtube-red);
-}
-
-/* --- RESPONSIVE DESIGN --- */
-
+/* Responsive Design */
 @media (max-width: 768px) {
+  .main-title {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+
   .news-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    height: auto;
+  }
+
+  .card-large {
+    grid-row: span 1;
+    min-height: 250px;
+  }
+
+  .card-medium {
+    min-height: 200px;
+  }
+
+  .card-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
   }
 
   .debate-content {
     flex-direction: column;
+    gap: 30px;
   }
 
-  .header-title {
-    font-size: 2em;
+  .video-container {
+    flex: none;
+    width: 100%;
+  }
+
+  .video-container iframe {
+    height: 250px;
+  }
+
+  .debate-text {
+    text-align: center;
+  }
+
+  .debate-text h3 {
+    font-size: 1.2rem;
+  }
+
+  .news-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-overlay {
+    padding: 20px;
   }
 }
 
 @media (max-width: 480px) {
-  .header-title {
-    font-size: 1.5em;
-    left: 10px;
-    bottom: 10px;
-  }
-  
-  .news-title-overlay {
-    font-size: 1.2em;
+  .main-title {
+    font-size: 2rem;
+    letter-spacing: 1px;
   }
 
-  .side-news-title {
-    font-size: 1.1em;
-  }
-  
-  .section-title {
-    font-size: 1.3em;
+  .header-section {
+    height: 250px;
   }
 
-  .youtube-promo p {
-    font-size: 1em;
+  .debate-body {
+    padding: 20px;
+  }
+
+  .debate-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .proximos-debates-btn {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+
+  .news-header {
+    padding: 15px 20px;
+  }
+
+  .card-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
   }
 }
