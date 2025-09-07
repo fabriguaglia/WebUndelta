@@ -14,22 +14,25 @@ const novedades = [
     title: "Primer dia de clases en la UNDelta",
     text: "Más de 1000 estudiantes comenzaron a cursar las primeras carreras universitarias..",
     buttonText: "Conocé más",
-    image: "/noticia1.jpg", 
-    alt: "botón 1"
+    image: "/noticia1.jpg",
+    alt: "botón 1",
+    route: '/ext-noticias/noticia1'
   },
   {
     title: "Cuando los jóvenes llegan al recinto",
     text: "Nueva edición de UNDelta en Debate junto a la Cámara de Diputados de la Provincia..",
     buttonText: "Conocé más",
     image: "/noticia2.jpg",
-    alt: "botón 2"
+    alt: "botón 2",
+    route: '/ext-noticias/noticia2'
   },
   {
     title: "¿Celulares en las escuelas?",
     text: "La UNDelta convocó a estudiantes secundarios a debatir sobre un tema clave..",
     buttonText: "Conocé más",
     image: "/noticia3.jpg",
-    alt: "botón 3"
+    alt: "botón 3",
+    route: '/ext-noticias/noticia3'
   }
 ];
 
@@ -54,6 +57,7 @@ const novedades = [
     navigate('/Eventos');
   }
   
+
   return (
     <>
       <div className="video-container">
@@ -171,7 +175,10 @@ const novedades = [
                   <p className="lead text-dark mb-4 fs-5">
                     {novedad.text}
                   </p>
-                  <button className="btn btn-info btn-lg rounded-pill px-4 py-2 text-white fw-semibold">
+                  <button
+                    className="btn btn-info btn-lg rounded-pill px-4 py-2 text-white fw-semibold"
+                    onClick={() => navigate(novedad.route)}
+                  >
                     {novedad.buttonText}
                   </button>
                 </div>
@@ -204,7 +211,7 @@ const novedades = [
           data-bs-slide="prev"
           style={{width: '50px', height: '50px'}}
         >
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" viewBox="0 0 16 16" >
             <path fillRule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
           </svg>
           <span className="visually-hidden">Previous</span>
@@ -216,7 +223,7 @@ const novedades = [
           data-bs-target="#novedadesCarousel"
           data-bs-slide="next"
           style={{width: '50px', height: '50px'}}
-        >
+         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="" viewBox="0 0 16 16">
             <path fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
           </svg>

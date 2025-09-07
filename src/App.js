@@ -14,6 +14,9 @@ import InscripcionPage from './components/Inscripcion/inscripcion.jsx';
 import Transparencia from './components/Transparencia/transparencia.jsx';
 import Eventos from './components/Eventos/eventos.jsx';
 import Extension from './components/extension-undelta/extension-undelta.jsx';
+import UNDeltaNoticia1 from './components/ext-noticias/noticia1/noticia1.jsx';
+import UNDeltaNoticia2 from './components/ext-noticias/noticia2/noticia2.jsx';
+import UNDeltaNoticia3 from './components/ext-noticias/noticia3/noticia3.jsx';
 import LicTurDes from './components/Carreras-Info/TurDesSos/LicTurDes/LicTurDes.jsx';
 import TecTurDes from './components/Carreras-Info/TurDesSos/TecTurDes/TecTurDes.jsx';
 import LicRelInt from './components/Carreras-Info/RelInt/LicRelInt/LicRelInt.jsx';
@@ -43,6 +46,9 @@ function App() {
           <Route path="/transparencia" element={<Transparencia />} />
           <Route path="/eventos" element={<Eventos />} />
           <Route path="/extension-undelta" element={<Extension />} />
+            <Route path="/ext-noticias/noticia1" element={<UNDeltaNoticia1 />} />
+            <Route path="/ext-noticias/noticia2" element={<UNDeltaNoticia2 />} />
+            <Route path="/ext-noticias/noticia3" element={<UNDeltaNoticia3 />} />
         </Routes>
         <Footer />
     </Router>

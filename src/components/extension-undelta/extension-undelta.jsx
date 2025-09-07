@@ -2,11 +2,24 @@ import React from 'react';
 import './extension-undelta.css';
 import { useNavigate } from 'react-router-dom';
 
+
 const Extension = () => {
   const navigate = useNavigate();
 
   const handleEventosClick = () => {
     navigate('/eventos');
+  };
+
+  const handleNoticia1Click = () => {
+    navigate('/ext-noticias/noticia1');
+  };
+
+  const handleNoticia2Click = () => {
+    navigate('/ext-noticias/noticia2'); 
+  };
+
+  const handleNoticia3Click = () => {
+    navigate('/ext-noticias/noticia3'); 
   };
 
   return (
@@ -27,7 +40,7 @@ const Extension = () => {
 
         <div className="news-grid">
           {/* Card 1 - Debate */}
-          <div className="news-card card-large">
+          <div className="news-card card-large" onClick={handleNoticia1Click} style={{ cursor: 'pointer' }} >
             <div className="card-overlay">
               <div className="card-content">
                 <h3>PRIMER DIA DE CLASES EN LA UNDELTA</h3>
@@ -37,7 +50,7 @@ const Extension = () => {
           </div>
 
           {/* Card 2 - Inscripciones */}
-          <div className="news-card card-medium">
+          <div className="news-card card-medium" onClick={handleNoticia2Click} style={{cursor: 'pointer'}}>
             <div className="card-overlay">
               <div className="card-content">
                 <h3>CUANDO LOS JOVENES LLEGAN AL RECINTO</h3>
@@ -47,7 +60,7 @@ const Extension = () => {
           </div>
 
           {/* Card 3 - Universidades */}
-          <div className="news-card card-medium">
+          <div className="news-card card-medium" onClick={handleNoticia3Click} style={{cursor: 'pointer'}}>
             <div className="card-overlay">
               <div className="card-content">
                 <h3>¿CELULARES EN LAS ESCUELAS?</h3>
