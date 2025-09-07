@@ -23,6 +23,14 @@ import LicRelInt from './components/Carreras-Info/RelInt/LicRelInt/LicRelInt.jsx
 import TecRelInt from './components/Carreras-Info/RelInt/TecRelInt/TecRelInt.jsx';
 import LicGesIns from './components/Carreras-Info/GesIns/LicGesIns.jsx';
 import TecGesIns from './components/Carreras-Info/DesEme/TecDesEme.jsx';
+import DipCiePri from './components/Diplomaturas-Info/CiePriv/DipCiePri.jsx';
+import DipGesDep from './components/Diplomaturas-Info/GesDep/DipGesDep.jsx';
+import DipGesRie from './components/Diplomaturas-Info/GesRie/DipGesRie.jsx';
+import DipInvCri from './components/Diplomaturas-Info/InvCri/DipInvCri.jsx';
+import DipDerHum from './components/Diplomaturas-Info/DerHum/DipDerHum.jsx';
+import DipRedInf from './components/Diplomaturas-Info/RedInf/DipRedInf.jsx';
+import DipAutCli from './components/Diplomaturas-Info/AutCli/DipAutCli.jsx';
+import DipGesEmp from './components/Diplomaturas-Info/DesEmp/DipDesEmp.jsx';
 
 function App() {
   return (
@@ -40,6 +48,14 @@ function App() {
             <Route path="/Carreras/TecRelInt" element={<TecRelInt />} />
             <Route path="/Carreras/LicGesIns" element={<LicGesIns />} />
             <Route path="/Carreras/TecGesIns" element={<TecGesIns />} />
+            <Route path="/Diplomaturas/DipCiePri" element={<DipCiePri />} />
+            <Route path="/Diplomaturas/DipGesDep" element={<DipGesDep />} />
+            <Route path="/Diplomaturas/DipGesRie" element={<DipGesRie />} />
+            <Route path="/Diplomaturas/DipInvCri" element={<DipInvCri />} />
+            <Route path="/Diplomaturas/DipDerHum" element={<DipDerHum />} />
+            <Route path="/Diplomaturas/DipRedInf" element={<DipRedInf />} />
+            <Route path="/Diplomaturas/DipAutCli" element={<DipAutCli />} />
+            <Route path="/Diplomaturas/DipDesEmp" element={<DipGesEmp />} />
           <Route path="/sobre-nosotros" element={<SobreNosotros />} />
           <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
           <Route path="/Inscripcion" element={<InscripcionPage />} />
