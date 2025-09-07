@@ -244,12 +244,12 @@ car-section {
 }
 
 .btn-secondary {
-  background: #4a9b8e;
+  background: #1e4a5c;
   color: white;
 }
 
 .btn-secondary:hover {
-  background: #3d8a7d;
+  background: #2d6b7a;
   transform: translateY(-2px);
 }
 

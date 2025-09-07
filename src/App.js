@@ -7,12 +7,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Contact from './components/Contact/Contact.jsx';
 import SobreNosotros from './components/Sobre nosotros/sobre-nosotros.jsx';
 import Carreras from './components/Carreras/Carreras.jsx';
-import CarrerasInfo from './components/Carreras-Info/LicCieDat/LicCieDat.jsx';
+import LicCieDat from './components/Carreras-Info/CieDat/LicCieDat/LicCieDat.jsx';
+import TecCieDat from './components/Carreras-Info/CieDat/TecCieDat/TecCieDat.jsx';
 import PreguntasFrecuentes from './components/preguntas-frecuentes/preguntas-frecuentes';
 import InscripcionPage from './components/Inscripcion/inscripcion.jsx';
 import Transparencia from './components/Transparencia/transparencia.jsx';
 import Eventos from './components/Eventos/eventos.jsx';
 import Extension from './components/extension-undelta/extension-undelta.jsx';
+import LicTurDes from './components/Carreras-Info/TurDesSos/LicTurDes/LicTurDes.jsx';
+import TecTurDes from './components/Carreras-Info/TurDesSos/TecTurDes/TecTurDes.jsx';
+import LicRelInt from './components/Carreras-Info/RelInt/LicRelInt/LicRelInt.jsx';
+import TecRelInt from './components/Carreras-Info/RelInt/TecRelInt/TecRelInt.jsx';
+import LicGesIns from './components/Carreras-Info/GesIns/LicGesIns.jsx';
+import TecGesIns from './components/Carreras-Info/DesEme/TecDesEme.jsx';
 
 function App() {
   return (
@@ -22,7 +29,14 @@ function App() {
           <Route exact path="/" element={<Menu />} />
           <Route path="/contacto" element={<Contact />} />
           <Route path='/Carreras' element={<Carreras />} />
-          <Route path='/Carreras-Info' element={<CarrerasInfo />} />
+            <Route path='/Carreras/LicCieDat' element={<LicCieDat />} />
+            <Route path='/Carreras/TecCieDat' element={<TecCieDat />} />
+            <Route path="/Carreras/LicTurDes" element={<LicTurDes />} />
+            <Route path="/Carreras/TecTurSos" element={<TecTurDes />} />
+            <Route path="/Carreras/LicRelInt" element={<LicRelInt />} />
+            <Route path="/Carreras/TecRelInt" element={<TecRelInt />} />
+            <Route path="/Carreras/LicGesIns" element={<LicGesIns />} />
+            <Route path="/Carreras/TecGesIns" element={<TecGesIns />} />
           <Route path="/sobre-nosotros" element={<SobreNosotros />} />
           <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
           <Route path="/Inscripcion" element={<InscripcionPage />} />
