@@ -22,7 +22,7 @@ const Carreras = () => {
       console.error(`URL de información no disponible para la carrera: ${careerTitle}`);
       return;
     }
-    window.open(infoUrl, '_blank');
+    window.location.href = infoUrl;
   };
 
   const licenciaturas = [
@@ -139,7 +139,7 @@ actuar eficazmente en situaciones que
 requieren acción rápida, coordinación y
 sensibilidad social.`,
       brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-Desastres-y-Emergencias-Sanitarias-UNDelta.pdf",
-      infoUrl: "/Carreras/TecGesIns"
+      infoUrl: "/Carreras/TecDesEme"
     }
   ];
 
@@ -223,7 +223,7 @@ sensibilidad social.`,
                 <button 
                   className="brochure-btn"
                   onClick={(e) => {
-                    e.stopPropagation(); // Evita que se cierre la tarjeta al hacer clic
+                    e.stopPropagation();
                     handleBrochureDownload(career.brochureUrl, career.title);
                   }}
                 >
@@ -259,27 +259,6 @@ sensibilidad social.`,
     if (currentIndex > maxIndex) setCurrentIndex(maxIndex);
   }, [visibleCount, currentIndex]);
 
-  // --- Slider logic ---
-  useEffect(() => {
-    const updateVisible = () => {
-      const w = window.innerWidth;
-      if (w < 768) setVisibleCount(1);
-      else if (w < 1024) setVisibleCount(2);
-      else setVisibleCount(4);
-    };
-
-    updateVisible();
-    window.addEventListener('resize', updateVisible);
-    return () => window.removeEventListener('resize', updateVisible);
-  }, []);
-
-  // Ensure currentIndex stays within bounds when visibleCount changes or number of items changes
-  useEffect(() => {
-    const total = 4; // number of course cards in section (en tu JSX original eran 4)
-    const maxIndex = Math.max(0, total - visibleCount);
-    if (currentIndex > maxIndex) setCurrentIndex(maxIndex);
-  }, [visibleCount, currentIndex]);
-
   const courses = [
     { 
       id: 'c1', 
@@ -303,10 +282,6 @@ sensibilidad social.`,
     }
   ];
 
-  const totalCourses = courses.length;
-  const maxIndex = Math.max(0, totalCourses - visibleCount);
-
-  // Actualiza las funciones de navegación
   const goPrev = () => {
     if (currentIndex > 0) {
       setCurrentIndex(prev => prev - 1);
@@ -318,10 +293,6 @@ sensibilidad social.`,
       setCurrentIndex(prev => prev + 1);
     }
   };
-
-  // compute transform percent (cada movimiento equivale a (100/visibleCount)%)
-  const translatePercent = (currentIndex * 100) / visibleCount;
-  const transformStyle = { transform: `translateX(-${translatePercent}%)` };
 
   return (
     <div className="carreras-container">
@@ -358,23 +329,15 @@ sensibilidad social.`,
           <div className="section-header-car">
             <h2>NUESTRAS DIPLOMATURAS</h2>
           </div>
-
-          <div className="careers-grid">
-            <div className="careers-column">
-              {diplomaturas.slice(0, 4).map(career => (
-                <CareerCard key={career.id} career={career} isExpanded={expandedItem === career.id} onClick={handleItemClick} />
-              ))}
-            </div>
-            <div className="careers-column">
-              {diplomaturas.slice(4, 8).map(career => (
-                <CareerCard key={career.id} career={career} isExpanded={expandedItem === career.id} onClick={handleItemClick} />
-              ))}
-            </div>
+          
+          <div className="diplo-list">
+            {diplomaturas.map(career => (
+              <CareerCard key={career.id} career={career} isExpanded={expandedItem === career.id} onClick={handleItemClick} />
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Cursos disponibles con slider funcional */}
       <section className="available-courses-section">
         <div className="container-carreras">
           <h2 className="courses-title">Cursos disponibles</h2>

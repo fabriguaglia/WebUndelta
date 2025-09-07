@@ -47,7 +47,7 @@ const FloatingVideoComponent = () => {
     borderRadius: '50%',
     background: 'linear-gradient(135deg, #69932D, #22c55e)',
     opacity: '0.3',
-    animation: 'pulse 2s infinite'
+    animation: 'pulse 2s infinite',
   };
 
   const panelStyle = {
@@ -87,39 +87,6 @@ const FloatingVideoComponent = () => {
 
   return (
     <>
-      <style>{`
-        @keyframes pulse {
-          0%, 100% { transform: scale(1); opacity: 0.3; }
-          50% { transform: scale(1.1); opacity: 0.1; }
-        }
-        
-        .video-hover:hover {
-          background-color: #e9ecef !important;
-        }
-        
-        .play-button {
-          width: 64px;
-          height: 64px;
-          background: linear-gradient(135deg, #003B55, #22c55e);
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.3s ease;
-        }
-        
-        .play-button:hover {
-          background: linear-gradient(135deg, #003B55, #69932D);
-          transform: scale(1.05);
-        }
-        
-        .spinner-border-custom {
-          width: 3rem;
-          height: 3rem;
-          border-width: 0.25em;
-        }
-      `}</style>
-
       <div>
         {/* Botón flotante colapsado */}
         {!isExpanded && (
@@ -141,34 +108,8 @@ const FloatingVideoComponent = () => {
                 <button 
                   onClick={toggleExpanded}
                   className="btn btn-sm"
-                  style={{
-                    width: '32px',
-                    height: '32px',
-                    background: 'rgba(255,255,255,0.2)',
-                    border: 'none',
-                    borderRadius: '50%',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                  }}
                 >
-                  <Minimize2 size={16} color="white" />
-                </button>
-                <button 
-                  onClick={toggleExpanded}
-                  className="btn btn-sm"
-                  style={{
-                    width: '32px',
-                    height: '32px',
-                    background: 'rgba(255,255,255,0.2)',
-                    border: 'none',
-                    borderRadius: '50%',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                  }}
-                >
-                  <X size={16} color="white" />
+                  <X size={20}color='white'></X>
                 </button>
               </div>
             </div>
@@ -185,11 +126,7 @@ const FloatingVideoComponent = () => {
                     <div className="play-button">
                       <Play size={32} color="white" style={{marginLeft: '4px'}} />
                     </div>
-                    <div style={{
-                      position: 'absolute',
-                      inset: '0',
-                      background: 'linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(34, 197, 94, 0.1))'
-                    }}></div>
+                    <div></div>
                   </>
                 ) : (
                   <video 
@@ -249,134 +186,44 @@ const FloatingVideoComponent = () => {
   );
 };
 
+
 // Componente del popup para el Paso 2
 const Paso2Popup = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="modal-overlay" style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      zIndex: 1000
-    }}>
-      <div className="modal-content" style={{
-        backgroundColor: 'white',
-        borderRadius: '12px',
-        padding: '2rem',
-        maxWidth: '500px',
-        width: '90%',
-        maxHeight: '80vh',
-        overflowY: 'auto',
-        position: 'relative',
-        boxShadow: '0 10px 25px rgba(0,0,0,0.3)'
-      }}>
-        <button
-          onClick={onClose}
-          style={{
-            position: 'absolute',
-            top: '1rem',
-            right: '1rem',
-            background: 'none',
-            border: 'none',
-            fontSize: '1.5rem',
-            cursor: 'pointer',
-            color: '#666'
-          }}
-        >
-          <X size={24} />
-        </button>
-        
-        <h3 style={{
-          color: '#2d5a27',
-          marginBottom: '1.5rem',
-          fontSize: '1.5rem',
-          fontWeight: '600'
-        }}>
+    <div className="modal-overlay">
+      <div className="modal-content">
+        <h3 className="popup-title">
           PASO 2 - Documentación Presencial
         </h3>
         
-        <div style={{ marginBottom: '1.5rem' }}>
-          <h4 style={{
-            color: '#333',
-            marginBottom: '1rem',
-            fontSize: '1.1rem',
-            fontWeight: '600'
-          }}>
+        <div className="content-section">
+          <h4 className="section-title">
             Recordá que para poder completar tu inscripción necesitás:
           </h4>
           
-          <ul style={{
-            listStyle: 'none',
-            padding: 0,
-            margin: 0
-          }}>
-            <li style={{
-              padding: '0.5rem 0',
-              borderBottom: '1px solid #eee',
-              color: '#555'
-            }}>
+          <ul className="requirements-list">
+            <li className="requirement-item">
               • DNI (original y copia)
             </li>
-            <li style={{
-              padding: '0.5rem 0',
-              borderBottom: '1px solid #eee',
-              color: '#555'
-            }}>
+            <li className="requirement-item">
               • Título secundario, certificado de título en trámite o certificado de alumno regular, según corresponda (original y copia)
             </li>
-            <li style={{
-              padding: '0.5rem 0',
-              borderBottom: '1px solid #eee',
-              color: '#555'
-            }}>
+            <li className="requirement-item">
               • Formulario de SIU Guaraní (impreso)
             </li>
           </ul>
         </div>
         
-        <div style={{
-          backgroundColor: '#f8f9fa',
-          padding: '1rem',
-          borderRadius: '8px',
-          borderLeft: '4px solid #2d5a27'
-        }}>
-          <p style={{
-            margin: 0,
-            fontWeight: '600',
-            color: '#333'
-          }}>
+        <div className="info-box">
+          <p className="info-text">
             <strong>La documentación debe entregarse de manera presencial en Avenida Avellaneda 2370, Virreyes, de 9:30 a 19:00 horas.</strong>
           </p>
         </div>
         
-        <div style={{
-          marginTop: '2rem',
-          display: 'flex',
-          justifyContent: 'center'
-        }}>
-          <button
-            onClick={onClose}
-            style={{
-              background: 'linear-gradient(135deg, #2d5a27, #4caf50)',
-              color: 'white',
-              border: 'none',
-              padding: '0.75rem 2rem',
-              borderRadius: '8px',
-              cursor: 'pointer',
-              fontSize: '1rem',
-              fontWeight: '600',
-              transition: 'all 0.3s ease'
-            }}
-            onMouseEnter={(e) => e.target.style.background = 'linear-gradient(135deg, #1b3a1a, #388e3c)'}
-            onMouseLeave={(e) => e.target.style.background = 'linear-gradient(135deg, #2d5a27, #4caf50)'}
-          >
+        <div className="button-container">
+          <button onClick={onClose} className="confirm-button">
             Entendido
           </button>
         </div>
@@ -384,6 +231,7 @@ const Paso2Popup = ({ isOpen, onClose }) => {
     </div>
   );
 };
+
 
 const InscripcionPage = () => {
   const [selectedStep, setSelectedStep] = useState(null);

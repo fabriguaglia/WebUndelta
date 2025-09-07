@@ -3,36 +3,35 @@ import { useNavigate } from 'react-router-dom';
 import Videodelta from "./UNDelta-inscripcion-carrerasABRIL-2025_v2-HORIZ.mp4";
 import './Menu.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Novedadesimg from './novedadesimage.png';
+
 
 function Menu() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const navigate = useNavigate();// Hook para navegación
+  const navigate = useNavigate();
 
-  const novedades = [
-    {
-      title: "Titulo noticia 1",
-      text: "noticia 1",
-      buttonText: "Conocé más",
-      image: Novedadesimg,
-      alt: "boton 1"
-    },
-    {
-      title: "TItulo noticia 2",
-      text: "noticia 2",
-      buttonText: "Conocé más",
-      image: Novedadesimg,
-      alt: "boton 2"
-    },
-    {
-      title: "Titulo noticia 3",
-      text: "noticia 3",
-      buttonText: "Conocé mas",
-      image: Novedadesimg,
-      alt: "boton 3"
-    }
-  ];
-
+const novedades = [
+  {
+    title: "Primer dia de clases en la UNDelta",
+    text: "Más de 1000 estudiantes comenzaron a cursar las primeras carreras universitarias..",
+    buttonText: "Conocé más",
+    image: "/noticia1.jpg", 
+    alt: "botón 1"
+  },
+  {
+    title: "Cuando los jóvenes llegan al recinto",
+    text: "Nueva edición de UNDelta en Debate junto a la Cámara de Diputados de la Provincia..",
+    buttonText: "Conocé más",
+    image: "/noticia2.jpg",
+    alt: "botón 2"
+  },
+  {
+    title: "¿Celulares en las escuelas?",
+    text: "La UNDelta convocó a estudiantes secundarios a debatir sobre un tema clave..",
+    buttonText: "Conocé más",
+    image: "/noticia3.jpg",
+    alt: "botón 3"
+  }
+];
 
   
   const handlePreguntasFrecuentes = () => {
