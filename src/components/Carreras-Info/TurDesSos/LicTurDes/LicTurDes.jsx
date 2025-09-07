@@ -1,12 +1,12 @@
 import React from 'react';
-import "../Carreras-Info.css";
+import "../../Carreras-Info.css"
 
-const CarrerasInfo = () => {
+const LicTurDes = () => {
   return (
     <div className="carreras-info-container">
       <div className="section-carreras-info">
         <div className="overlay-carreras container-fluid">
-          <h1 className="title-carreras text-fluid">LICENCIATURA EN CIENCIA DE DATOS</h1>
+          <h1 className="title-carreras text-fluid">TECNICATURA EN CIENCIA DE DATOS</h1>
         </div>
       </div>
       <div className='green-bar-car'></div>
@@ -65,7 +65,7 @@ const CarrerasInfo = () => {
                 </svg>
               </div>
               <div className="info-title">Título que otorga:</div>
-              <div className="info-value">Licenciado/a en Ciencia de Datos</div>
+              <div className="info-value">Técnico/a en Ciencia de Datos</div>
             </div>
 
             <div className="info-card">
@@ -114,4 +114,4 @@ const CarrerasInfo = () => {
   );
 };
 
-export default CarrerasInfo;
+export default LicTurDes;

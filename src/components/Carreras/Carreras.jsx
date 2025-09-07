@@ -17,6 +17,14 @@ const Carreras = () => {
     window.open(brochureUrl, '_blank');
   };
 
+  const handleMoreInfo = (infoUrl, careerTitle) => {
+    if (!infoUrl) {
+      console.error(`URL de información no disponible para la carrera: ${careerTitle}`);
+      return;
+    }
+    window.open(infoUrl, '_blank');
+  };
+
   const licenciaturas = [
     { 
       id: 1, 
@@ -31,7 +39,8 @@ un profesional capaz de dar respuesta a las
 necesidades de nuestra sociedad, empresas y
 organismos a través de la construcción de
 modelos de Ciencia de Datos.`,
-      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Licenciatura-Ciencia-de-Datos-UNDelta.pdf"
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Licenciatura-Ciencia-de-Datos-UNDelta.pdf",
+      infoUrl: "/Carreras/LicCieDat"
     },
     { 
       id: 2, 
@@ -44,7 +53,8 @@ investigar, así como también para impulsar proyectos
 turísticos que respeten los ecosistemas, promuevan
 la equidad y valoren el patrimonio natural y cultural de
 tu región.`,
-      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Licenciatura-Turismo-y-Desarrollo-Sostenible-UNDelta.pdf"
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Licenciatura-Turismo-y-Desarrollo-Sostenible-UNDelta.pdf",
+      infoUrl: "/Carreras/LicTurDes"
     },
     { 
       id: 3, 
@@ -54,7 +64,8 @@ de comprender las tendencias actuales e
 intervenir en la complejidad global. Si querés
 incidir en escenarios internacionales con
 impacto local, esta carrera es para vos.`,
-      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Licenciatura-Relaciones-Internacionales-y-Asuntos-Globales-UNDelta.pdf"
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Licenciatura-Relaciones-Internacionales-y-Asuntos-Globales-UNDelta.pdf",
+      infoUrl: "/Carreras/LicRelInt"
     },
     { 
       id: 4, 
@@ -68,7 +79,8 @@ acompañar procesos de cambio, promover
 la inclusión, la participación democrática y el
 derecho a la educación desde una mirada
 situada y transformadora.`,
-      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Lic_Educacion.pdf"
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Lic_Educacion.pdf",
+      infoUrl: "/Carreras/LicGesIns"
     }
   ];
 
@@ -85,7 +97,8 @@ reales y tomar decisiones informadas. Vas a
 formarte como técnico/a con capacidades
 prácticas para trabajar en proyectos de Ciencia
 de Datos en equipos multidisciplinarios.`,
-      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-Ciencia-de-Datos-UNDelta.pdf"
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-Ciencia-de-Datos-UNDelta.pdf",
+      infoUrl: "/Carreras/TecCieDat"
     },
     { 
       id: 6, 
@@ -97,7 +110,8 @@ herramientas prácticas para diseñar, organizar y
 acompañar actividades turísticas sostenibles,
 integradas al territorio y con impacto positivo en
 las comunidades locales.`,
-      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-Turismo-UNDelta.pdf"
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-Turismo-UNDelta.pdf",
+      infoUrl: "/Carreras/TecTurSos"
     },
     { 
       id: 7, 
@@ -111,7 +125,8 @@ el comercio internacional, las estrategias
 globales con impacto local y la diplomacia y
 sus nuevas dinámicas, esta es la tecnicatura
 para vos.`,
-      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-RRII-UNDelta.pdf"
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-RRII-UNDelta.pdf",
+      infoUrl: "/Carreras/TecRelInt"
     },
     { 
       id: 8, 
@@ -123,19 +138,60 @@ respuesta. Esta tecnicatura te forma para
 actuar eficazmente en situaciones que
 requieren acción rápida, coordinación y
 sensibilidad social.`,
-      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-Desastres-y-Emergencias-Sanitarias-UNDelta.pdf"
+      brochureUrl: "https://undelta.edu.ar/wp-content/uploads/2025/04/Tecnicatura-Desastres-y-Emergencias-Sanitarias-UNDelta.pdf",
+      infoUrl: "/Carreras/TecGesIns"
     }
   ];
 
   const diplomaturas = [
-    { id: 9, title: "Diplomatura en Ciencias sociales aplicadas al sector privado", description: `La Diplomatura presentará los aportes de las Ciencias Sociales a las empresas y las demandas, estilos, lenguajes y dinámicas de las distintas industrias del sector privado. También se propiciarán instancias específicas para el networking y consultas a especialistas de cada área.` },
-    { id: 10, title: "Diplomatura en Innovación Aplicada a la Gestión Deportiva de Clubes y Federaciones", description: "La Diplomatura tiene como objetivo formar profesionales capaces de gestionar en el deporte de forma eficiente e innovadora en búsqueda de la inclusión, la salud y el bienestar general." },
-    { id: 11, title: "Diplomatura en Gestión Integral de Riesgo y Desarrollo Resiliente", description: "La diplomatura tiene como objetivo fortalecer las capacidades y aptitudes competentes de profesionales, técnicos y tomadores de decisión en la identificación, evaluación y reducción de riesgos de cualquier origen, como así también para el diseño e implementación de iniciativas de gestión de riesgo a partir de un enfoque integral que incluye la interacción con diversas disciplinas convergentes." },
-    { id: 12, title: "Diplomatura en Investigación Criminal", description: "La presente diplomatura tiene por objeto introducir a los estudiantes en el ámbito del Derecho Procesal Penal, y particularmente en el desarrollo de las nuevas modalidades de investigación criminal." },
-    { id: 13, title: "Diplomatura en Derechos Humanos y Garantías Judiciales", description: "La diplomatura tiene como objetivo brindar una formación integral y especializada en derechos humanos y garantías judiciales, que permita a los y las participantes analizar, interpretar y aplicar los principios constitucionales y los sistemas internacionales de protección de derechos humanos, con especial atención a las garantías procesales, la responsabilidad de actores estatales y no estatales." },
-    { id: 14, title: "Diplomatura en Redes Informáticas y Comunicación de Datos", description: "" },
-    { id: 15, title: "Diplomatura en Autismo: Clínica y Práctica Psicoanalítica", description: "Curso destinado a profesionales del campo de la Salud y de la Educación. Profesionales o estudiantes avanzados en las áreas de psicología, psiquiatría, trabajo social, enfermería, terapia ocupacional y otras disciplinas o campos pertinentes." },
-    { id: 16, title: "Diplomatura en Desarrollo Emprendedor y Empresarial", description: "" }
+    { 
+      id: 9, 
+      title: "Diplomatura en Ciencias sociales aplicadas al sector privado", 
+      description: `La Diplomatura presentará los aportes de las Ciencias Sociales a las empresas y las demandas, estilos, lenguajes y dinámicas de las distintas industrias del sector privado. También se propiciarán instancias específicas para el networking y consultas a especialistas de cada área.`,
+      infoUrl: "https://undelta.edu.ar/carrera/diplomatura-en-ciencias-sociales-aplicadas-al-sector-privado/"
+    },
+    { 
+      id: 10, 
+      title: "Diplomatura en Innovación Aplicada a la Gestión Deportiva de Clubes y Federaciones", 
+      description: "La Diplomatura tiene como objetivo formar profesionales capaces de gestionar en el deporte de forma eficiente e innovadora en búsqueda de la inclusión, la salud y el bienestar general.",
+      infoUrl: "https://undelta.edu.ar/carrera/diplomatura-en-innovacion-aplicada-a-la-gestion-deportiva-de-clubes-y-federaciones/"
+    },
+    { 
+      id: 11, 
+      title: "Diplomatura en Gestión Integral de Riesgo y Desarrollo Resiliente", 
+      description: "La diplomatura tiene como objetivo fortalecer las capacidades y aptitudes competentes de profesionales, técnicos y tomadores de decisión en la identificación, evaluación y reducción de riesgos de cualquier origen, como así también para el diseño e implementación de iniciativas de gestión de riesgo a partir de un enfoque integral que incluye la interacción con diversas disciplinas convergentes.",
+      infoUrl: "https://undelta.edu.ar/carrera/diplomatura-en-gestion-integral-de-riesgo-y-desarrollo-resiliente/"
+    },
+    { 
+      id: 12, 
+      title: "Diplomatura en Investigación Criminal", 
+      description: "La presente diplomatura tiene por objeto introducir a los estudiantes en el ámbito del Derecho Procesal Penal, y particularmente en el desarrollo de las nuevas modalidades de investigación criminal.",
+      infoUrl: "https://undelta.edu.ar/carrera/diplomatura-en-investigacion-criminal/"
+    },
+    { 
+      id: 13, 
+      title: "Diplomatura en Derechos Humanos y Garantías Judiciales", 
+      description: "La diplomatura tiene como objetivo brindar una formación integral y especializada en derechos humanos y garantías judiciales, que permita a los y las participantes analizar, interpretar y aplicar los principios constitucionales y los sistemas internacionales de protección de derechos humanos, con especial atención a las garantías procesales, la responsabilidad de actores estatales y no estatales.",
+      infoUrl: "https://undelta.edu.ar/carrera/diplomatura-en-derechos-humanos-y-garantias-judiciales/"
+    },
+    { 
+      id: 14, 
+      title: "Diplomatura en Redes Informáticas y Comunicación de Datos", 
+      description: "",
+      infoUrl: "https://undelta.edu.ar/carrera/diplomatura-en-redes-informaticas-y-comunicacion-de-datos/"
+    },
+    { 
+      id: 15, 
+      title: "Diplomatura en Autismo: Clínica y Práctica Psicoanalítica", 
+      description: "Curso destinado a profesionales del campo de la Salud y de la Educación. Profesionales o estudiantes avanzados en las áreas de psicología, psiquiatría, trabajo social, enfermería, terapia ocupacional y otras disciplinas o campos pertinentes.",
+      infoUrl: "https://undelta.edu.ar/carrera/diplomatura-en-autismo-clinica-y-practica-psicoanalitica/"
+    },
+    { 
+      id: 16, 
+      title: "Diplomatura en Desarrollo Emprendedor y Empresarial", 
+      description: "",
+      infoUrl: "https://undelta.edu.ar/carrera/diplomatura-en-desarrollo-emprendedor-y-empresarial/"
+    }
   ];
 
   const CareerCard = ({ career, isExpanded, onClick }) => {
@@ -154,7 +210,15 @@ sensibilidad social.`,
           <div className="career-content">
             <p>{career.description}</p>
             <div className="career-buttons">
-              <button className="more-info-btn">Más información</button>
+              <button 
+                className="more-info-btn"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  handleMoreInfo(career.infoUrl, career.title);
+                }}
+              >
+                Más información
+              </button>
               {!isDiplomatura && (
                 <button 
                   className="brochure-btn"
@@ -173,7 +237,7 @@ sensibilidad social.`,
     );
   };
 
-    const [visibleCount, setVisibleCount] = useState(4);
+  const [visibleCount, setVisibleCount] = useState(4);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
