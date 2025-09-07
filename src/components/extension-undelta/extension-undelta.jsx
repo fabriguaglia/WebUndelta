@@ -1,7 +1,14 @@
 import React from 'react';
 import './extension-undelta.css';
+import { useNavigate } from 'react-router-dom';
 
 const Extension = () => {
+  const navigate = useNavigate();
+
+  const handleEventosClick = () => {
+    navigate('/eventos');
+  };
+
   return (
     <div className="extension-container">
       {/* Header Section */}
@@ -71,7 +78,9 @@ const Extension = () => {
           <div className="debate-info">
             <div className="debate-text">
               <h3>MIRA LO ÚLTIMO DE UNDELTA EN DEBATE EN NUESTRO CANAL DE YOUTUBE.</h3>
-              <button className="proximos-debates-btn">PRÓXIMOS DEBATES</button>
+              <button className="proximos-debates-btn" onClick={handleEventosClick}>
+                PRÓXIMOS DEBATES
+              </button>
             </div>
           </div>
         </div>
