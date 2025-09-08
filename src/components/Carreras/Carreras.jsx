@@ -196,6 +196,10 @@ const CareerCard = ({ career, isExpanded, onClick }) => {
         <div className="career-content">
           <p>{career.description}</p>
           <div className="career-buttons">
+            {/*BOTON DE INSCRIPCION FINALIZADA, COMENTAR SI NO ES NECESARIO*/}
+            <button className="inscription-finished-btn" disabled> 
+              INSCRIPCIÓN FINALIZADA
+            </button>
             <button 
               className="more-info-btn"
               onClick={(e) => {
@@ -216,10 +220,7 @@ const CareerCard = ({ career, isExpanded, onClick }) => {
             </button>
           
 
-            {/*BOTON DE INSCRIPCION FINALIZADA, COMENTAR SI NO ES NECESARIO*/}
-            <button className="inscription-finished-btn" disabled> 
-              INSCRIPCIÓN FINALIZADA
-            </button>
+            
 
           </div>
         </div>
