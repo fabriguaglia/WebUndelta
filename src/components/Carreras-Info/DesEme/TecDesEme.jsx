@@ -1,7 +1,7 @@
 import React from 'react';
 import "../Carreras-Info.css"
 
-const TecGesIns = () => {
+const TecDesEme = () => {
   return (
     <div className="carreras-info-container">
       <div className="section-carreras-info">
@@ -114,4 +114,4 @@ const TecGesIns = () => {
   );
 };
 
-export default TecGesIns;
+export default TecDesEme;

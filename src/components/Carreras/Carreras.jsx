@@ -197,7 +197,7 @@ const CareerCard = ({ career, isExpanded, onClick }) => {
           <p>{career.description}</p>
           <div className="career-buttons">
             {/*BOTON DE INSCRIPCION FINALIZADA, COMENTAR SI NO ES NECESARIO*/}
-            <button className="inscription-finished-btn" disabled> 
+            <button className="inscription-finished-btn" disabled>
               INSCRIPCIÓN FINALIZADA
             </button>
             <button 

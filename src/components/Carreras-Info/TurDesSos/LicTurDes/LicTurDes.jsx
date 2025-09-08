@@ -6,7 +6,7 @@ const LicTurDes = () => {
     <div className="carreras-info-container">
       <div className="section-carreras-info">
         <div className="overlay-carreras container-fluid">
-          <h1 className="title-carreras text-fluid">TECNICATURA EN CIENCIA DE DATOS</h1>
+          <h1 className="title-carreras text-fluid">LICENCIATURA EN TURISMO Y DESARROLLO SOSTENIBLE</h1>
         </div>
       </div>
       <div className='green-bar-car'></div>
@@ -22,17 +22,19 @@ const LicTurDes = () => {
         <div className="container">
           <div className="intro-content">
             <div className="icon-container">
-              <svg viewBox="0 0 24 24">
-                <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-airplane-fill" viewBox="0 0 16 16">
+                <path d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849"/>
               </svg>
             </div>
             <div className="intro-text">
-              La <strong>Ciencia de Datos</strong> es una disciplina clave en la era digital: 
-              permite transformar grandes volúmenes de datos en conocimiento útil para 
-              tomar decisiones estratégicas en ámbitos como la salud, el comercio, la industria o el 
-              gobierno. Estudiá esta carrera y convertite en un profesional capaz de dar 
-              respuesta a las necesidades de nuestra sociedad, empresas y organismos a través de la construcción de modelos de <strong>Ciencia de 
-              Datos</strong>.
+              En un contexto donde el turismo puede ser motor
+              del desarrollo local, esta licenciatura te ayudará a
+              construir una mirada aplicada, territorial y
+              sostenible. Vas a adquirir herramientas para
+              investigar, así como también para impulsar proyectos
+              turísticos que respeten los ecosistemas, promuevan
+              la equidad y valoren el patrimonio natural y cultural de
+              tu región.
             </div>
           </div>
         </div>
@@ -47,9 +49,10 @@ const LicTurDes = () => {
       <section className="objective-section">
         <div className="container">
           <p className="objective-text">
-            Formar profesionales capaces de investigar, diseñar, implementar y aplicar métodos analíticos y 
-            computacionales para extraer conocimiento a partir de grandes volúmenes de datos, orientados a la 
-            toma de decisiones en entornos multidisciplinarios.
+            Formar profesionales de manera integral
+            capaces de liderar procesos de desarrollo
+            turístico sostenible a nivel local, regional o
+            nacional.
           </p>
         </div>
       </section>
@@ -65,7 +68,7 @@ const LicTurDes = () => {
                 </svg>
               </div>
               <div className="info-title">Título que otorga:</div>
-              <div className="info-value">Técnico/a en Ciencia de Datos</div>
+              <div className="info-value">Licenciado/a en Turismo y Desarrollo Sostenible</div>
             </div>
 
             <div className="info-card">
@@ -85,7 +88,7 @@ const LicTurDes = () => {
                 </svg>
               </div>
               <div className="info-title">Total de horas:</div>
-              <div className="info-value">2.164 horas</div>
+              <div className="info-value">2.192 horas</div>
             </div>
 
             <div className="info-card">

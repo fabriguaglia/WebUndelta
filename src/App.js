@@ -22,7 +22,7 @@ import TecTurDes from './components/Carreras-Info/TurDesSos/TecTurDes/TecTurDes.
 import LicRelInt from './components/Carreras-Info/RelInt/LicRelInt/LicRelInt.jsx';
 import TecRelInt from './components/Carreras-Info/RelInt/TecRelInt/TecRelInt.jsx';
 import LicGesIns from './components/Carreras-Info/GesIns/LicGesIns.jsx';
-import TecGesIns from './components/Carreras-Info/DesEme/TecDesEme.jsx';
+import TecDesEme from './components/Carreras-Info/DesEme/TecDesEme.jsx';
 import DipCiePri from './components/Diplomaturas-Info/CiePriv/DipCiePri.jsx';
 import DipGesDep from './components/Diplomaturas-Info/GesDep/DipGesDep.jsx';
 import DipGesRie from './components/Diplomaturas-Info/GesRie/DipGesRie.jsx';
@@ -47,7 +47,7 @@ function App() {
             <Route path="/Carreras/LicRelInt" element={<LicRelInt />} />
             <Route path="/Carreras/TecRelInt" element={<TecRelInt />} />
             <Route path="/Carreras/LicGesIns" element={<LicGesIns />} />
-            <Route path="/Carreras/TecGesIns" element={<TecGesIns />} />
+            <Route path="/Carreras/TecDesEme" element={<TecDesEme />} />
             <Route path="/Diplomaturas/DipCiePri" element={<DipCiePri />} />
             <Route path="/Diplomaturas/DipGesDep" element={<DipGesDep />} />
             <Route path="/Diplomaturas/DipGesRie" element={<DipGesRie />} />
