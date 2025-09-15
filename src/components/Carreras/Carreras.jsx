@@ -3,6 +3,11 @@ import './Carreras.css';
 import { href } from 'react-router';
 
 const Carreras = () => {
+  
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+
   const [expandedItem, setExpandedItem] = useState(null);
 
   const handleItemClick = (id) => {
