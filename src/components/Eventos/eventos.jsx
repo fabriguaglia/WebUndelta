@@ -1,7 +1,10 @@
-import React from 'react';
+import { useEffect } from "react";
 import './eventos.css';
 
 const Eventos = () => {
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="eventos-container">
       {/* Header Section */}

@@ -3,6 +3,9 @@ import './preguntas-frecuentes.css';
 import Preguntasimg from './preguntas.png'
 
 const FAQPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [activeAccordion, setActiveAccordion] = useState('collapseOne');
   const [visibleElements, setVisibleElements] = useState([]);
 

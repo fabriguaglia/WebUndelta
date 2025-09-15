@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './transparencia.css';
@@ -7,6 +7,9 @@ import Org1 from "./Organigrama-1.jpeg"
 import Org2 from "./Organigrama-2.jpeg";
 
 function Transparencia() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   // Estado para controlar la visibilidad del modal y su contenido
   const [showModal, setShowModal] = useState(false);
   const [modalContent, setModalContent] = useState({

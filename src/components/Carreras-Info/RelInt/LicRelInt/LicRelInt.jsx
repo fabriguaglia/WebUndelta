@@ -1,7 +1,10 @@
-import React from 'react';
+import { useEffect } from "react";
 import "../../Carreras-Info.css"
 
 const LicRelInt = () => {
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="carreras-info-container">
       <div className="section-carreras-info">

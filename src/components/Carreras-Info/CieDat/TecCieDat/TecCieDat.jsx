@@ -1,7 +1,10 @@
-import React from 'react';
+import { useEffect, useState } from "react";
 import "../../Carreras-Info.css"
 
 const TecCieDat = () => {
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="carreras-info-container">
       <div className="section-carreras-info">
