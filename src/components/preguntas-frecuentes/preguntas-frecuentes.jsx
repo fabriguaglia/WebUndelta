@@ -107,7 +107,7 @@ const FAQPage = () => {
     },
     {
       id: 'collapseSeven',
-      question: '¿Cuál es la diferencia entre cursar una Tecnicatura Universitaria y una Licenciatura en UNDelta?',
+      question: '¿Cuál es la diferencia entre cursar una tecnicatura universitaria y una licenciatura en UNDelta?',
       answer: ( 
         <div>
         Las Tecnicaturas Universitarias de la Universidad Nacional del Delta tienen una orientación más práctica y técnica, con una duración de cinco cuatrimestres. Las Licenciaturas, en cambio, se focalizan también en la investigación y tienen una duración de ocho cuatrimestres.
