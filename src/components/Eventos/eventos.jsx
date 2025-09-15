@@ -34,7 +34,7 @@ const Eventos = () => {
                 frameBorder="0" 
                 scrolling="no"
               /> */}
-            <h3 className="">En construcción.</h3>
+            <h3 className="">Calendario en construcción.</h3>
           </div>
         </div>
         </div>
