@@ -1,7 +1,10 @@
-import React from 'react';
+import { useEffect } from "react";
 import './eventos.css';
 
 const Eventos = () => {
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="eventos-container">
       {/* Header Section */}
@@ -21,7 +24,7 @@ const Eventos = () => {
         {/* Calendar Container - Espacio reservado para el calendario */}
         <div className="calendario-container">
           <div className="calendario-placeholder">
-            <iframe 
+           {/* <iframe 
                 src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FArgentina%2FBuenos_Aires&showPrint=0&src=ZmFicmlndWFnbGlhNzJAZ21haWwuY29t&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039be5&color=%230b8043" 
                 style={{
                   border: "solid 1px #777"
@@ -30,7 +33,8 @@ const Eventos = () => {
                 height="600" 
                 frameBorder="0" 
                 scrolling="no"
-              />
+              /> */}
+            <h3 className="">Calendario en construcción.</h3>
           </div>
         </div>
         </div>

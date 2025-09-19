@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom'; 
-import Videodelta from "./UNDelta-inscripcion-carrerasABRIL-2025_v2-HORIZ.mp4";
+import Videodelta from "./UNDelta apertura web_v3-horiz-BAJA.mp4";
 import './Menu.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Menu() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [currentSlide, setCurrentSlide] = useState(0);
   const navigate = useNavigate();
 

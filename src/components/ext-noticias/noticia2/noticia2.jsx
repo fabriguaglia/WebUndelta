@@ -1,9 +1,12 @@
-import React from 'react';
+import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import '../noticias.css';
 import noti2 from "./noticia2.jpg";
 
 const UndeltaNoticia2 = () => {
+      useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
   const navigate = useNavigate();
 
   const handleSobrenos = () => {

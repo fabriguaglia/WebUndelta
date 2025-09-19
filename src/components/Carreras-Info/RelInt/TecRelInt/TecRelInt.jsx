@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 import React from 'react';
 import "../../Carreras-Info.css";
+=======
+import { useEffect } from "react";
+import "../../Carreras-Info.css"
+>>>>>>> 19221a4fa8f7406d4513c7fba6ed9075e579e435
 
 const TecRelInt = () => {
+      useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="carreras-info-container">
       {/* ... (el resto de tu componente se mantiene igual hasta la sección de información) ... */}
