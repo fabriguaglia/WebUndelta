@@ -127,7 +127,12 @@ const LicTurDes = () => {
         <div className="container">
           <div className="cta-buttons">
             <button className="btn btn-primary">Inscribirse</button>
-            <button className="btn btn-secondary">Plan de Estudio</button>
+            <button 
+              className="btn btn-secondary" 
+              onClick={() => window.open('/carreras pdf/Lic.-en-Turismo-y-Desarrollo-Sostenible.pdf', '_blank')}
+              >
+                Plan de Estudio
+            </button>
           </div>
         </div>
       </section>

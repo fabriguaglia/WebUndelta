@@ -128,7 +128,12 @@ y moderna.
         <div className="container">
           <div className="cta-buttons">
             <button className="btn btn-primary">Inscribirse</button>
-            <button className="btn btn-secondary">Plan de Estudio</button>
+            <button 
+              className="btn btn-secondary" 
+              onClick={() => window.open('/carreras pdf/Lic.-en-Relaciones-Internacionales.pdf', '_blank')}
+              >
+                Plan de Estudio
+            </button>
           </div>
         </div>
       </section>

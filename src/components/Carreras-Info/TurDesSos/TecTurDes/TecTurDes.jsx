@@ -126,7 +126,12 @@ perspectiva inclusiva y respetuosa del entorno.
         <div className="container">
           <div className="cta-buttons">
             <button className="btn btn-primary">Inscribirse</button>
-            <button className="btn btn-secondary">Plan de Estudio</button>
+            <button 
+              className="btn btn-secondary" 
+              onClick={() => window.open('/carreras pdf/Tec.-en-Turismo-Sostenible.pdf', '_blank')}
+              >
+                Plan de Estudio
+            </button>
           </div>
         </div>
       </section>
