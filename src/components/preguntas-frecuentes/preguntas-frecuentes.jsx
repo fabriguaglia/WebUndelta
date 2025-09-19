@@ -21,7 +21,7 @@ const FAQPage = () => {
   const faqData = [
     {
       id: 'collapseOne',
-      question: '¿Cómo Me Inscribo A Una Carrera?',
+      question: '¿Cómo me inscribo a una carrera?',
       answer: (
         <div>
         El proceso de inscripción para cualquiera de nuestras carreras consta de dos etapas:
@@ -42,7 +42,7 @@ const FAQPage = () => {
     },
     {
       id: 'collapseTwo',
-      question: '¿En Qué Consiste La Inscripción Virtual?',
+      question: '¿En qué consiste la inscripción virtual?',
       answer: (
         <div>
             Para realizar tu inscripción a una carrera, deberás contar con:
@@ -57,7 +57,7 @@ const FAQPage = () => {
     },
     {
       id: 'collapseThree',
-      question: '¿Cuáles Son Los Requisitos Para Inscribirme?',
+      question: '¿Cuáles son los requisitos para inscribirme?',
       answer: (
         <div>
           Para poder inscribirte en las primeras materias de tu carrera, primero deberás realizar el Curso de Preparación Universitaria, que comenzará en Agosto de este año.

@@ -31,7 +31,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-
   z-index: 1;
 }
 
@@ -55,9 +54,10 @@
   margin: auto;
   padding: 0;
 }
+
 /* Hero Section */
-car-section {
-  background-image: (url("carinfo.png"));
+.car-section {
+  background-image: url("carinfo.png");
   background-size: cover;
   background-position: center;
   height: 550px;
@@ -166,9 +166,11 @@ car-section {
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  width: 100%;
 }
+
 
 .info-card-carrera {
   background: #f8f9fa;
@@ -254,7 +256,13 @@ car-section {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* Para móviles (menos de 768px) - 1 columna */
+@media (max-width: 767px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
   .hero-title {
     font-size: 2.5rem;
   }
@@ -267,11 +275,6 @@ car-section {
   .icon-container {
     width: 120px;
     height: 120px;
-  }
-
-  .info-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
   }
 
   .cta-buttons {
@@ -296,10 +299,18 @@ car-section {
   .intro-text {
     text-align: center;
   }
+  
+  .title-carreras {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 480px) {
   .hero-title {
+    font-size: 2rem;
+  }
+  
+  .title-carreras {
     font-size: 2rem;
   }
 
