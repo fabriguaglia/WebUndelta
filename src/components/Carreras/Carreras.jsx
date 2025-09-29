@@ -362,7 +362,7 @@ const CareerCard = ({ career, isExpanded, onClick }) => {
           </div>
         </div>
       </section>
-      <section className="available-courses-section">
+      {/* <section className="available-courses-section">
         <div className="container-carreras">
           <h2 className="courses-title">Cursos disponibles</h2>
           
@@ -427,7 +427,7 @@ const CareerCard = ({ career, isExpanded, onClick }) => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

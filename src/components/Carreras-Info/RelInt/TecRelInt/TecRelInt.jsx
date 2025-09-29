@@ -128,7 +128,7 @@ const TecRelInt = () => {
       <section className="cta-section">
         <div className="container">
           <div className="cta-buttons">
-            <button className="btn btn-primary">Inscribirse</button>
+            <button className="btn btn-primary" onClick={() => window.open('/Inscripcion', '_blank')}>Inscribirse</button>
             <button 
               className="btn btn-secondary" 
               onClick={() => window.open('/carreras pdf/Tec.-en-Relaciones-Internacionales.pdf', '_blank')}
