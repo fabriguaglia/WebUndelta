@@ -31,6 +31,7 @@ import DipDerHum from './components/Diplomaturas-Info/DerHum/DipDerHum.jsx';
 import DipRedInf from './components/Diplomaturas-Info/RedInf/DipRedInf.jsx';
 import DipAutCli from './components/Diplomaturas-Info/AutCli/DipAutCli.jsx';
 import DipGesEmp from './components/Diplomaturas-Info/DesEmp/DipDesEmp.jsx';
+import Ayuda from './components/Ayuda/Ayuda.jsx';
 
 function App() {
   return (
@@ -65,6 +66,7 @@ function App() {
             <Route path="/ext-noticias/noticia1" element={<UNDeltaNoticia1 />} />
             <Route path="/ext-noticias/noticia2" element={<UNDeltaNoticia2 />} />
             <Route path="/ext-noticias/noticia3" element={<UNDeltaNoticia3 />} />
+          <Route path="/ayuda" element={<Ayuda />} />
         </Routes>
         <Footer />
     </Router>

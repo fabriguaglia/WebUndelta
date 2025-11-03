@@ -71,9 +71,7 @@ html, body {
 }
 
 .row-custom-nav .col-custom:nth-child(4):hover {
-  background-image: url('IMG_2267.jpg');
   background-size: cover;
-  background-color: rgba(10, 128, 171, 0.63);
   background-blend-mode: multiply; /* mezcla color con imagen */
 }
 

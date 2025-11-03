@@ -9,7 +9,6 @@ function Menu() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  const [currentSlide, setCurrentSlide] = useState(0);
   const navigate = useNavigate();
 
 const novedades = [

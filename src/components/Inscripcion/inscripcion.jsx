@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Monitor, Users, GraduationCap, ChevronRight, Play, X, Minimize2 } from 'lucide-react';
+import { Monitor, Users, GraduationCap, ChevronRight, Play, X } from 'lucide-react';
 import './inscripcion.css';
 import Video from "./preinscripcion.mp4";
 

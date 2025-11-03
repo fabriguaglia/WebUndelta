@@ -1,5 +1,5 @@
 import React from 'react'
-import './Contact.css' 
+import './Contact.css' // Asegúrate de que este archivo CSS contenga el estilo blur
 
 function Contact() {
   const handleAddressClick = () => {
@@ -31,6 +31,7 @@ function Contact() {
       <div className="contact-content">
         <h1>Contacto</h1>
         
+        {/* Sección de información de contacto (Dirección, Horario, Teléfono, Email) */}
         <div className="container mt-5">
           <div className="row">
             <div className="col-md-3 col-sm-6 mb-4">
@@ -112,7 +113,7 @@ function Contact() {
         {/* Formulario de contacto y mapa */}
         <div className="container mt-5">
           <div className="row">
-            {/* Columna del formulario */}
+            {/* Columna del formulario (IZQUIERDA) */}
             <div className="col-md-6 mb-4">
               <div className="contact-form">
                 <h3 className="mb-4">Envíanos un mensaje</h3>
@@ -147,7 +148,7 @@ function Contact() {
               </div>
             </div>
             
-            {/* Columna del mapa */}
+            {/* Columna del mapa (DERECHA) */}
             <div className="col-md-6 mb-4">
               <div className="map-container">
                 <h3 className="mb-4">Nuestra ubicación</h3>
@@ -164,6 +165,20 @@ function Contact() {
                   </iframe>
                 </div>
               </div>
+            </div>
+          </div>
+          
+          {/* BOTÓN DE AYUDA CON ESTILO BLUR */}
+          <div className="row mt-4"> 
+            <div className="col-12">
+              <a href='/ayuda' className='text-decoration-none'>
+                <div className="contact-item" style={{cursor: 'pointer'}}>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-question-circle-fill mb-2" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987v.294c0 .138.112.248.25.266h.825c.138 0 .248-.113.266-.25v-.105c-.035-.85.344-1.34 1.03-1.847.697-.507 1.48-1.11 1.48-2.227 0-1.254-1.143-2.269-2.435-2.269-1.328 0-2.273.811-2.614 1.764-.068.188.118.277.266.277zM8 12.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                  </svg>
+                  <h5 style={{ fontWeight: 'bold' }}>¿Necesitas Ayuda? Haz clic aquí</h5>
+                </div>
+              </a>
             </div>
           </div>
         </div>

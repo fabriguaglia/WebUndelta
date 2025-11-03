@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './preguntas-frecuentes.css';
-import Preguntasimg from './preguntas.png'
 
 const FAQPage = () => {
   useEffect(() => {

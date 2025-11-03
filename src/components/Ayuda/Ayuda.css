@@ -1,0 +1,137 @@
+/* Base: Fondo degradado para toda la página */
+.min-vh-100.bg-light {
+    background: linear-gradient(135deg, #bbe184 0%, #003b54 100%);
+    min-height: 100vh; 
+}
+
+/* Estilo Glassmorfismo para las Cards y el contenedor principal */
+.card.shadow {
+    background: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card.shadow:hover {
+    transform: translateY(-3px);
+}
+
+/* Encabezados y texto principal */
+.text-primary {
+    color: #003b54 !important; 
+}
+
+/* --- BOTONES PRINCIPALES (AZUL OSCURO) --- */
+
+.btn-custom {
+    background-color: #003b54; 
+    border-color: #003b54;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 59, 84, 0.4);
+    color: white !important; /* <--- CLASE btn-princ CONSOLIDADA AQUÍ */
+}
+
+/* CLASE .btn-princ ELIMINADA POR SER INNECESARIA */
+
+.btn-custom:hover {
+    background-color: #002a40; 
+    border-color: #002a40;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 8px rgba(0, 59, 84, 0.5);
+}
+
+/* 🚀 FIX DE FOCO UNIFICADO: AHORA SÓLO SE DIRIGE A .btn-custom 🚀 */
+.custom-focus-fix.btn-custom:focus, 
+.custom-focus-fix.btn-custom.focus, 
+.custom-focus-fix.btn-custom:active, /* <--- AÑADIDO: asegura el color al presionar */
+.custom-focus-fix.btn-custom:active:focus {
+    background-color: #002a40 !important;
+    border-color: #002a40 !important;
+    /* Anula el foco azul con un foco de color azul oscuro (40% opacidad) */
+    box-shadow: 0 0 0 0.25rem rgba(0, 59, 84, 0.4) !important; 
+}
+
+/* Botones Outline */
+.btn-outline-primary {
+    color: #003b54; 
+    border-color: #003b54;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #003b54;
+    color: white;
+}
+
+/* 🚀 FIX DE FOCO: ANULACIÓN DE BOX-SHADOW PARA OUTLINE 🚀 */
+.custom-focus-fix.btn-outline-primary:focus,
+.custom-focus-fix.btn-outline-primary.focus {
+    /* Color basado en #003b54 (40% opacidad) */
+    box-shadow: 0 0 0 0.25rem rgba(0, 59, 84, 0.4) !important;
+}
+
+
+/* --- BOTONES DE ÉXITO (VERDE OLIVA) --- */
+
+.badge.bg-primary {
+    background-color: #5c8227 !important; /* Color de acento */
+}
+
+/* Color Success (Aprobado) */
+.border-success { border-color: #5c8227 !important; }
+.bg-success { 
+    background-color: #5c8227 !important; 
+    color: #ffffff !important;
+}
+
+.btn-success {
+    background-color: #5c8227 !important;
+    border-color: #5c8227 !important;
+}
+.btn-success:hover {
+    background-color: #4a6820 !important;
+    border-color: #4a6820 !important;
+}
+
+/* 🚀 FIX DE FOCO: ANULACIÓN DE BOX-SHADOW PARA SUCCESS 🚀 */
+.custom-focus-fix.btn-success:focus, 
+.custom-focus-fix.btn-success.focus, 
+.custom-focus-fix.btn-success:active:focus {
+    background-color: #4a6820 !important;
+    border-color: #4a6820 !important;
+    /* Color basado en #5c8227 (40% opacidad) */
+    box-shadow: 0 0 0 0.25rem rgba(92, 130, 39, 0.4) !important; 
+}
+
+
+/* --- CAMPOS DE FORMULARIO --- */
+.form-control, .form-select {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* 🚀 FIX DE FOCO: ANULACIÓN DE BOX-SHADOW PARA INPUTS/SELECTS 🚀 */
+.custom-focus-fix.form-control:focus, 
+.custom-focus-fix.form-select:focus {
+    background-color: white;
+    /* Anillo de enfoque (box-shadow) con el color primario */
+    box-shadow: 0 0 0 0.25rem rgba(0, 59, 84, 0.25); 
+    border-color: #003b54;
+}
+
+
+/* Otros estados de color */
+.border-danger, .bg-danger { 
+    border-color: #dc3545 !important;
+    background-color: #dc3545 !important;
+}
+.border-warning, .bg-warning { 
+    border-color: #ffc107 !important; 
+    background-color: #ffc107 !important; 
+    color: #343a40 !important; 
+}
