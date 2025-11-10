@@ -173,7 +173,7 @@ export default function Header() {
                     </div>
 
                     <div className="d-flex align-items-center mb-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-question-circle mx-3" viewBox="0 0 16 16">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bank mx-3" viewBox="0 0 16 16">
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path d="M5.255 5.786a.237.237 0 0 1 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.065-1.167 1.987v.633c0 .414.336.75.75.75h.478a.75.75 0 0 0 .749-.724v-.123c0-.71.491-1.178 1.278-1.74.786-.562 1.637-1.16 1.637-2.721 0-1.523-1.25-2.244-2.667-2.244-1.404 0-2.614.726-2.674 2.037z"/>
                         <path d="M8 12.997a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
