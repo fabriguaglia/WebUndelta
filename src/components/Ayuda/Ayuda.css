@@ -1,5 +1,6 @@
 /* Base: Fondo degradado para toda la página */
 .min-vh-100.bg-light {
+    padding-top: 5vh;
     background: linear-gradient(135deg, #bbe184 0%, #003b54 100%);
     min-height: 100vh; 
 }
@@ -34,7 +35,6 @@
     color: white !important; /* <--- CLASE btn-princ CONSOLIDADA AQUÍ */
 }
 
-/* CLASE .btn-princ ELIMINADA POR SER INNECESARIA */
 
 .btn-custom:hover {
     background-color: #002a40; 
@@ -43,7 +43,7 @@
     box-shadow: 0 6px 8px rgba(0, 59, 84, 0.5);
 }
 
-/* 🚀 FIX DE FOCO UNIFICADO: AHORA SÓLO SE DIRIGE A .btn-custom 🚀 */
+
 .custom-focus-fix.btn-custom:focus, 
 .custom-focus-fix.btn-custom.focus, 
 .custom-focus-fix.btn-custom:active, /* <--- AÑADIDO: asegura el color al presionar */
@@ -67,7 +67,7 @@
     color: white;
 }
 
-/* 🚀 FIX DE FOCO: ANULACIÓN DE BOX-SHADOW PARA OUTLINE 🚀 */
+
 .custom-focus-fix.btn-outline-primary:focus,
 .custom-focus-fix.btn-outline-primary.focus {
     /* Color basado en #003b54 (40% opacidad) */
@@ -97,7 +97,7 @@
     border-color: #4a6820 !important;
 }
 
-/* 🚀 FIX DE FOCO: ANULACIÓN DE BOX-SHADOW PARA SUCCESS 🚀 */
+
 .custom-focus-fix.btn-success:focus, 
 .custom-focus-fix.btn-success.focus, 
 .custom-focus-fix.btn-success:active:focus {
@@ -115,7 +115,7 @@
     transition: all 0.3s ease;
 }
 
-/* 🚀 FIX DE FOCO: ANULACIÓN DE BOX-SHADOW PARA INPUTS/SELECTS 🚀 */
+
 .custom-focus-fix.form-control:focus, 
 .custom-focus-fix.form-select:focus {
     background-color: white;
