@@ -93,14 +93,44 @@ function Transparencia() {
                           Misión y servicios a la ciudadanía
                         </button>
                         <div className="modal fade" id="misionModal" tabIndex="-1" aria-labelledby="misionModalLabel" aria-hidden="true">
-                          <div className="modal-dialog">
+                          <div className="modal-dialog" >
                             <div className="modal-content">
                               <div className="modal-header">
                                 <h1 className="modal-title fs-5" id="misionModalLabel">Misión y servicios a la ciudadanía</h1>
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div className="modal-body">
-                                Desde la Universidad Nacional del Delta nos proponemos como objetivo la formación integral de los estudiantes que en esta institución se formen, preparándolos para desempeñarse en actividades científicas y profesionales, inculcando asimismo el respeto por las normas e instituciones de la Constitución Nacional y la República Argentina. Nuestro objetivo es generar conocimiento y formar profesionales de excelencia a nivel nacional, adaptados a las necesidades específicas de los ciudadanos e instituciones de los Partidos de Tigre, San Fernando y Escobar, para contribuir al logro de sus proyectos de vida. <br /> Por todo esto, desde la Universidad Nacional del Delta ofrecemos una serie de cursos y diplomaturas pensadas en función de las necesidades de nuestra región.
+                                <p className="mb-4">La Universidad Nacional del Delta se constituye como un actor clave en la construcción de una educación superior pública, gratuita e inclusiva, orientada al desarrollo integral de la región del Delta del Paraná. Su misión se centra en formar profesionales comprometidos con la realidad local y nacional, promoviendo la investigación aplicada, la extensión universitaria y la innovación educativa como herramientas para la transformación social y territorial.</p>
+                                <p className="mb-4">Nuestra función principal es generar conocimiento y formar profesionales de excelencia, preparados para desempeñarse en actividades científicas y profesionales, con un firme compromiso con el respeto a las normas e instituciones de la Constitución Nacional y de la República Argentina. Buscamos responder a las necesidades de los ciudadanos y las instituciones de los Partidos de Tigre, San Fernando y Escobar, contribuyendo al desarrollo social, territorial y al fortalecimiento del tejido comunitario.</p>
+                                <p className="mb-4">Para cumplir con este propósito, la universidad vincula activamente su oferta académica con la comunidad, adaptando cursos y diplomaturas a las demandas específicas de la región. Estas propuestas buscan no solo la excelencia profesional, sino también el compromiso ético y la participación activa en la construcción de una sociedad más equitativa y justa.</p>
+                                <h4 className="text-primary border-bottom border-primary pb-2 mb-3">Objetivos específicos de nuestra Universidad: </h4>
+                                <p className="card-text text-muted mb-3">a) Organizar e impartir Educación Superior Universitaria, presencial o a distancia, mediante trayectos curriculares de pregrado, grado y posgrado.</p>
+                                <p className="card-text text-muted mb-3">b) Generar una oferta académica de avanzada, de cara a los desafíos regionales y globales que presenta el siglo XXI, con estrategias de enseñanza innovadoras y de puertas abiertas a las demandas y necesidades de la comunidad.</p>
+                                <p className="card-text text-muted mb-3">c) Desarrollar la enseñanza en el marco de concepciones pedagógicas y didácticas que promuevan la incorporación de nuevos contextos, tecnologías, metodologías y estrategias de enseñanza-aprendizaje.</p>
+                                <p className="card-text text-muted mb-3">d) Formar graduados capaces de ejercer un rol profesional activo en el desarrollo económico sustentable y el progreso social y cultural de la sociedad, desde una perspectiva que integre la competencia profesional con el humanismo y solidaridad social, y con conciencia de las necesidades y particularidades locales y nacionales.</p>
+                                <p className="card-text text-muted mb-3">e) Contribuir al mejoramiento de la calidad de vida de la comunidad, transfiriendo tecnologías, elevando su nivel sociocultural, científico, político y económico, formando personas reflexivas y críticas que respeten el orden institucional y democrático y desarrollen valores éticos y solidarios.</p>
+                                <p className="card-text text-muted mb-3">f) Organizar y desarrollar las actividades de generación y sistematización de conocimientos, mediante las modalidades de investigación básica, aplicada y de desarrollo experimental y aplicación tecnológica, otorgando prioridad a las necesidades y problemáticas zonales, regionales y nacionales.</p>
+                                 <p className="card-text text-muted mb-3">g) Promover, organizar, coordinar y llevar a cabo programas o acciones de cooperación comunitaria, de servicio público y/o voluntariado, tendientes al desarrollo cultural, científico, político, social y económico de la región de pertenencia.</p>
+                                <p className="card-text text-muted mb-3">h) Promover acciones tendientes al desarrollo socioeconómico local, regional y nacional con el objeto de contribuir a la resolución de los problemas de la comunidad y, en especial, al mejoramiento de las condiciones de vida de aquellos sectores socialmente más postergados.</p>
+                                <p className="card-text text-muted mb-3">i) Ofrecer servicios y asesorías, rentadas o no, a instituciones públicas o privadas y asociarse para el desarrollo y explotación de bienes físicos o intelectuales.</p>
+                                <p className="card-text text-muted mb-3">j) Realizar acuerdos y convenios de articulación y cooperación con organismos municipales, provinciales, nacionales o federales e internacionales, con organizaciones sociales, profesionales, científicas, técnicas o culturales y con empresas públicas o privadas de toda índole, que contribuyan al logro de su objetivo general y/o específicos.</p>
+                                 <p className="card-text text-muted mb-3">k) Constituir una comunidad de trabajo plural integrada por docentes, estudiantes, graduados, personal no docente técnico, administrativo y de servicio, y por las fuerzas vivas de la sociedad en su conjunto, abierta a las exigencias de su tiempo y de su medio, que garantice la democratización del conocimiento y la enseñanza como herramienta de transformación y equidad de la sociedad, dentro del más amplio contexto de la cultura nacional a la que servirá con su gestión.</p>
+                                 <p className="card-text text-muted mb-3">l) Favorecer la retención y promoción de aquellos/as estudiantes con vocación y empeño académico que por motivos económicos se encuentren en situación vulnerable y en riesgo de abandonar estudios.</p>
+                                <p className="card-text text-muted mb-3">m) Promover la igualdad de género en todo sentido.</p>
+                               <p className="card-text text-muted mb-3"> n) Contribuir a la recreación, preservación y difusión de la cultura, y a la memoria y rescate de obras trascendentales de pensadores y artistas locales, regionales, nacionales, latinoamericanos y populares mediante seminarios, inclusiones curriculares, homenajes, talleres, concursos, premios, etc.</p>
+                               <p className="card-text text-muted mb-3"> o) Coordinar con las Universidades y el sistema educativo de la región el desarrollo de los estudios superiores, de investigación y acciones de cooperación comunitaria, garantizando una funcionalidad y una operatividad que propendan a solucionar sistemática y permanentemente problemas relacionados con las necesidades de la región.</p>
+                               <p className="card-text text-muted mb-3"> p) Desarrollar actividades de investigación y sistematización de conocimientos que tengan como foco central las características, potencialidades y necesidades del ecosistema del Delta.</p>
+                               <p className="card-text text-muted mb-3"> q) Articular con el Sistema Nacional de Ciencia, Tecnología e Innovación con aportes sustantivos a la producción de conocimiento orientado al desarrollo local del Delta y la inserción global de Argentina.</p>
+                                <p className="card-text text-muted mb-3">r) Promover organizaciones asociativas y participativas dentro de la comunidad universitaria.</p>
+                               <p className="card-text text-muted mb-3"> s) Desarrollar una política editorial y bibliotecológica que contribuya a la excelencia académica.</p>
+                                <p className="card-text text-muted mb-3">t) Mantener vínculos permanentes con los graduados y promover su formación continua, actualización, perfeccionamiento y/o especialización profesional.</p>
+                                <h5 className="text-primary mb-3">Artículo 7 del <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" target="_blank" className="text-decoration-none">Estatuto de la Universidad Nacional del Delta</a></h5>
+                                <p class="fst-italic">Actualizado Octubre 2025</p>       
+                                <a href="/Carreras" className="btn btn-primary">
+                                  <i className="bi bi-arrow-right-circle me-2"></i>
+                                 Conocé nuestra oferta académica completa
+                                </a>  
+                                <br />                                    
                               </div>
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -201,6 +231,7 @@ function Transparencia() {
                                 <div className="mb-2">
                                   <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" target="_blank" className="text-decoration-none">📄 Conoce el Estatuto de la Universidad Nacional del Delta</a>
                                 </div>
+                                <p class="fst-italic">Actualizado Octubre 2025</p>  
                               </div>
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -230,40 +261,15 @@ function Transparencia() {
                                     <div className="card-body">
                                       <h5 className="card-title text-primary mb-3">
                                         <i className="bi bi-file-earmark-text me-2"></i>
-                                        Personal Docente Universitario
+                                        Escala Salarial del Personal Docente y No Docente - Septiembre 2025
                                       </h5>
-                                      <p className="card-text text-muted mb-3">Actualizada: Junio 2024</p>
-                                      <a href="http://prueba.local/wp-content/uploads/2024/08/Escala-Salarial-del-Personal-Docente-Universitario-Junio-2024.pdf" target="_blank" className="btn btn-outline-primary">
+                                      <p className="card-text text-muted mb-3">Actualizado: Octubre 2025</p>
+                                      <a href="./Escalas Salariales Personal Docente y No Docente Universitario.pdf" target="_blank" className="btn btn-outline-primary">
                                         📄 Ver Escala Salarial
                                       </a>
                                     </div>
                                   </div>
                                   
-                                  <div className="card border-success">
-                                    <div className="card-body">
-                                      <h5 className="card-title text-success mb-3">
-                                        <i className="bi bi-file-earmark-text me-2"></i>
-                                        Personal Docente Preuniversitario
-                                      </h5>
-                                      <p className="card-text text-muted mb-3">Actualizada: Junio 2024</p>
-                                      <a href="http://prueba.local/wp-content/uploads/2024/08/Escala-Salarial-del-Personal-Docente-Preuniversitario-Junio-2024.pdf" target="_blank" className="btn btn-outline-success">
-                                        📄 Ver Escala Salarial
-                                      </a>
-                                    </div>
-                                  </div>
-                                  
-                                  <div className="card border-info">
-                                    <div className="card-body">
-                                      <h5 className="card-title text-info mb-3">
-                                        <i className="bi bi-file-earmark-text me-2"></i>
-                                        Personal No Docente
-                                      </h5>
-                                      <p className="card-text text-muted mb-3">Actualizada: Junio 2024</p>
-                                      <a href="http://prueba.local/wp-content/uploads/2024/08/Escala-Salarial-del-Personal-No-Docente-Junio-2024.pdf" target="_blank" className="btn btn-outline-info">
-                                        📄 Ver Escala Salarial
-                                      </a>
-                                    </div>
-                                  </div>
                                 </div>
                               </div>
                               <div className="modal-footer">
@@ -289,6 +295,7 @@ function Transparencia() {
                               <div className="modal-body">
                                 Las transferencias son prestaciones dinerarias que realiza el sector público tanto a personas jurídicas como a personas humanas en el marco de la implementación de políticas o programas. <br /> Actualmente, esta Universidad no realiza transferencias.
                               </div>
+                               <p class="fst-italic">Actualizado Octubre 2025</p>  
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                               </div>
@@ -342,6 +349,7 @@ function Transparencia() {
                                   </li>
                                 </ul>
                               </div>
+                               <p class="fst-italic">Actualizado Octubre 2025</p>  
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                               </div>
@@ -363,7 +371,10 @@ function Transparencia() {
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div className="modal-body">
-                                Los organismos públicos están sujetos a distintos tipos de escrutinio sobre sus tareas, desempeños y procesos. En este sentido, la Universidad Nacional del Delta tiene la clara intención de poner a disposición los informes de auditoría elaborados por la Sindicatura General de la Nación (SIGEN), junto al plan anual de auditorías. Sin embargo, dado que aún no hemos cumplido un año desde nuestra creación, no hemos podido realizar auditorías. Estamos trabajando para poder publicar en un corto plazo nuestros primeros informes tanto a la SIGEN como a la Unidad de Auditoría Interna. <br /> Hasta el momento no se han realizado evaluaciones.
+                                Los organismos públicos están sujetos a distintos tipos de escrutinio sobre sus tareas, desempeños y procesos. En este sentido, la Universidad Nacional del Delta tiene la clara intención de poner a disposición los informes de auditoría elaborados por la Sindicatura General de la Nación (SIGEN), junto al plan anual de auditorías. 
+
+                                Se adjunta la Memoria Anual 2024 como evaluación institucional, aprobada por la Asamblea Universitaria de la Universidad Nacional del Delta. 
+                               <p class="fst-italic">Actualizado Octubre 2025</p>  
                               </div>
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -442,6 +453,7 @@ function Transparencia() {
                                   </div>
                                 </div>
                               </div>
+                               <p class="fst-italic">Actualizado Octubre 2025</p>  
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                               </div>
@@ -465,54 +477,13 @@ function Transparencia() {
                               <div className="modal-body">
                                 <div className="mb-4">
                                   <i className="bi bi-envelope-paper fs-1 text-primary mb-3"></i>
-                                  <p className="mb-4">Aca podés contactarte con nosotros para solicitar información adicional sobre cualquier aspecto de la Universidad Nacional del Delta. Nuestro equipo estará encantado de ayudarte con todas tus consultas.</p>
+                                  <p className="mb-4">La Universidad Nacional del Delta cumple con la Nº Ley 27.275 de <a href='https://www.argentina.gob.ar/normativa/nacional/ley-27275-265949'> Acceso a la información publica </a>, que tiene por objetivo garantizar el efectivo ejercicio del derecho de acceso a la información pública,promover la participación ciudadana y la transparencia de la gestión pública.</p>
                                 </div>
-                                
-                                <div className="card border-primary mb-4">
-                                  <div className="card-body">
-                                    <h5 className="card-title text-primary">
-                                      <i className="bi bi-chat-dots me-2"></i>
-                                      Página de Contacto
-                                    </h5>
-                                    <p className="card-text">Contactános y te responderemos a la brevedad.</p>
-                                    <a href="/contacto" className="btn btn-primary">
-                                      <i className="bi bi-arrow-right-circle me-2"></i>
-                                      Ir a la página de contacto
-                                    </a>
-                                  </div>
-                                </div>
-                                
-                                <div className="row">
-                                  <div className="col-md-6 mb-3">
-                                    <div className="card h-100 border-info">
-                                      <div className="card-body text-center">
-                                        <i className="bi bi-envelope-fill text-info fs-4 mb-2"></i>
-                                        <h6 className="card-title">Email</h6>
-                                        <p className="card-text small">
-                                          <a href="mailto:info@prueba.local" className="text-decoration-none">
-                                            undelta@undelta.edu.ar
-                                          </a>
-                                        </p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="col-md-6 mb-3">
-                                    <div className="card h-100 border-success">
-                                      <div className="card-body text-center">
-                                        <i className="bi bi-clock-fill text-success fs-4 mb-2"></i>
-                                        <h6 className="card-title">Horario</h6>
-                                        <p className="card-text small">9:00 a 18:00 hs</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                                
-                                <div className="alert alert-light mt-3">
-                                  <small className="text-muted">
-                                    <i className="bi bi-info-circle me-1"></i>
-                                    También podés acercarte personalmente a: <a className='text-decoration-none' href='https://maps.app.goo.gl/DLBVP7tF72Mwcc8z8' target='_blank'><br />📍 Av. Avellaneda 2270, Virreyes.</a>
-                                  </small>
-                                </div>
+                                <p className="mb-4">En caso de alguna duda respecto de la información aquí publicada podés acercarte a la sede de la Universidad Nacional del Delta (Avenida Avellaneda 2270, San Fernando, CP: 1646, Provincia de Buenos Aires) o contactarte con la persona Responsable de Políticas de Transparencia por los siguientes medios:</p>
+                                <p className="mb-4">Nombre y Apellido: Pablo Manuel Baigorria</p>
+                                <p className="mb-4">Correo electrónico: transparencia@undelta.edu.ar</p>
+                                <p className="mb-4">Teléfono: +5491170990250</p>
+                                 <p class="fst-italic">Actualizado Octubre 2025</p>  
                               </div>
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -640,6 +611,7 @@ function Transparencia() {
                                   </div>
                                 </div>
                               </div>
+                               <p class="fst-italic">Actualizado Octubre 2025</p>  
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                               </div>
@@ -679,6 +651,7 @@ function Transparencia() {
                                   <h6 className="alert-heading">Estado Actual</h6>
                                   <p className="mb-0">En estos momentos, la Universidad Nacional del Delta no cuenta con espacios de participación ciudadana en curso.</p>
                                 </div>
+                                 <p class="fst-italic">Actualizado Octubre 2025</p>  
                               </div>
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -701,15 +674,10 @@ function Transparencia() {
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div className="modal-body">
-                                <p className="mb-4">Ponemos a disposición el listado de autoridades de la Agencia de Acceso a la Información Pública que deben presentar anualmente ante la Oficina Anticorrupción sus Declaraciones Juradas Patrimoniales Integrales, en cumplimiento del artículo 5° inciso m) de la Ley de Ética Nº 25.188. Quienes accedieron a sus cargos en una fecha posterior a la última presentación aún no cuentan con esta declaración.</p>
-                                
-                                <div className="alert alert-success text-center mb-4">
-                                  <i className="bi bi-check-circle-fill fs-4 me-2"></i>
-                                  <strong>El 100% de los funcionarios y funcionarias de la Agencia cumplen con su obligación de presentar sus declaraciones juradas.</strong>
-                                </div>
-                                
+                                <p className="mb-4">Ponemos a disposición el listado de autoridades de la Universidad Nacional del Delta que deben presentar anualmente ante la Oficina Anticorrupción sus Declaraciones Juradas Patrimoniales Integrales, en cumplimiento del artículo 5° inciso m) de la Ley de Ética Nº 25.188. Quienes accedieron a sus cargos en una fecha posterior a la última presentación aún no cuentan con esta declaración.</p>
+                                <p className="mb-3">Podés consultar las declaraciones juradas en el sitio de la Oficina Anticorrupción completando un formulario en línea.</p>
+                                <p class="fst-italic">Actualizado Octubre 2025</p> 
                                 <div className="text-center">
-                                  <p className="mb-3">Podés consultar las declaraciones juradas en el sitio de la Oficina Anticorrupción completando un formulario en línea.</p>
                                   <a href="https://www.argentina.gob.ar/consultar-declaraciones-juradas-de-funcionarios-publicos" target="_blank" className="btn btn-primary">
                                     🔍 Conocé cómo hacerlo
                                   </a>
@@ -760,17 +728,9 @@ function Transparencia() {
                               </div>
                               <div className="modal-body text-center">
                                 <i className="bi bi-cart-check fs-1 text-primary mb-4"></i>
-                                <p className="mb-4">Las compras y contrataciones de la Universidad Nacional del Delta están publicadas en nuestro portal de compras públicas.</p>
-                                
-                                <a href="https://undelta.edu.ar/compras-y-contrataciones/#" target="_blank" className="btn btn-primary btn-lg">
-                                  <i className="bi bi-box-arrow-up-right me-2"></i>
-                                  Acceder al Portal de Compras Públicas
-                                </a>
-                                
-                                <div className="alert alert-info mt-4">
-                                  <i className="bi bi-info-circle me-2"></i>
-                                  En el portal encontrarás información completa sobre licitaciones, contrataciones directas y procesos de compra.
-                                </div>
+                                <p className="mb-4">LLas compras y contrataciones de la Universidad Nacional del Delta están publicadas en nuestro portal de compras públicas. Hasta la fecha, no se han realizado convocatorias públicas.</p>
+                                 <p class="fst-italic">Actualizado Octubre 2025</p>  
+                              
                               </div>
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -796,6 +756,7 @@ function Transparencia() {
                                 <p className="mb-3">Podés acceder a los actos administrativos de la Universidad Nacional del Delta en nuestra sección de normativa.</p>
                                 <p className="mb-4">Si querés conocer los actos de naturaleza pública que realiza el Estado Nacional, podés ingresar al <a href="https://www.boletinoficial.gob.ar/" target="_blank" className="text-decoration-none">Boletín Oficial</a>.</p>
                               </div>
+                               <p class="fst-italic">Actualizado Octubre 2025</p>  
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                               </div>
@@ -819,6 +780,7 @@ function Transparencia() {
                               <div className="modal-body">
                                 Los permisos y las concesiones son las maneras que el Estado tiene de ceder el uso de un bien y/o el manejo, la explotación, la operación o la prestación de un servicio público.Actualmente, esta Universidad no otorga ni permisos ni concesiones.
                               </div>
+                               <p class="fst-italic">Actualizado Octubre 2025</p>  
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                               </div>
@@ -842,6 +804,7 @@ function Transparencia() {
                               <div className="modal-body">
                                 Conforme con la <a href="http://www.argentina.gob.ar/normativa/nacional/ley-26856-215004/texto" target="_blank" className="text-decoration-none">Ley N° 26.856</a> cada organismo debe publicar integramente todas las acordadas y resoluciones que dicte, el mismo día de su dictado. Mientras que las sentencias deberán ser publicadas una vez notificadas a todas las partes correspondientes. Siempre en formato digital y con acceso gratuito.<br />Actualmente, esta Universidad no publica acordadas ni sentencias.
                               </div>
+                               <p class="fst-italic">Actualizado Octubre 2025</p>  
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                               </div>
@@ -865,6 +828,7 @@ function Transparencia() {
                               <div className="modal-body">
                                 La Ley de Acceso a la Información Pública y el <a href="https://www.argentina.gob.ar/normativa/nacional/decreto-117-2016-257755" target="_blank" className="text-decoration-none">Decreto Nº117/16</a> prevén la publicación de los datos públicos en formatos electrónicos abiertos con el fin de eliminar toda barrera a su acceso y fomentar su reutilización.<br />En esta sección podés encontrar los conjuntos de datos documentados de acuerdo con el <a href="https://datosgobar.github.io/paquete-apertura-datos/perfil-metadatos/" target="_blank" className="text-decoration-none">Perfil de Aplicación Nacional de Metadatos para Datos Abiertos</a>. Para acceder a los datos te recomendamos visitar el <a href="https://datos.gob.ar/" target="_blank" className="text-decoration-none">Portal Nacional de Datos Públicos</a>.
                               </div>
+                               <p class="fst-italic">Actualizado Octubre 2025</p>  
                               <div className="modal-footer">
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                               </div>
