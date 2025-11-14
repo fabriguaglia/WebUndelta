@@ -124,7 +124,7 @@ function Transparencia() {
                                 <p className="card-text text-muted mb-3">r) Promover organizaciones asociativas y participativas dentro de la comunidad universitaria.</p>
                                <p className="card-text text-muted mb-3"> s) Desarrollar una política editorial y bibliotecológica que contribuya a la excelencia académica.</p>
                                 <p className="card-text text-muted mb-3">t) Mantener vínculos permanentes con los graduados y promover su formación continua, actualización, perfeccionamiento y/o especialización profesional.</p>
-                                <h5 className="text-primary mb-3">Artículo 7 del <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" target="_blank" className="text-decoration-none">Estatuto de la Universidad Nacional del Delta</a></h5>
+                                <h5 className="text-primary mb-3">Artículo 7 del <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none">Estatuto de la Universidad Nacional del Delta</a></h5>
                                 <p class="fst-italic">Actualizado Octubre 2025</p>       
                                 <a href="/Carreras" className="btn btn-primary">
                                   <i className="bi bi-arrow-right-circle me-2"></i>
@@ -161,13 +161,13 @@ function Transparencia() {
                                 </div>
                                 <p>A continuación se adjunta el Estatuto de la Universidad Nacional del Delta, donde se encuentra estipulada la estructura general de la institución.</p>
                                 <div className="mb-2">
-                                  <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" target="_blank" className="text-decoration-none">📄 Conoce el Estatuto de la Universidad Nacional del Delta</a>
+                                  <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none">📄 Conoce el Estatuto de la Universidad Nacional del Delta</a>
                                 </div>
                                 <div className="mb-2">
-                                  <a href="https://drive.google.com/file/d/11teCLn7jbFb2S4QnzkpBo2yubD6tycGx/view" target="_blank" className="text-decoration-none">🏛️ Estructura del Consejo Superior</a>
+                                  <a href="https://drive.google.com/file/d/11teCLn7jbFb2S4QnzkpBo2yubD6tycGx/view" target="_blank" rel="noopener noreferrer" className="text-decoration-none">🏛️ Estructura del Consejo Superior</a>
                                 </div>
                                 <div className="mb-3">
-                                  <a href="https://drive.google.com/file/d/1J3CFPAjuBHc4ZadA21-cqbsJVnZl8J6h/view" target="_blank" className="text-decoration-none">🏛️ Estructura del Consejo Directivo</a>
+                                  <a href="https://drive.google.com/file/d/1J3CFPAjuBHc4ZadA21-cqbsJVnZl8J6h/view" target="_blank" rel="noopener noreferrer" className="text-decoration-none">🏛️ Estructura del Consejo Directivo</a>
                                 </div>
                                 <div className="text-center mb-4">
                                   <img src={Org2} className="img-fluid" alt="Estructura del Consejo Directivo" />
@@ -178,49 +178,49 @@ function Transparencia() {
                                 <div className="bg-light border-start border-primary border-4 p-3 mb-3">
                                   <div className="fw-bold text-primary mb-1">Lic. Farias, Silvia Carolina</div>
                                   <div className="text-muted mb-2">DNI: 23.614.474 | Rectora</div>
-                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Lic.-Silvia-Carolina-Farias.pdf" target="_blank" className="text-decoration-none">📋 Designación – Lic. Silvia Carolina Farias</a>
+                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Lic.-Silvia-Carolina-Farias.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none">📋 Designación – Lic. Silvia Carolina Farias</a>
                                 </div>
 
                                 <div className="bg-light border-start border-primary border-4 p-3 mb-3">
                                   <div className="fw-bold text-primary mb-1">Cdor. Puccio, Mariano</div>
                                   <div className="text-muted mb-2">DNI: 24.595.794 | Secretario General</div>
-                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Cdor.-Mariano-Javier-Puccio.pdf" target="_blank" className="text-decoration-none">📋 Designación – Cdor. Mariano Javier Puccio</a>
+                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Cdor.-Mariano-Javier-Puccio.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none">📋 Designación – Cdor. Mariano Javier Puccio</a>
                                 </div>
 
                                 <div className="bg-light border-start border-primary border-4 p-3 mb-3">
                                   <div className="fw-bold text-primary mb-1">Lic. Rovira, Sebastián</div>
                                   <div className="text-muted mb-2">DNI: 42.149.689 | Secretario Administrativo, Financiero y Técnico</div>
-                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Lic.-Sebastian-Rovira.pdf" target="_blank" className="text-decoration-none">📋 Designación – Lic. Sebastian Rovira</a>
+                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Lic.-Sebastian-Rovira.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none">📋 Designación – Lic. Sebastian Rovira</a>
                                 </div>
 
                                 <div className="bg-light border-start border-primary border-4 p-3 mb-3">
                                   <div className="fw-bold text-primary mb-1">Prof. Castro, Sergio</div>
                                   <div className="text-muted mb-2">DNI: 21.094.957 | Secretario de Extensión Universitaria y Enlace con la Comunidad</div>
-                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Prof.-Sergio-Gustavo-Castro-.pdf" target="_blank" className="text-decoration-none">📋 Designación – Prof. Sergio Gustavo Castro</a>
+                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Prof.-Sergio-Gustavo-Castro-.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none">📋 Designación – Prof. Sergio Gustavo Castro</a>
                                 </div>
 
                                 <div className="bg-light border-start border-primary border-4 p-3 mb-3">
                                   <div className="fw-bold text-primary mb-1">Dr. Quilici, Federico Domingo</div>
                                   <div className="text-muted mb-2">DNI: 18.844.392 | Secretario Académico</div>
-                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Dr.-Federico-Domingo-Quilici.pdf" target="_blank" className="text-decoration-none">📋 Designación – Dr. Federico Domingo Quilici</a>
+                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Dr.-Federico-Domingo-Quilici.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none">📋 Designación – Dr. Federico Domingo Quilici</a>
                                 </div>
 
                                 <div className="bg-light border-start border-primary border-4 p-3 mb-3">
                                   <div className="fw-bold text-primary mb-1">Dra. Del Cogliano, Natalia Cecilia</div>
                                   <div className="text-muted mb-2">DNI: 31.349.099 | Secretaria de Vinculación con el Empleo y la Producción</div>
-                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Dra.-Natalia-del-Cogliano.pdf" target="_blank" className="text-decoration-none">📋 Designación – Dra. Natalia del Cogliano</a>
+                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Dra.-Natalia-del-Cogliano.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none">📋 Designación – Dra. Natalia del Cogliano</a>
                                 </div>
 
                                 <div className="bg-light border-start border-primary border-4 p-3 mb-3">
                                   <div className="fw-bold text-primary mb-1">Dr. Davidovich, Pablo</div>
                                   <div className="text-muted mb-2">DNI: 26.200.499 | Director de Asuntos Legales</div>
-                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Dr.-Pablo-Omar-Davidovich.pdf" target="_blank" className="text-decoration-none">📋 Designación – Dr. Pablo Omar Davidovich</a>
+                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Dr.-Pablo-Omar-Davidovich.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none">📋 Designación – Dr. Pablo Omar Davidovich</a>
                                 </div>
 
                                 <div className="bg-light border-start border-primary border-4 p-3 mb-3">
                                   <div className="fw-bold text-primary mb-1">Mg. Giuliani, Leonardo Andrés</div>
                                   <div className="text-muted mb-2">DNI: 28.632.556 | Director de Instituto de Innovación Educación</div>
-                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Mg.-Leonardo-Ariel-Giuliani.pdf" target="_blank" className="text-decoration-none">📋 Designación – Mg. Leonardo Ariel Giuliani</a>
+                                  <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Designacion-Mg.-Leonardo-Ariel-Giuliani.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none">📋 Designación – Mg. Leonardo Ariel Giuliani</a>
                                 </div>
 
                                 <h4 className="text-primary border-bottom border-primary pb-2 mb-3">Personal</h4>
@@ -229,7 +229,7 @@ function Transparencia() {
                                 <h4 className="text-primary border-bottom border-primary pb-2 mb-3">Explicación de forma de gobierno y autonomía</h4>
                                 <p>El Estatuto de la Universidad Nacional del Delta tiene estipulado su forma de gobierno y autonomía.</p>
                                 <div className="mb-2">
-                                  <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" target="_blank" className="text-decoration-none">📄 Conoce el Estatuto de la Universidad Nacional del Delta</a>
+                                  <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none">📄 Conoce el Estatuto de la Universidad Nacional del Delta</a>
                                 </div>
                                 <p class="fst-italic">Actualizado Octubre 2025</p>  
                               </div>
@@ -264,7 +264,7 @@ function Transparencia() {
                                         Escala Salarial del Personal Docente y No Docente - Septiembre 2025
                                       </h5>
                                       <p className="card-text text-muted mb-3">Actualizado: Octubre 2025</p>
-                                      <a href="./Escalas Salariales Personal Docente y No Docente Universitario.pdf" target="_blank" className="btn btn-outline-primary">
+                                      <a href="./Escalas Salariales Personal Docente y No Docente Universitario.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
                                         📄 Ver Escala Salarial
                                       </a>
                                     </div>
@@ -413,7 +413,7 @@ function Transparencia() {
                                       <i className="bi bi-search fs-2 text-primary mb-3"></i>
                                       <h5 className="card-title">Registro de Obsequios y Viajes</h5>
                                       <p className="card-text text-muted mb-3">Consultá el registro oficial de la Oficina Anticorrupción</p>
-                                      <a href="https://www.argentina.gob.ar/anticorrupcion/obsequiosyviajes" target="_blank" className="btn btn-primary">
+                                      <a href="https://www.argentina.gob.ar/anticorrupcion/obsequiosyviajes" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                                         🔍 Consultá el registro de obsequios y viajes
                                       </a>
                                     </div>
@@ -424,7 +424,7 @@ function Transparencia() {
                                       <i className="bi bi-database fs-2 text-info mb-3"></i>
                                       <h5 className="card-title">Portal Datos Abiertos</h5>
                                       <p className="card-text text-muted mb-3">También los podés encontrar en el Portal Datos Abiertos</p>
-                                      <a href="https://datos.gob.ar/" target="_blank" className="btn btn-info">
+                                      <a href="https://datos.gob.ar/" target="_blank" rel="noopener noreferrer" className="btn btn-info">
                                         📊 Ingresá al portal de datos
                                       </a>
                                     </div>
@@ -446,7 +446,7 @@ function Transparencia() {
                                       <li>¿Cómo se registra?</li>
                                     </ul>
                                     <div className="text-center">
-                                      <a href="https://www.argentina.gob.ar/anticorrupcion/obsequios-y-viajes-preguntas" target="_blank" className="btn btn-outline-primary">
+                                      <a href="https://www.argentina.gob.ar/anticorrupcion/obsequios-y-viajes-preguntas" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary">
                                         🔍 Consultá el registro de obsequios y viajes
                                       </a>
                                     </div>
@@ -521,7 +521,7 @@ function Transparencia() {
                                         <div className="d-flex align-items-center">
                                           <i className="bi bi-download text-primary me-3 fs-4"></i>
                                           <div>
-                                            <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Informe-de-Gestion-Universidad-Nacional-del-Delta-2024.pdf" target="_blank" className="text-decoration-none fw-bold">
+                                            <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/Informe-de-Gestion-Universidad-Nacional-del-Delta-2024.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none fw-bold">
                                               📊 Informe de Gestión Universidad Nacional del Delta 2024
                                             </a>
                                           </div>
@@ -559,7 +559,7 @@ function Transparencia() {
                                       <div className="accordion-body">
                                         <p className="mb-3">Accedé al Plan Estratégico de la Universidad Nacional del Delta, en el que se establecen las metas a ser cumplidas por la institución en un plazo de seis años.</p>
                                         <div className="text-center">
-                                          <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/PLANIFICACION-ESTRATEGICA.pdf" target="_blank" className="btn btn-outline-warning">
+                                          <a href="https://undelta.edu.ar/wp-content/uploads/2025/02/PLANIFICACION-ESTRATEGICA.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-outline-warning">
                                             🎯 Conocé la planificación estratégica de la Universidad
                                           </a>
                                         </div>
@@ -580,7 +580,7 @@ function Transparencia() {
                                         <div className="d-flex align-items-center">
                                           <i className="bi bi-file-earmark-text text-info me-3 fs-4"></i>
                                           <div>
-                                            <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" target="_blank" className="text-decoration-none fw-bold">
+                                            <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none fw-bold">
                                               📄 Conocé el Estatuto de la Universidad Nacional del Delta
                                             </a>
                                           </div>
@@ -601,7 +601,7 @@ function Transparencia() {
                                         <div className="d-flex align-items-center">
                                           <i className="bi bi-file-earmark-text text-danger me-3 fs-4"></i>
                                           <div>
-                                            <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" target="_blank" className="text-decoration-none fw-bold">
+                                            <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394281/res2742me.pdf" target="_blank" rel="noopener noreferrer" className="text-decoration-none fw-bold">
                                               📄 Conocé el Estatuto de la Universidad Nacional del Delta
                                             </a>
                                           </div>
@@ -639,7 +639,7 @@ function Transparencia() {
                                   <div className="card-body text-center">
                                     <i className="bi bi-people-fill fs-1 text-primary mb-3"></i>
                                     <p className="card-text">Conocé el <strong>Catálogo de espacios de participación ciudadana</strong> disponible en el Portal Nacional de Transparencia.</p>
-                                    <a href="https://portal.transparencia.gob.ar/participacion/espaciosDeParticipacion" target="_blank" className="btn btn-primary">
+                                    <a href="https://portal.transparencia.gob.ar/participacion/espaciosDeParticipacion" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                                       <i className="bi bi-box-arrow-up-right me-2"></i>
                                       Acceder al Portal Nacional de Transparencia
                                     </a>
@@ -678,7 +678,7 @@ function Transparencia() {
                                 <p className="mb-3">Podés consultar las declaraciones juradas en el sitio de la Oficina Anticorrupción completando un formulario en línea.</p>
                                 <p class="fst-italic">Actualizado Octubre 2025</p> 
                                 <div className="text-center">
-                                  <a href="https://www.argentina.gob.ar/consultar-declaraciones-juradas-de-funcionarios-publicos" target="_blank" className="btn btn-primary">
+                                  <a href="https://www.argentina.gob.ar/consultar-declaraciones-juradas-de-funcionarios-publicos" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
                                     🔍 Conocé cómo hacerlo
                                   </a>
                                 </div>
@@ -754,7 +754,7 @@ function Transparencia() {
                               </div>
                               <div className="modal-body">
                                 <p className="mb-3">Podés acceder a los actos administrativos de la Universidad Nacional del Delta en nuestra sección de normativa.</p>
-                                <p className="mb-4">Si querés conocer los actos de naturaleza pública que realiza el Estado Nacional, podés ingresar al <a href="https://www.boletinoficial.gob.ar/" target="_blank" className="text-decoration-none">Boletín Oficial</a>.</p>
+                                <p className="mb-4">Si querés conocer los actos de naturaleza pública que realiza el Estado Nacional, podés ingresar al <a href="https://www.boletinoficial.gob.ar/" target="_blank" rel="noopener noreferrer" className="text-decoration-none">Boletín Oficial</a>.</p>
                               </div>
                                <p class="fst-italic">Actualizado Octubre 2025</p>  
                               <div className="modal-footer">
@@ -802,7 +802,7 @@ function Transparencia() {
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div className="modal-body">
-                                Conforme con la <a href="http://www.argentina.gob.ar/normativa/nacional/ley-26856-215004/texto" target="_blank" className="text-decoration-none">Ley N° 26.856</a> cada organismo debe publicar integramente todas las acordadas y resoluciones que dicte, el mismo día de su dictado. Mientras que las sentencias deberán ser publicadas una vez notificadas a todas las partes correspondientes. Siempre en formato digital y con acceso gratuito.<br />Actualmente, esta Universidad no publica acordadas ni sentencias.
+                                Conforme con la <a href="http://www.argentina.gob.ar/normativa/nacional/ley-26856-215004/texto" target="_blank" rel="noopener noreferrer" className="text-decoration-none">Ley N° 26.856</a> cada organismo debe publicar integramente todas las acordadas y resoluciones que dicte, el mismo día de su dictado. Mientras que las sentencias deberán ser publicadas una vez notificadas a todas las partes correspondientes. Siempre en formato digital y con acceso gratuito.<br />Actualmente, esta Universidad no publica acordadas ni sentencias.
                               </div>
                                <p class="fst-italic">Actualizado Octubre 2025</p>  
                               <div className="modal-footer">
@@ -826,7 +826,7 @@ function Transparencia() {
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                               </div>
                               <div className="modal-body">
-                                La Ley de Acceso a la Información Pública y el <a href="https://www.argentina.gob.ar/normativa/nacional/decreto-117-2016-257755" target="_blank" className="text-decoration-none">Decreto Nº117/16</a> prevén la publicación de los datos públicos en formatos electrónicos abiertos con el fin de eliminar toda barrera a su acceso y fomentar su reutilización.<br />En esta sección podés encontrar los conjuntos de datos documentados de acuerdo con el <a href="https://datosgobar.github.io/paquete-apertura-datos/perfil-metadatos/" target="_blank" className="text-decoration-none">Perfil de Aplicación Nacional de Metadatos para Datos Abiertos</a>. Para acceder a los datos te recomendamos visitar el <a href="https://datos.gob.ar/" target="_blank" className="text-decoration-none">Portal Nacional de Datos Públicos</a>.
+                                La Ley de Acceso a la Información Pública y el <a href="https://www.argentina.gob.ar/normativa/nacional/decreto-117-2016-257755" target="_blank" rel="noopener noreferrer" className="text-decoration-none">Decreto Nº117/16</a> prevén la publicación de los datos públicos en formatos electrónicos abiertos con el fin de eliminar toda barrera a su acceso y fomentar su reutilización.<br />En esta sección podés encontrar los conjuntos de datos documentados de acuerdo con el <a href="https://datosgobar.github.io/paquete-apertura-datos/perfil-metadatos/" target="_blank" rel="noopener noreferrer" className="text-decoration-none">Perfil de Aplicación Nacional de Metadatos para Datos Abiertos</a>. Para acceder a los datos te recomendamos visitar el <a href="https://datos.gob.ar/" target="_blank" rel="noopener noreferrer" className="text-decoration-none">Portal Nacional de Datos Públicos</a>.
                               </div>
                                <p class="fst-italic">Actualizado Octubre 2025</p>  
                               <div className="modal-footer">

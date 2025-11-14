@@ -2,9 +2,10 @@ import { useEffect } from "react";
 import './eventos.css';
 
 const Eventos = () => {
-      useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="eventos-container">
       {/* Header Section */}
@@ -23,22 +24,18 @@ const Eventos = () => {
         
         {/* Calendar Container - Espacio reservado para el calendario */}
         <div className="calendario-container">
-          <div className="calendario-placeholder">
-           {/* <iframe 
-                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FArgentina%2FBuenos_Aires&showPrint=0&src=ZmFicmlndWFnbGlhNzJAZ21haWwuY29t&src=ZXMuYXIjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23039be5&color=%230b8043" 
-                style={{
-                  border: "solid 1px #777"
-                }}
-                width="800" 
-                height="600" 
-                frameBorder="0" 
-                scrolling="no"
-              /> */}
-            <h3 className="">Calendario en construcción.</h3>
+            <iframe 
+              src="https://calendar.google.com/calendar/embed?height=600&wkst=2&ctz=America%2FArgentina%2FBuenos_Aires&showPrint=0&showCalendars=0&title=Calendario%20de%20eventos%20de%20la%20Universidad%20Nacional%20del%20Delta&src=Y2FsZW5kYXJpb3dlYkB1bmRlbHRhLmVkdS5hcg&src=ZXMtNDE5LmFyI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039be5&color=%230b8043" 
+              style={{ borderWidth: 0 }} 
+              width="800" 
+              height="600" 
+              frameBorder="0" 
+              scrolling="no"
+              title="Calendario de eventos"
+            ></iframe>
           </div>
-        </div>
-        </div>
       </div>
+    </div>
   );
 };
 
